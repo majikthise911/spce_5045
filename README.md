@@ -45,24 +45,25 @@ Spring 2026
 Schedule
 
 
-Session	Topic	
-		
-1	PART 1: Introduction and Definition of Terms	Part 1; Ch 1-3
-2	Space Mission Concept Definition	Ch 4-6
-3	Introduction to Space Environment and	
-	Space Mission Geometry	Ch 7,8
-4	Orbits and Astrodynamics	Chapter 9
-5	Orbit Design (cont.)	Chapter 10
-6	Financial aspects	Ch 11,12,13
-7	PART 2: Spacecraft and payload design	Ch 14,15
-8	mid-term exam	
-9	Communications payloads	Chapter 16
-10  Spacecraft subsystems 1,2,3	Chapter 18, 19, 20
-11  Spacecraft subsystems 4,5	Ch 21,22
-12  Logistics, risk, alternative designs	Ch 23,24,25
-13  PART 3: Launch ops, ground systems 	Ch 26,27,28
-14  Mission ops and EOL 	Ch 29,30
-15	Observation payloads/post final exam	Chapter 17
-16	Turn in final exam and term project	
+| Session | Topic | Text Ref. |
+| --- | --- | --- |
+|  |  |  |
+| 1 | PART 1: Introduction and Definition of Terms | Part 1; Ch 1-3 |
+| 2 | Space Mission Concept Definition | Ch 4-6 |
+| 3 | Introduction to Space Environment and |  |
+|  | Space Mission Geometry | Ch 7,8 |
+| 4 | Orbits and Astrodynamics | Chapter 9 |
+| 5 | Orbit Design (cont.) | Chapter 10 |
+| 6 | Financial aspects | Ch 11,12,13 |
+| 7 | PART 2: Spacecraft and payload design | Ch 14,15 |
+| 8 | mid-term exam |  |
+| 9 | Communications payloads | Chapter 16 |
+| 10 | Spacecraft subsystems 1,2,3 | Chapter 18, 19, 20 |
+| 11 | Spacecraft subsystems 4,5 | Ch 21,22 |
+| 12 | Logistics, risk, alternative designs | Ch 23,24,25 |
+| 13 | PART 3: Launch ops, ground systems | Ch 26,27,28 |
+| 14 | Mission ops and EOL | Ch 29,30 |
+| 15 | Observation payloads/post final exam | Chapter 17 |
+| 16 | Turn in final exam and term project |  |
 		
 
