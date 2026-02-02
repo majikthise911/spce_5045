@@ -1,0 +1,1533 @@
+<!DOCTYPE html><html><head>
+      <title>spce5045_wk2_mastery_guide</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/jordanclayton/.cursor/extensions/shd101wyy.markdown-preview-enhanced-0.8.20-universal/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      <script type="text/javascript" src="file:////Users/jordanclayton/.cursor/extensions/shd101wyy.markdown-preview-enhanced-0.8.20-universal/crossnote/dependencies/mermaid/mermaid.min.js" charset="UTF-8"></script>
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="spce-5045---space-mission-analysis-week-2-mastery-guide">SPCE 5045 - Space Mission Analysis: Week 2 Mastery Guide </h1>
+<h2 id="overview">Overview </h2>
+<p><strong>Session 2: Space Mission Concept Definition</strong> covers the systematic process of turning a broad need into a well-defined space mission. This material corresponds to Chapters 4, 5, and 6 of <em>Space Mission Engineering: The New SMAD</em> (Wertz, ISBN 978-1-881883-15-9).</p>
+<p>Week 1 introduced the building blocks (architecture elements) and maturity framework (TRLs). This week answers the critical question: <strong>How do you go from "we need a space system" to a concrete, requirements-driven mission design?</strong> The answer involves concept exploration, mission analysis, trade studies, and formal requirements development.</p>
+<h3 id="topic-dependency-map">Topic Dependency Map </h3>
+<div class="mermaid">graph TD
+    A[Week 1: Mission Architecture &amp; TRLs] --&gt; B[Space Mission Concept Definition]
+    B --&gt; C[Concept Exploration &amp; Definition]
+    C --&gt; D[Needs Analysis]
+    C --&gt; E[Concept Development]
+    B --&gt; F[Mission Analysis]
+    F --&gt; G[Feasibility Assessment]
+    F --&gt; H[Sizing Estimate]
+    F --&gt; I[Point Design]
+    F --&gt; J[Trade Study]
+    F --&gt; K[Performance Assessment]
+    F --&gt; L[Utility Assessment]
+    B --&gt; M[Trade Studies]
+    M --&gt; N[System Drivers]
+    M --&gt; O[Alternative Architectures]
+    M --&gt; P[Trade Process]
+    B --&gt; Q[Requirements Development]
+    Q --&gt; R[Functional Requirements]
+    Q --&gt; S[Operational Requirements]
+    Q --&gt; T[Constraints]
+    Q --&gt; U[Requirements Baseline]
+    Q --&gt; V[Operability Aspects]
+    B --&gt; W[Specifications &amp; Standards]
+</div><hr>
+<h2 id="topic-1-space-mission-concept-definition">Topic 1: Space Mission Concept Definition </h2>
+<h3 id="analogy">Analogy </h3>
+<p>Imagine you are a city planner asked to solve a transportation problem. You would not immediately start designing a bridge. Instead, you would:</p>
+<ol>
+<li><strong>Understand the need:</strong> "People need to cross the river" (needs analysis)</li>
+<li><strong>Explore broad options:</strong> Bridge? Tunnel? Ferry? Helicopter service? (concept exploration)</li>
+<li><strong>Narrow to feasible options:</strong> Eliminate helicopter service (too expensive), consider bridge vs. tunnel (concept development)</li>
+<li><strong>Define requirements:</strong> Must handle 10,000 cars/day, withstand earthquakes, cost under $500M (requirements definition)</li>
+<li><strong>Trade off options:</strong> Bridge is cheaper but tunnel avoids visual impact -- which matters more? (trade studies)</li>
+<li><strong>Select and refine:</strong> Choose a bridge, then specify span length, materials, lane count, etc. (detailed development)</li>
+</ol>
+<p>Space mission concept definition follows this exact same process, but the "river" might be "we need to detect forest fires from orbit" and the options involve different orbits, sensors, spacecraft, and ground systems.</p>
+<h3 id="core-explanation">Core Explanation </h3>
+<p>The mission concept definition process bridges the gap between a broad need ("detect fires") and a concrete design ("two IR satellites in polar LEO at 700 km with a dedicated ground station"). It is an <strong>iterative, multi-stakeholder process</strong> involving three groups:</p>
+<ol>
+<li>
+<p><strong>Requirements Generation (Users and Operators):</strong> Define what the system must do, flowing from very broad needs down to specific, quantifiable requirements.</p>
+</li>
+<li>
+<p><strong>Acquisition Management (Developers):</strong> Develop alternative concepts, select the best approach, and produce a stable design.</p>
+</li>
+<li>
+<p><strong>Planning, Programming, and Budgeting (Sponsors):</strong> Establish affordability goals, set constraints, and determine firm unit costs.</p>
+</li>
+</ol>
+<p>These three tracks proceed in parallel, interacting through two-way feedback at every stage. The process has two major phases:</p>
+<ul>
+<li><strong>Concept Exploration:</strong> Broad, open-ended. Generate potential requirements, explore alternative concepts, establish affordability goals.</li>
+<li><strong>Detailed Development:</strong> Narrow, focused. Refine requirements into specifications, produce a stable design, establish firm costs.</li>
+</ul>
+<p>The endpoint is <strong>Production and Deployment</strong> -- actually building and launching the system.</p>
+<h3 id="formal-definitions">Formal Definitions </h3>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mission Concept</strong></td>
+<td>The overarching approach for how a mission will accomplish its objectives, including how information/services flow from the space segment to the end user.</td>
+</tr>
+<tr>
+<td><strong>Concept Exploration</strong></td>
+<td>The early phase of mission definition where broad needs are identified and alternative approaches are explored.</td>
+</tr>
+<tr>
+<td><strong>Detailed Development</strong></td>
+<td>The later phase where a selected concept is refined into a buildable design with firm requirements and costs.</td>
+</tr>
+<tr>
+<td><strong>Needs Analysis</strong></td>
+<td>The subprocess of generating potential requirements based on mission objectives, concept of operations, schedule, costs, marketplace changes, policy, threats, and technology developments.</td>
+</tr>
+<tr>
+<td><strong>Concept Development</strong></td>
+<td>The subprocess of reassessing requirements, developing alternative mission architectures, and estimating performance, cost, schedule, risk, and return on investment.</td>
+</tr>
+<tr>
+<td><strong>Concept of Operations (ConOps)</strong></td>
+<td>A description of how the system will be used from the operator's and user's perspective.</td>
+</tr>
+<tr>
+<td><strong>Life-Cycle Cost</strong></td>
+<td>The total cost of a system from initial concept through development, production, operations, and disposal.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mission-timeline-elements-table-4-8">Mission Timeline Elements (Table 4-8) </h3>
+<p>Every mission passes through defined phases, each driven by different factors:</p>
+<table>
+<thead>
+<tr>
+<th>Timeline Element</th>
+<th>Typically Driven By</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Planning and Development</strong></td>
+<td>Funding constraints; System need date</td>
+</tr>
+<tr>
+<td><strong>Production</strong></td>
+<td>Funding constraints; Technology development; System need date</td>
+</tr>
+<tr>
+<td><strong>Initial Launch</strong></td>
+<td>Spacecraft completion; Launch availability; System need date</td>
+</tr>
+<tr>
+<td><strong>Constellation Build-up</strong> (if applicable)</td>
+<td>Production schedule; Launch availability; Satellite lifetime</td>
+</tr>
+<tr>
+<td><strong>Normal Mission Operations</strong></td>
+<td>Planned operational life; Satellite lifetime (planned or failure constrained)</td>
+</tr>
+<tr>
+<td><strong>Replenishment</strong></td>
+<td>Production schedule; Failure of on-orbit satellites; Launch availability; Satellite lifetime</td>
+</tr>
+<tr>
+<td><strong>End-of-Mission Disposal</strong></td>
+<td>Legal and political constraints; Danger to other spacecraft</td>
+</tr>
+</tbody>
+</table>
+<h3 id="worked-examples">Worked Examples </h3>
+<h4 id="example-1-firesat-concept-definition">Example 1: FireSat Concept Definition </h4>
+<p><strong>Broad Need:</strong> The US Forest Service needs to detect forest fires faster than current methods (aircraft patrols, ground observers, existing weather satellites).</p>
+<p><strong>Needs Analysis:</strong></p>
+<ul>
+<li>Mission objective: Detect fires with 0.12 K sensitivity at 300 K, 500 m resolution, 500 m location accuracy</li>
+<li>Coverage: 750 million acres within continental US, daily</li>
+<li>Responsiveness: Data to fire rangers within 30 minutes</li>
+<li>Schedule: Initial capability within 5 years</li>
+<li>Cost: &lt; $20M/year + R&amp;D</li>
+<li>Regulatory: NASA mission, responsive to public demand</li>
+</ul>
+<p><strong>Concept Exploration:</strong></p>
+<ul>
+<li>Option A: Small IR satellites in LEO (low cost, high resolution, but coverage gaps)</li>
+<li>Option B: Single satellite in GEO (continuous coverage of CONUS, but lower resolution)</li>
+<li>Option C: Use existing weather satellite data (cheapest, but insufficient sensitivity/resolution)</li>
+</ul>
+<p><strong>Concept Development:</strong> Detailed analysis of Options A and B, estimating performance, cost, schedule, and risk for each.</p>
+<h4 id="example-2-commercial-communications-satellite">Example 2: Commercial Communications Satellite </h4>
+<p><strong>Broad Need:</strong> A telecom company wants to provide broadband internet to rural areas.</p>
+<p><strong>Needs Analysis:</strong></p>
+<ul>
+<li>Coverage: All of North America, including remote areas</li>
+<li>Data rate: At least 25 Mbps per user</li>
+<li>Latency: Low enough for video calls (&lt; 600 ms round trip acceptable? Or &lt; 50 ms needed?)</li>
+<li>Cost: Return on investment within 10 years</li>
+<li>Commercial objective: Compete with terrestrial broadband</li>
+</ul>
+<p><strong>Concept Exploration:</strong></p>
+<ul>
+<li>LEO constellation (low latency but many satellites, expensive)</li>
+<li>GEO satellite (fewer satellites, higher latency, proven technology)</li>
+<li>MEO constellation (compromise between LEO and GEO)</li>
+</ul>
+<p>The latency requirement is a <strong>critical driving requirement</strong> -- it eliminates GEO if real-time applications are needed.</p>
+<h3 id="practice-questions">Practice Questions </h3>
+<p><strong>Q1.</strong> What are the three stakeholder groups in mission concept definition, and what does each contribute?</p>
+<details>
+<summary>Answer</summary>
+<ol>
+<li><strong>Requirements Generation (Users &amp; Operators):</strong> Define what the system must do -- they establish performance objectives and ultimately the formal requirements.</li>
+<li><strong>Acquisition Management (Developers):</strong> Determine <em>how</em> to build the system -- they develop alternative concepts, select the best approach, and create a stable design.</li>
+<li><strong>Planning, Programming, and Budgeting (Sponsors):</strong> Determine how much can be spent -- they set affordability goals, constraints, and firm unit costs.</li>
+</ol>
+</details>
+<p><strong>Q2.</strong> What is the difference between "Concept Exploration" and "Detailed Development"?</p>
+<details>
+<summary>Answer</summary>
+<p><strong>Concept Exploration</strong> is broad and open-ended: you are identifying needs, exploring many possible approaches, and establishing feasibility. Requirements are preliminary and evolving. <strong>Detailed Development</strong> is narrow and focused: you have selected a concept and are refining it into a buildable design with firm requirements, stable interfaces, and committed costs. The transition occurs when a concept is selected and requirements are sufficiently mature.</p>
+</details>
+<p><strong>Q3.</strong> Why is the concept definition process described as "iterative"?</p>
+<details>
+<summary>Answer</summary>
+<p>Because the three tracks (requirements, design concepts, and budgets) continuously influence each other. Requirements may change when developers demonstrate that a capability is infeasible at the given budget. Budgets may change when users explain that a minimum performance level is non-negotiable. Design concepts may shift when new technology becomes available or requirements change. The arrows in the process diagram point both ways between all three tracks.</p>
+</details>
+<h3 id="common-pitfalls">Common Pitfalls </h3>
+<ol>
+<li>
+<p><strong>Jumping to a solution before defining the problem.</strong> Engineers often want to start designing a spacecraft immediately. The concept definition process forces you to first understand the <em>need</em>, then explore <em>alternatives</em>, then select and refine.</p>
+</li>
+<li>
+<p><strong>Treating requirements as fixed from the start.</strong> In reality, requirements evolve as concepts are explored and costs become clearer. The process is inherently iterative.</p>
+</li>
+<li>
+<p><strong>Ignoring the sponsor/budget track.</strong> A technically elegant solution that cannot be afforded is not a solution. Cost is always a constraint.</p>
+</li>
+<li>
+<p><strong>Confusing needs with requirements.</strong> A need is a broad statement of what must be accomplished ("detect fires faster"). A requirement is a specific, quantifiable, verifiable statement ("detect temperature anomalies of 0.12 K at 300 K with 500 m spatial resolution").</p>
+</li>
+</ol>
+<h3 id="key-takeaways">Key Takeaways </h3>
+<ul>
+<li>Mission concept definition is a <strong>structured, iterative process</strong> involving users, developers, and sponsors.</li>
+<li>It proceeds from <strong>broad needs</strong> through <strong>concept exploration</strong> to <strong>detailed development</strong>.</li>
+<li>Three parallel tracks (requirements, design, budget) interact continuously.</li>
+<li>The process prevents premature commitment to a design before alternatives are explored.</li>
+<li>Every mission passes through defined <strong>timeline phases</strong> from planning through end-of-life disposal.</li>
+</ul>
+<blockquote>
+<p><strong>Active Recall:</strong> Draw the three-track concept definition diagram from memory. Can you label the progression arrows (very broad needs -&gt; performance objectives -&gt; requirements; alternative concepts -&gt; concept selection -&gt; stable design; affordability goals -&gt; constraints -&gt; firm unit costs)?</p>
+</blockquote>
+<hr>
+<h2 id="topic-2-mission-analysis">Topic 2: Mission Analysis </h2>
+<h3 id="analogy-1">Analogy </h3>
+<p>Mission analysis is like evaluating whether to start a business. You might:</p>
+<ol>
+<li><strong>Feasibility check:</strong> "Is it even possible to open a restaurant here?" (quick, broad)</li>
+<li><strong>Sizing estimate:</strong> "How big would the restaurant need to be? How many staff?" (basic numbers)</li>
+<li><strong>Point design:</strong> "Here's one specific restaurant layout to serve as a baseline" (concrete but not necessarily optimal)</li>
+<li><strong>Trade study:</strong> "Should we do Italian or Mexican? Dine-in or takeout? Downtown or suburban?" (comparing alternatives)</li>
+<li><strong>Performance assessment:</strong> "With this specific design, how many customers per hour can we serve?" (quantified detail)</li>
+<li><strong>Utility assessment:</strong> "Overall, how well does this restaurant concept meet the business objectives?" (big picture)</li>
+</ol>
+<p>The first three are quick with limited detail; the last three are more detailed and used for comparing alternatives.</p>
+<h3 id="core-explanation-1">Core Explanation </h3>
+<p><strong>Mission analysis</strong> is the set of analytical methods used to evaluate a mission concept. The textbook identifies six types of analysis, arranged from quick/broad to detailed/focused:</p>
+<h4 id="quick-limited-detail">Quick, Limited Detail: </h4>
+<table>
+<thead>
+<tr>
+<th>Analysis Type</th>
+<th>Goal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Feasibility Assessment</strong></td>
+<td>To establish whether an objective is achievable and its approximate degree of complexity</td>
+</tr>
+<tr>
+<td><strong>Sizing Estimate</strong></td>
+<td>To estimate basic parameters such as size, weight, power, or cost</td>
+</tr>
+<tr>
+<td><strong>Point Design</strong></td>
+<td>To demonstrate feasibility and establish a baseline for comparison of alternatives</td>
+</tr>
+</tbody>
+</table>
+<h4 id="more-detailed-complex-trades">More Detailed, Complex Trades: </h4>
+<table>
+<thead>
+<tr>
+<th>Analysis Type</th>
+<th>Goal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Trade Study</strong></td>
+<td>To establish the relative advantages of alternative approaches or options</td>
+</tr>
+<tr>
+<td><strong>Performance Assessment</strong></td>
+<td>To quantify performance parameters (e.g., resolution, timeliness) for a particular approach</td>
+</tr>
+<tr>
+<td><strong>Utility Assessment</strong></td>
+<td>To quantify how well the system can meet overall mission objectives</td>
+</tr>
+</tbody>
+</table>
+<p>The progression matters: you start with quick assessments to eliminate clearly infeasible options, then invest detailed analysis only in the surviving candidates.</p>
+<h3 id="common-system-drivers-table-4-16">Common System Drivers (Table 4-16) </h3>
+<p>A <strong>system driver</strong> is a parameter that has outsized influence on the overall mission design. Understanding system drivers is critical because they determine which trade-offs matter most.</p>
+<table>
+<thead>
+<tr>
+<th>Driver</th>
+<th>What Limits the Driver</th>
+<th>What the Driver Limits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Size</strong></td>
+<td>Shroud or bay size, available weight, aerodynamic drag</td>
+<td>Payload size (frequently antenna diameter or aperture)</td>
+</tr>
+<tr>
+<td><strong>On-orbit Weight</strong></td>
+<td>Altitude, inclination, launch vehicle</td>
+<td>Payload weight, survivability; largely determines design and manufacturing cost</td>
+</tr>
+<tr>
+<td><strong>Power</strong></td>
+<td>Size, weight (control is secondary problem)</td>
+<td>Payload &amp; bus design, system sensitivity, on-orbit life</td>
+</tr>
+<tr>
+<td><strong>Data Rate</strong></td>
+<td>Storage, processing, antenna sizes, limits of existing systems</td>
+<td>Information sent to user; can push demand for onboard processing</td>
+</tr>
+<tr>
+<td><strong>Communications</strong></td>
+<td>Coverage, availability of ground stations or relay satellites</td>
+<td>Coverage, timeliness, ability to command</td>
+</tr>
+<tr>
+<td><strong>Pointing</strong></td>
+<td>Cost, weight</td>
+<td>Resolution, geolocation, overall system accuracy; pushes spacecraft cost</td>
+</tr>
+<tr>
+<td><strong>Number of Spacecraft</strong></td>
+<td>Cost</td>
+<td>Coverage frequency and overlap</td>
+</tr>
+<tr>
+<td><strong>Altitude</strong></td>
+<td>Launch vehicle, performance demands, weight</td>
+<td>Performance, survivability, coverage (instantaneous and rate), communications</td>
+</tr>
+<tr>
+<td><strong>Coverage (geometry and timing)</strong></td>
+<td>Orbit, scheduling, payload field of view &amp; observation time</td>
+<td>Data frequency and continuity, maneuver requirements</td>
+</tr>
+<tr>
+<td><strong>Scheduling</strong></td>
+<td>Timeline &amp; operations, decision making, communications</td>
+<td>Coverage, responsiveness, mission utility</td>
+</tr>
+<tr>
+<td><strong>Operations</strong></td>
+<td>Cost, crew size, communications</td>
+<td>Frequently principal cost driver, principal error source, pushes demand for autonomy (can also save "lost" missions)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="worked-examples-1">Worked Examples </h3>
+<h4 id="example-1-identifying-the-system-driver">Example 1: Identifying the System Driver </h4>
+<p>A mission requires 1-meter resolution imaging of ground targets from orbit. What is the primary system driver?</p>
+<p><strong>Answer:</strong> <strong>Pointing and altitude</strong> are the primary drivers. Resolution depends on the ratio of the sensor aperture to the altitude (for optical systems, resolution <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≈</mo><mn>1.22</mn><mi>λ</mi><mo>⋅</mo><mi>h</mi><mi mathvariant="normal">/</mi><mi>D</mi></mrow><annotation encoding="application/x-tex">\approx 1.22 \lambda \cdot h / D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4831em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">1.22</span><span class="mord mathnormal">λ</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">h</span><span class="mord">/</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span> where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">λ</span></span></span></span> is wavelength, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi></mrow><annotation encoding="application/x-tex">h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span></span></span></span> is altitude, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi></mrow><annotation encoding="application/x-tex">D</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span></span></span></span> is aperture diameter). To achieve 1-m resolution:</p>
+<ul>
+<li>At lower altitude, a smaller aperture works but you need more satellites for coverage.</li>
+<li>At higher altitude, a larger aperture is needed, increasing size, weight, cost, and pointing accuracy requirements.</li>
+<li>The pointing system must be accurate enough that the 1-m ground pixel is correctly targeted.</li>
+</ul>
+<p>This is a classic example of how one requirement (resolution) cascades through multiple system drivers (altitude, size, weight, pointing, number of spacecraft, cost).</p>
+<h4 id="example-2-feasibility-assessment">Example 2: Feasibility Assessment </h4>
+<p><strong>Question:</strong> Can we detect individual people from geostationary orbit?</p>
+<p><strong>Quick feasibility check:</strong> GEO altitude is ~35,786 km. Detecting a person requires ~0.5 m resolution. For visible light (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>λ</mi><mo>≈</mo><mn>0.5</mn><mi>μ</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">\lambda \approx 0.5 \mu m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">λ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">0.5</span><span class="mord mathnormal">μ</span><span class="mord mathnormal">m</span></span></span></span>), the required aperture is:</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>D</mi><mo>≈</mo><mn>1.22</mn><mo>×</mo><mi>λ</mi><mo>×</mo><mi>h</mi><mi mathvariant="normal">/</mi><mtext>resolution</mtext><mo>=</mo><mn>1.22</mn><mo>×</mo><mn>0.5</mn><mo>×</mo><msup><mn>10</mn><mrow><mo>−</mo><mn>6</mn></mrow></msup><mo>×</mo><mn>35</mn><mo separator="true">,</mo><mn>786</mn><mo>×</mo><msup><mn>10</mn><mn>3</mn></msup><mi mathvariant="normal">/</mi><mn>0.5</mn><mo>≈</mo><mn>43.7</mn><mtext>&nbsp;m</mtext></mrow><annotation encoding="application/x-tex">D \approx 1.22 \times \lambda \times h / \text{resolution} = 1.22 \times 0.5 \times 10^{-6} \times 35,786 \times 10^{3} / 0.5 \approx 43.7 \text{ m}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1.22</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">λ</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">h</span><span class="mord">/</span><span class="mord text"><span class="mord">resolution</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1.22</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">0.5</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.9474em;vertical-align:-0.0833em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">6</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">35</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">786</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.1141em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span><span class="mord">/0.5</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">43.7</span><span class="mord text"><span class="mord">&nbsp;m</span></span></span></span></span></span></p>
+<p>A 44-meter aperture telescope in space is not feasible with current technology. <strong>Conclusion: Not feasible from GEO.</strong> This quick assessment eliminates GEO for this mission objective without detailed analysis.</p>
+<h3 id="practice-questions-1">Practice Questions </h3>
+<p><strong>Q1.</strong> Why do you start with feasibility assessments rather than jumping straight to trade studies?</p>
+<details>
+<summary>Answer</summary>
+<p>Feasibility assessments are quick and require limited detail. They allow you to rapidly eliminate options that are clearly infeasible before investing significant time and resources in detailed trade studies. If you start with trade studies on all possible approaches, you waste effort analyzing options that a quick feasibility check would have ruled out.</p>
+</details>
+<p><strong>Q2.</strong> A mission has a constraint of 300 kg total spacecraft mass. Which system drivers are most affected?</p>
+<details>
+<summary>Answer</summary>
+<p><strong>On-orbit weight</strong> is directly constrained at 300 kg, which limits:</p>
+<ul>
+<li><strong>Payload weight and size</strong> (the primary mission instrument must fit within the mass budget)</li>
+<li><strong>Power</strong> (less mass available for solar panels and batteries)</li>
+<li><strong>Data rate</strong> (less mass available for larger antennas)</li>
+<li><strong>Altitude and orbit</strong> (lighter spacecraft can reach higher orbits on smaller launch vehicles, but the 300 kg constraint also limits the choice of launch vehicles)</li>
+</ul>
+<p>The mass constraint forces trade-offs across nearly every subsystem.</p>
+</details>
+<p><strong>Q3.</strong> What is the difference between a "point design" and a "trade study"?</p>
+<details>
+<summary>Answer</summary>
+<p>A <strong>point design</strong> is a single, specific design that demonstrates feasibility and serves as a baseline. It answers: "Here is one way this could work." A <strong>trade study</strong> compares multiple alternatives (which may include the point design) to determine which approach offers the best balance of performance, cost, risk, and schedule. The point design provides a reference; the trade study provides a decision.</p>
+</details>
+<h3 id="common-pitfalls-1">Common Pitfalls </h3>
+<ol>
+<li><strong>Conducting detailed analysis on infeasible options.</strong> Always do a quick feasibility check first.</li>
+<li><strong>Ignoring system drivers.</strong> The drivers listed in Table 4-16 are the parameters that most strongly constrain the design. Identifying them early focuses your analysis effort.</li>
+<li><strong>Treating system drivers as independent.</strong> Drivers interact: increasing altitude improves communications coverage but degrades resolution. These interactions are what make trade studies necessary.</li>
+</ol>
+<h3 id="key-takeaways-1">Key Takeaways </h3>
+<ul>
+<li>Mission analysis progresses from <strong>quick/broad</strong> (feasibility, sizing, point design) to <strong>detailed/focused</strong> (trade study, performance assessment, utility assessment).</li>
+<li><strong>System drivers</strong> are the parameters that most strongly influence mission design. Identifying them early is critical.</li>
+<li>Drivers <strong>interact</strong> -- changing one affects many others, creating cascading trade-offs.</li>
+</ul>
+<hr>
+<h2 id="topic-3-trade-studies">Topic 3: Trade Studies </h2>
+<h3 id="analogy-2">Analogy </h3>
+<p>Buying a car involves trade-offs: fuel efficiency vs. power, size vs. maneuverability, luxury vs. price. You cannot maximize everything simultaneously. The structured process of evaluating these trade-offs -- comparing options against weighted criteria -- is exactly what a trade study does for a space mission.</p>
+<h3 id="core-explanation-2">Core Explanation </h3>
+<p>A <strong>trade study</strong> (or trade-off analysis) is the systematic evaluation of alternative approaches to determine which best satisfies the mission objectives given constraints. Trade studies are at the heart of space mission design because no single design can optimize all parameters simultaneously.</p>
+<p>The process involves:</p>
+<ol>
+<li>Identifying what elements can be traded</li>
+<li>Defining the options for each tradeable element</li>
+<li>Constructing a trade tree of combinations</li>
+<li>Pruning unrealistic combinations</li>
+<li>Evaluating surviving options against criteria</li>
+</ol>
+<h3 id="principal-areas-for-key-system-trades-table-5-2">Principal Areas for Key System Trades (Table 5-2) </h3>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Principal Issue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mission Objectives</strong></td>
+<td>What are we really trying to accomplish?</td>
+</tr>
+<tr>
+<td><strong>Critical Requirements</strong></td>
+<td>What requirements are hard to meet and drive cost, risk, and schedule?</td>
+</tr>
+<tr>
+<td><strong>Mission Concept</strong></td>
+<td>How do we get the information/data and deliver results to the end user?</td>
+</tr>
+<tr>
+<td><strong>Subject</strong></td>
+<td>What do we want to look at or measure?</td>
+</tr>
+<tr>
+<td><strong>Type and Complexity of Payloads</strong></td>
+<td>What spectral band? How do we measure it? How many payloads?</td>
+</tr>
+<tr>
+<td><strong>Orbit</strong></td>
+<td>A specialized orbit or one of a continuum?</td>
+</tr>
+<tr>
+<td><strong>Number of Spacecraft</strong></td>
+<td>A single satellite or a constellation?</td>
+</tr>
+</tbody>
+</table>
+<h3 id="alternative-architecture-derivation">Alternative Architecture Derivation </h3>
+<p>The textbook defines a 5-step process for generating alternative architectures:</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A</strong></td>
+<td>Identify the mission elements subject to trade</td>
+</tr>
+<tr>
+<td><strong>B</strong></td>
+<td>Identify the main options for each tradeable element</td>
+</tr>
+<tr>
+<td><strong>C</strong></td>
+<td>Construct a trade tree of available options</td>
+</tr>
+<tr>
+<td><strong>D</strong></td>
+<td>Prune the trade tree by eliminating unrealistic combinations</td>
+</tr>
+<tr>
+<td><strong>E</strong></td>
+<td>Look for other alternatives which could substantially influence how we do the mission</td>
+</tr>
+</tbody>
+</table>
+<h3 id="trade-off-possibilities">Trade-off Possibilities </h3>
+<p>Not every element of the mission architecture can (or should) be traded. Here is an example from the FireSat mission:</p>
+<table>
+<thead>
+<tr>
+<th>Element of Mission Architecture</th>
+<th>Can be Traded</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mission Concept</strong></td>
+<td>Yes</td>
+<td>Want to remain open to alternative approaches</td>
+</tr>
+<tr>
+<td><strong>Subject</strong></td>
+<td>No</td>
+<td>Passive subject is well defined (heat from fires)</td>
+</tr>
+<tr>
+<td><strong>Payload</strong></td>
+<td>Yes</td>
+<td>Can select complexity and frequencies</td>
+</tr>
+<tr>
+<td><strong>Spacecraft Bus</strong></td>
+<td>Yes</td>
+<td>Multiple options based on scan mechanism and power</td>
+</tr>
+<tr>
+<td><strong>Launch System</strong></td>
+<td>Cost only</td>
+<td>Choose minimum cost for selected orbit</td>
+</tr>
+<tr>
+<td><strong>Orbit</strong></td>
+<td>Yes</td>
+<td>Options are low, medium, or high altitude with varying number of satellites</td>
+</tr>
+<tr>
+<td><strong>Ground System</strong></td>
+<td>Yes</td>
+<td>Could share NOAA control facility, use dedicated FireSat facility, or direct downlink to users</td>
+</tr>
+<tr>
+<td><strong>Communications Architecture</strong></td>
+<td>No</td>
+<td>Fixed by mission operations and ground system</td>
+</tr>
+<tr>
+<td><strong>Mission Operations</strong></td>
+<td>Yes</td>
+<td>Can adjust level of automation</td>
+</tr>
+</tbody>
+</table>
+<h3 id="system-trade-process-for-parameters-with-multiple-effects-table-5-4">System Trade Process for Parameters with Multiple Effects (Table 5-4) </h3>
+<p>When a single parameter affects many aspects of the design, a structured 5-step trade process is used:</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Description</th>
+<th>FireSat II Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Select trade parameter</strong> (typically a system driver)</td>
+<td>Choose the parameter to trade</td>
+<td>Altitude</td>
+</tr>
+<tr>
+<td><strong>2. Identify factors which affect the parameter or are affected by it</strong></td>
+<td>List all coupled factors</td>
+<td>Coverage, deployment strategy, orbit period, time in view, eclipse fraction, response time, number of spacecraft, launch capability, resolution, radiation environment, communications, lifetime</td>
+</tr>
+<tr>
+<td><strong>3. Assess impact of each factor</strong></td>
+<td>Determine how each factor constrains or influences the trade</td>
+<td>Can launch up to 1,800 km; best coverage above 600 km; resolution -- lower is better; survivability -- higher is better (but not much)</td>
+</tr>
+<tr>
+<td><strong>4. Document and summarize results</strong></td>
+<td>Create summary charts/tables</td>
+<td>Charts of launch capability vs. altitude, coverage vs. altitude, resolution vs. altitude, survivability vs. altitude</td>
+</tr>
+<tr>
+<td><strong>5. Select parameter value and possible range</strong></td>
+<td>Choose the value and acceptable range</td>
+<td>Altitude = 700 km; Range = 600 to 800 km</td>
+</tr>
+</tbody>
+</table>
+<h3 id="firesat-trade-study-example-table-5-3">FireSat Trade Study Example (Table 5-3) </h3>
+<p>The textbook presents two FireSat design options to illustrate trade-offs:</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Option 1 (Small LEO)</th>
+<th>Option 6 (Large GEO)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mission Concept</strong></td>
+<td>IR detection of fires, results mapped and transmitted</td>
+<td>IR detection of fires, results mapped and transmitted</td>
+</tr>
+<tr>
+<td><strong>Subject</strong></td>
+<td>Characteristics defined by specification</td>
+<td>Characteristics defined by specification</td>
+</tr>
+<tr>
+<td><strong>Payload</strong></td>
+<td>Small-aperture IR</td>
+<td>Large-aperture IR</td>
+</tr>
+<tr>
+<td><strong>Spacecraft Bus</strong></td>
+<td>Small, 3-axis</td>
+<td>Mid-size, 3-axis</td>
+</tr>
+<tr>
+<td><strong>Launch System</strong></td>
+<td>Pegasus</td>
+<td>STS, integral propulsion</td>
+</tr>
+<tr>
+<td><strong>Orbit</strong></td>
+<td>Low-Earth, 2 satellites, 2 perpendicular polar planes</td>
+<td>Geosynchronous, 1 satellite centered over west coast of US</td>
+</tr>
+<tr>
+<td><strong>Ground System</strong></td>
+<td>Single, dedicated ground station</td>
+<td>Single, dedicated ground station</td>
+</tr>
+<tr>
+<td><strong>Communications Architecture</strong></td>
+<td>TDRS data downlink, commercial links to users</td>
+<td>Direct to station; results relayed to users via FireSat</td>
+</tr>
+<tr>
+<td><strong>Mission Operations</strong></td>
+<td>Continuous during fire season, partial otherwise</td>
+<td>Continuous during fire season, partial otherwise</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key trade-off:</strong> Option 1 uses small, cheap satellites close to Earth (better resolution, lower cost per satellite, but needs 2 satellites and has coverage gaps). Option 6 uses one large, expensive satellite far from Earth (continuous coverage of CONUS, but needs a much larger aperture for equivalent resolution and a much larger launch vehicle).</p>
+<h3 id="firesat-ii-and-scs-baseline-table-5-12">FireSat II and SCS Baseline (Table 5-12) </h3>
+<p>The textbook also compares two complete mission baselines: <strong>FireSat II</strong> (fire detection) and <strong>SCS</strong> (Satellite Communications System):</p>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>FireSat II Baseline</th>
+<th>SCS Baseline</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Subject</strong></td>
+<td>Heat from fire</td>
+<td>Handheld receiver</td>
+</tr>
+<tr>
+<td><strong>Payload</strong></td>
+<td>IR sensor</td>
+<td>Software defined radio; bands TBD</td>
+</tr>
+<tr>
+<td><strong>Spacecraft Bus</strong></td>
+<td>SmallSat bus, body-mounted arrays, integral propulsion, Earth pointing</td>
+<td>200 kg SmallSat bus with deployable arrays and fixed crosslinks fore and aft</td>
+</tr>
+<tr>
+<td><strong>Ground Segment</strong></td>
+<td>Dedicated ground station in CONUS</td>
+<td>2 dedicated ground stations for redundancy</td>
+</tr>
+<tr>
+<td><strong>Mission Operations</strong></td>
+<td>Single facility doing fire detection and commanding</td>
+<td>Single facility doing payload and constellation control</td>
+</tr>
+<tr>
+<td><strong>C3 Architecture</strong></td>
+<td>Direct link from ground segment to FireSat II</td>
+<td>Continuous link from ground station in CONUS to all satellites</td>
+</tr>
+<tr>
+<td><strong>Orbit</strong></td>
+<td>2 satellites in LEO at inclination = 60 deg</td>
+<td>3 satellites in circular, equatorial orbits at 20,000 km; supplemented with 3 more equatorial or 3 polar</td>
+</tr>
+<tr>
+<td><strong>Launch Segment</strong></td>
+<td>Pegasus or Minotaur I</td>
+<td>All 3 satellites launched on a single EELV</td>
+</tr>
+<tr>
+<td><strong>Mission Concept</strong></td>
+<td>Fire detection by trained analysts at mission ops facility; fire data relayed back through FireSat II and down to end user</td>
+<td>Fixed crosslinks provide continuous connectivity to CONUS with only 1 hop from anywhere within 50 deg of the equator</td>
+</tr>
+</tbody>
+</table>
+<h3 id="worked-examples-2">Worked Examples </h3>
+<h4 id="example-1-altitude-trade-for-an-earth-observation-mission">Example 1: Altitude Trade for an Earth Observation Mission </h4>
+<p>You are designing an Earth observation satellite. Your key requirement is 5-meter ground resolution. Trade the altitude parameter:</p>
+<p><strong>Step 1:</strong> Trade parameter = Altitude</p>
+<p><strong>Step 2:</strong> Factors affected:</p>
+<ul>
+<li>Resolution (lower altitude = better resolution for a given aperture)</li>
+<li>Coverage area per pass (higher altitude = wider swath)</li>
+<li>Orbital period (higher altitude = longer period = fewer passes per day)</li>
+<li>Atmospheric drag (lower altitude = more drag = shorter orbit life or more fuel)</li>
+<li>Launch vehicle requirements (higher altitude = more energy needed)</li>
+<li>Radiation environment (varies with altitude -- Van Allen belts peak around 1,500-5,000 km)</li>
+<li>Communications (higher altitude = longer range = weaker signal)</li>
+</ul>
+<p><strong>Step 3:</strong> Assess impacts:</p>
+<ul>
+<li>At 300 km: Excellent resolution, but severe drag, short lifetime, limited coverage per pass</li>
+<li>At 700 km: Good resolution, manageable drag, good coverage, standard launch vehicles</li>
+<li>At 1,200 km: Marginal resolution (may need larger aperture), minimal drag, wide coverage, but entering inner radiation belt</li>
+</ul>
+<p><strong>Step 4:</strong> Document -- create charts of resolution, drag, coverage, and radiation vs. altitude</p>
+<p><strong>Step 5:</strong> Select altitude = 500-700 km range as the best compromise</p>
+<h4 id="example-2-single-satellite-vs-constellation">Example 2: Single Satellite vs. Constellation </h4>
+<p>A maritime surveillance mission needs to detect ships in the North Atlantic.</p>
+<p><strong>Option A: Single satellite in sun-synchronous orbit (~800 km)</strong></p>
+<ul>
+<li>Pro: Low cost, simple operations</li>
+<li>Con: Revisit time of ~12 hours (many ships missed between passes)</li>
+</ul>
+<p><strong>Option B: Constellation of 6 satellites in 3 orbital planes</strong></p>
+<ul>
+<li>Pro: Revisit time of ~2 hours (much better coverage)</li>
+<li>Con: 6x satellite cost, more complex operations, 6x launch cost (unless ride-share)</li>
+</ul>
+<p><strong>Trade criterion:</strong> If the mission requires detection within 4 hours, Option A fails and Option B is required. If 12-hour revisit is acceptable, Option A is far more cost-effective.</p>
+<p>This illustrates how a single requirement (revisit time) can determine the entire architecture.</p>
+<h3 id="practice-questions-2">Practice Questions </h3>
+<p><strong>Q1.</strong> Why is it important to "prune the trade tree" (Step D in Alternative Architecture Derivation)?</p>
+<details>
+<summary>Answer</summary>
+<p>A full trade tree combining all options for all elements produces a combinatorial explosion of possibilities. Most combinations are unrealistic or infeasible (e.g., a 10-ton payload on a Pegasus launch vehicle, which can only lift ~450 kg to LEO). Pruning eliminates these impossible or clearly inferior combinations early, focusing analysis effort on realistic candidates.</p>
+</details>
+<p><strong>Q2.</strong> In the FireSat altitude trade (Table 5-4), the selected altitude is 700 km with a range of 600-800 km. Why specify a range instead of a single value?</p>
+<details>
+<summary>Answer</summary>
+<p>The range communicates flexibility for subsequent design iterations. As the design matures and more detailed analysis is performed, the optimal altitude may shift within this range. Specifying a range also alerts other subsystem designers that the altitude is not yet locked -- they should ensure their designs work across the full range. If a single value were specified prematurely, it might force unnecessary redesigns later.</p>
+</details>
+<p><strong>Q3.</strong> For the FireSat trade, the "Subject" element cannot be traded. Why not?</p>
+<details>
+<summary>Answer</summary>
+<p>The subject (heat from forest fires) is defined by the mission objective itself. You cannot trade it because it <em>is</em> the problem you are solving. Changing the subject would mean you are solving a different problem entirely. (However, you <em>can</em> trade how you observe the subject -- visible light vs. IR vs. radar -- which falls under the Payload element.)</p>
+</details>
+<p><strong>Q4.</strong> When trading altitude for FireSat, which factor ultimately constrained the lower bound of the range (600 km)?</p>
+<details>
+<summary>Answer</summary>
+<p><strong>Coverage.</strong> The best coverage (in terms of area covered per unit time) occurs above 600 km. Below 600 km, the swath width is too narrow and more satellites would be needed to achieve adequate coverage, increasing cost. Atmospheric drag also becomes a significant factor below ~500 km, reducing satellite lifetime.</p>
+</details>
+<h3 id="common-pitfalls-2">Common Pitfalls </h3>
+<ol>
+<li>
+<p><strong>Not identifying all affected factors in a trade.</strong> If you trade altitude and forget to consider radiation environment, you might select an altitude in the heart of the Van Allen belts.</p>
+</li>
+<li>
+<p><strong>Trading too many parameters simultaneously.</strong> Trade one parameter at a time (or a small coupled set), keeping others at their baseline values. This isolates the effects and makes the trade understandable.</p>
+</li>
+<li>
+<p><strong>Treating all trade criteria as equally important.</strong> Some criteria are "must haves" (hard constraints) and others are "nice to haves" (soft preferences). A weighted evaluation matrix should reflect these differences.</p>
+</li>
+<li>
+<p><strong>Stopping at the first feasible design.</strong> The point of trade studies is to find the <em>best</em> design among alternatives, not just any design that works.</p>
+</li>
+</ol>
+<h3 id="key-takeaways-2">Key Takeaways </h3>
+<ul>
+<li>Trade studies are the <strong>core analytical method</strong> for selecting among alternative mission designs.</li>
+<li>The process is structured: identify tradeable elements, generate options, build a trade tree, prune, evaluate.</li>
+<li><strong>System drivers</strong> (altitude, mass, power, etc.) have cascading effects across multiple subsystems.</li>
+<li>The <strong>altitude trade</strong> is a canonical example: it affects resolution, coverage, drag, radiation, launch, and communications simultaneously.</li>
+<li>Trades should specify a <strong>value and range</strong>, not just a single number.</li>
+<li>Some architecture elements are <strong>fixed</strong> (subject, sometimes communications architecture) while others are <strong>tradeable</strong>.</li>
+</ul>
+<blockquote>
+<p><strong>Active Recall:</strong> From memory, list the 5 steps of Alternative Architecture Derivation. Then list at least 6 factors affected by a change in orbital altitude.</p>
+</blockquote>
+<hr>
+<h2 id="topic-4-requirements-development">Topic 4: Requirements Development </h2>
+<h3 id="analogy-3">Analogy </h3>
+<p>Think of building a house. The requirements are not "build a nice house." They are specific, measurable statements:</p>
+<ul>
+<li><strong>Functional:</strong> "The house shall have 4 bedrooms, each at least 120 sq ft" (what it must do)</li>
+<li><strong>Operational:</strong> "The house shall be suitable for a family of 5, with a 2-car garage accessible from the main road" (how it will be used)</li>
+<li><strong>Constraints:</strong> "The house shall be built on the existing lot (50 x 100 ft), comply with city zoning code, and cost no more than $400,000" (limitations imposed on the design)</li>
+</ul>
+<p>Each requirement must be <strong>verifiable</strong> -- you can inspect, test, or analyze whether it is met. "Build a nice house" is not verifiable. "Each bedroom shall be at least 120 sq ft" is verifiable by measurement.</p>
+<h3 id="core-explanation-3">Core Explanation </h3>
+<p>Requirements are the bridge between <strong>what users need</strong> and <strong>what engineers build</strong>. Poor requirements are the single most common cause of space mission failures and cost overruns. The textbook (Table 6-1) identifies critical features of good requirements and a structured process for developing them.</p>
+<h4 id="critical-features-of-requirements">Critical Features of Requirements </h4>
+<ul>
+<li>Should be based on <strong>fundamental mission objectives</strong> (mission or payload derived)</li>
+<li>Should <strong>flow down</strong> from basic (high-level) requirements to detailed (subsystem-level) requirements</li>
+<li>Should be part of the <strong>system trade process</strong> (not developed in isolation)</li>
+<li>Should state <strong>what is to be done</strong> (pointing, mapping, timing), <strong>not how to do it</strong> (specific orbit, specific attitude, specific clock)</li>
+<li>Should be <strong>quantitative expressions</strong> of how well objectives are met</li>
+<li>Must be recorded in the <strong>system specification</strong></li>
+</ul>
+<h4 id="types-of-requirements">Types of Requirements </h4>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Definition</th>
+<th>Example (FireSat II)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Functional Requirements</strong></td>
+<td>How well the system must perform</td>
+<td>0.12 K sensitivity at 300 K; 500 m resolution; 500 m location accuracy</td>
+</tr>
+<tr>
+<td><strong>Operational Requirements</strong></td>
+<td>How the system is to be used</td>
+<td>Mission operational at least 10 yrs; 98% availability excluding weather; data to 500 fire-monitoring offices + 2,000 rangers</td>
+</tr>
+<tr>
+<td><strong>Constraints</strong></td>
+<td>Limitations imposed on the system</td>
+<td>Cost &lt; $20M/yr + R&amp;D; initial capability within 5 yrs; NASA mission; natural environment only (not designed for nuclear war survivability)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="elements-to-document-for-each-requirement">Elements to Document for Each Requirement </h4>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Function</strong></td>
+<td>What is to be done</td>
+</tr>
+<tr>
+<td><strong>Performance Requirement</strong></td>
+<td>How well it has to be done</td>
+</tr>
+<tr>
+<td><strong>Verification</strong></td>
+<td>How the performance is to be verified (by inspection, test, or analysis)</td>
+</tr>
+<tr>
+<td><strong>Reason</strong></td>
+<td><em>Why</em> it is required (typically omitted from specifications, but critical for understanding intent)</td>
+</tr>
+</tbody>
+</table>
+<p>The "reason" element is particularly important because it enables engineers to propose alternative solutions. If you know <em>why</em> a requirement exists, you can sometimes find a better way to satisfy the underlying need.</p>
+<h3 id="requirements-baseline-process-11-steps">Requirements Baseline Process (11 Steps) </h3>
+<p>The textbook presents an 11-step process for establishing a requirements baseline:</p>
+<ol>
+<li><strong>Identify the customer and user</strong> of the product or services. A customer may be a procuring agent but not the ultimate user; both must be understood.</li>
+<li><strong>Identify and prioritize</strong> customer/user objectives and needs for the mission.</li>
+<li><strong>Define internal and external constraints.</strong></li>
+<li><strong>Translate customer/user needs</strong> into functional attributes and system characteristics. Quality Function Deployment (QFD) is one tool for this.</li>
+<li><strong>Establish functional requirements</strong> for the system and provide for decomposition to elements.</li>
+<li><strong>Establish functional flow</strong> and representative performance of functions.</li>
+<li><strong>Translate functional attributes</strong> into technical characteristics which become requirements for the physical system.</li>
+<li><strong>Establish quantifiable requirements</strong> from all the above steps.</li>
+<li><strong>Use block diagrams</strong> to express interfaces and hardware/software/data relationships at the system level.</li>
+<li><strong>Decompose</strong> functional requirements and characteristics to successive lower levels (subsystem, component), defining the basis of the system elements.</li>
+<li><strong>Iterate</strong> at all steps with preceding activities to test assumptions and reconcile higher-level requirements with functional implementation.</li>
+</ol>
+<h3 id="top-level-mission-requirements-example-table-6-2">Top-Level Mission Requirements Example (Table 6-2) </h3>
+<table>
+<thead>
+<tr>
+<th>Requirement Category</th>
+<th>Factors</th>
+<th>FireSat II Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>FUNCTIONAL</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Performance</td>
+<td>Primary objective, payload size, orbit, pointing</td>
+<td>0.12 K sensitivity at 300 K; 500 m resolution; 500 m location accuracy</td>
+</tr>
+<tr>
+<td>Coverage</td>
+<td>Orbit, swath width, number of satellites, scheduling</td>
+<td>Daily coverage of 750 million acres within continental US</td>
+</tr>
+<tr>
+<td>Responsiveness</td>
+<td>Communications architecture, processing, delays, operations</td>
+<td>Send registered mission data within 30 min to up to 50 users</td>
+</tr>
+<tr>
+<td>Secondary Mission</td>
+<td>As above</td>
+<td>Land and sea surface temperature, high-res water vapor imagery and crude winds over continental US</td>
+</tr>
+<tr>
+<td><strong>OPERATIONAL</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Duration</td>
+<td>Experiment or operations, level of redundancy, altitude</td>
+<td>Mission operational at least 10 years</td>
+</tr>
+<tr>
+<td>Availability</td>
+<td>Level of redundancy</td>
+<td>98% excluding weather, 3-day maximum outage</td>
+</tr>
+<tr>
+<td>Survivability</td>
+<td>Orbit, hardening, electronics</td>
+<td>Natural environment only</td>
+</tr>
+<tr>
+<td>Data Distribution</td>
+<td>Communications architecture</td>
+<td>Up to 500 fire-monitoring offices + 2,000 rangers worldwide (max. 100 simultaneous users)</td>
+</tr>
+<tr>
+<td>Data Content, Form, Format</td>
+<td>User needs, level and place of processing, payload</td>
+<td>Location and extent of fire on any of 12 map bases, average temperature for each 30 m<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span> grid</td>
+</tr>
+<tr>
+<td><strong>CONSTRAINTS</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Cost</td>
+<td>Manned flight, number of spacecraft, size, complexity, orbit</td>
+<td>&lt; $20M/yr + R&amp;D</td>
+</tr>
+<tr>
+<td>Schedule</td>
+<td>Technical readiness, program size</td>
+<td>Initial operating capability within 5 yrs, final capability within 6 yrs</td>
+</tr>
+<tr>
+<td>Regulations</td>
+<td>Law and policy</td>
+<td>NASA mission</td>
+</tr>
+<tr>
+<td>Political</td>
+<td>Sponsor, whether international program</td>
+<td>Responsive to public demand for action</td>
+</tr>
+<tr>
+<td>Environment</td>
+<td>Orbit, lifetime</td>
+<td>Natural</td>
+</tr>
+<tr>
+<td>Interfaces</td>
+<td>Level of user and operator infrastructure</td>
+<td>Comm. relay and interoperable through NOAA ground stations</td>
+</tr>
+<tr>
+<td>Development Constraints</td>
+<td>Sponsoring organization</td>
+<td>No unique operations people at data distribution nodes</td>
+</tr>
+</tbody>
+</table>
+<h3 id="requirements-activities-across-program-phases">Requirements Activities Across Program Phases </h3>
+<p>Requirements activities evolve as the program matures:</p>
+<p><strong>Phase 1: Needs Analysis</strong></p>
+<ul>
+<li>Defining mission requirements</li>
+<li>Defining environment</li>
+<li>Identifying mission drivers and constraints</li>
+<li>Technology programs</li>
+</ul>
+<p><strong>Phase 2: Concept Development</strong></p>
+<ul>
+<li>Identifying critical driving requirements and associated risks</li>
+<li>Developing operations and design concepts</li>
+<li>Cost estimates</li>
+<li>Functional analysis and major interfaces</li>
+<li>System studies and simulations</li>
+<li>Prototyping and assessing technology</li>
+</ul>
+<p><strong>Phase 3: Concept Validation</strong></p>
+<ul>
+<li>Tailored system and segment definitions</li>
+<li>Preliminary internal interface requirements</li>
+<li>Preliminary system standards</li>
+<li>Preliminary requirements flowdown</li>
+<li>Integrated system validation including test planning</li>
+<li>Transition planning</li>
+<li>Validating technology</li>
+</ul>
+<p><strong>Phase 4: Design and Implementation</strong></p>
+<ul>
+<li>Detailed requirements flowdown</li>
+<li>Developing formal design documentation and interface control</li>
+<li>Integrating and testing the system</li>
+<li>Demonstrating and verifying the system</li>
+<li>Test procedures and reports</li>
+</ul>
+<h3 id="aspects-of-operability">Aspects of "Operability" </h3>
+<p>The textbook defines 9 aspects of system operability -- how easy the system is to operate:</p>
+<table>
+<thead>
+<tr>
+<th>Aspect</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Visibility/Observability</strong></td>
+<td>The extent to which the system provides the operations team with usable information about the configuration, status, and performance of the system.</td>
+</tr>
+<tr>
+<td><strong>2. Commandability/Controllability</strong></td>
+<td>The extent to which the operations team can place the flight system in the desired state and produce the desired outcome via commanding.</td>
+</tr>
+<tr>
+<td><strong>3. Predictability</strong></td>
+<td>The extent to which the operations team is able to predict, with some certainty, the outcome of the execution of a planned event.</td>
+</tr>
+<tr>
+<td><strong>4. Flexibility</strong></td>
+<td>The extent to which the operations team can reconfigure components to maximize utilization, circumvent anomalous components, provide options, and increase robustness.</td>
+</tr>
+<tr>
+<td><strong>5. Robustness</strong></td>
+<td>The extent to which the system maintains performance under perturbations and prevents and contains errors.</td>
+</tr>
+<tr>
+<td><strong>6. Autonomy</strong></td>
+<td>The extent to which the system manages nominal or contingency operations without ground intervention.</td>
+</tr>
+<tr>
+<td><strong>7. Efficiency</strong></td>
+<td>The extent to which the operations team can optimize the use of time and resources.</td>
+</tr>
+<tr>
+<td><strong>8. Testability</strong></td>
+<td>The extent to which the operations team can verify and validate system components and test assets.</td>
+</tr>
+<tr>
+<td><strong>9. Tractability</strong></td>
+<td>The extent to which the operations team is freed from the need to pay attention to, or "care and feed" the system.</td>
+</tr>
+</tbody>
+</table>
+<p>These 9 aspects are important because <strong>operations is frequently the principal cost driver</strong> for a space mission. A system that is difficult to operate (low operability) costs more over its lifetime, even if the hardware is cheap.</p>
+<h3 id="worked-examples-3">Worked Examples </h3>
+<h4 id="example-1-writing-good-vs-bad-requirements">Example 1: Writing Good vs. Bad Requirements </h4>
+<p><strong>Bad requirement:</strong> "The satellite shall have a good camera."</p>
+<ul>
+<li>Not quantifiable, not verifiable, states "how" rather than "what"</li>
+</ul>
+<p><strong>Good requirement:</strong> "The payload shall detect temperature anomalies of 0.12 K or greater at a scene temperature of 300 K, with a spatial resolution of 500 m or better and a geolocation accuracy of 500 m or better."</p>
+<ul>
+<li>Quantifiable (0.12 K, 500 m, 500 m)</li>
+<li>Verifiable (can be tested against known thermal sources)</li>
+<li>States what is to be done, not how</li>
+</ul>
+<h4 id="example-2-requirement-flowdown">Example 2: Requirement Flowdown </h4>
+<p><strong>Top-level requirement:</strong> "The system shall provide daily coverage of 750 million acres within the continental US."</p>
+<p><strong>Flowdown to subsystem requirements:</strong></p>
+<ul>
+<li><strong>Orbit:</strong> Must provide sufficient ground track spacing for daily revisit over CONUS. For a satellite at 700 km altitude with a swath width of X km, the orbit must be near-polar with specific inclination.</li>
+<li><strong>Payload:</strong> Must have a field of view wide enough to achieve the required swath width.</li>
+<li><strong>Number of spacecraft:</strong> If one satellite cannot cover 750M acres/day, a constellation is needed.</li>
+<li><strong>Mission operations:</strong> Must schedule observations to maximize coverage within CONUS.</li>
+</ul>
+<h4 id="example-3-identifying-requirement-types">Example 3: Identifying Requirement Types </h4>
+<p>Classify each statement:</p>
+<p>a) "The system shall transmit fire detection data within 30 minutes of acquisition."<br>
+b) "The system shall operate for at least 10 years."<br>
+c) "The system cost shall not exceed $20M per year plus R&amp;D."<br>
+d) "The payload shall achieve 500 m spatial resolution."</p>
+<details>
+<summary>Answers</summary>
+<p>a) <strong>Functional</strong> (performance of the data delivery function) -- could also be argued as <strong>operational</strong> depending on context<br>
+b) <strong>Operational</strong> (how long the system is to be used)<br>
+c) <strong>Constraint</strong> (limitation imposed on the system)<br>
+d) <strong>Functional</strong> (how well the observation function must perform)</p>
+</details>
+<h3 id="practice-questions-3">Practice Questions </h3>
+<p><strong>Q1.</strong> Why should requirements state "what is to be done" rather than "how to do it"?</p>
+<details>
+<summary>Answer</summary>
+<p>Stating "what" preserves design freedom. If you specify "the satellite shall be in a 700 km sun-synchronous orbit," you have eliminated all other orbits that might also meet the actual need (e.g., daily coverage of CONUS). If instead you specify "the system shall provide daily coverage of 750 million acres within CONUS," the designers can explore multiple orbit options (different altitudes, inclinations, constellation sizes) that all satisfy the requirement. "What" requirements enable trade studies; "how" requirements prevent them.</p>
+</details>
+<p><strong>Q2.</strong> What is the purpose of documenting the "reason" for each requirement?</p>
+<details>
+<summary>Answer</summary>
+<p>The "reason" captures <em>why</em> a requirement exists -- the underlying need or objective it supports. This enables:</p>
+<ol>
+<li>Engineers to propose alternative solutions that better satisfy the underlying need.</li>
+<li>Trade studies that might relax a requirement if the cost of meeting it is disproportionate to its importance.</li>
+<li>Future engineers to understand the intent, even if the original authors are no longer available.</li>
+<li>Detection of "orphan" requirements that no longer serve a valid need.</li>
+</ol>
+</details>
+<p><strong>Q3.</strong> List the three methods of verification and give an example of each.</p>
+<details>
+<summary>Answer</summary>
+<ol>
+<li><strong>Inspection:</strong> Visual or physical examination. <em>Example:</em> Verify that the satellite has a specified connector type by looking at it.</li>
+<li><strong>Test:</strong> Subjecting the system to controlled conditions and measuring results. <em>Example:</em> Place the IR sensor in front of a blackbody source at 300 K and measure whether it detects a 0.12 K anomaly.</li>
+<li><strong>Analysis:</strong> Mathematical or computational evaluation. <em>Example:</em> Use orbit propagation software to verify that the selected orbit provides daily coverage of 750 million acres in CONUS.</li>
+</ol>
+</details>
+<p><strong>Q4.</strong> Why is "autonomy" listed as an aspect of operability?</p>
+<details>
+<summary>Answer</summary>
+<p>A more autonomous system requires less ground intervention for routine operations and can handle contingencies independently. This reduces operations cost (fewer staff needed, less communication bandwidth required) and improves responsiveness (the spacecraft can react to anomalies faster than waiting for a ground command). Since operations is often the principal cost driver over the mission lifetime, designing for appropriate autonomy directly reduces life-cycle cost.</p>
+</details>
+<h3 id="common-pitfalls-3">Common Pitfalls </h3>
+<ol>
+<li>
+<p><strong>Gold-plating requirements.</strong> Adding unnecessarily stringent requirements drives up cost and risk. Every requirement should be traceable to a mission objective with a documented reason.</p>
+</li>
+<li>
+<p><strong>Specifying "how" instead of "what."</strong> This is the most common requirements error. It eliminates design options and prevents trade studies.</p>
+</li>
+<li>
+<p><strong>Forgetting verification.</strong> A requirement that cannot be verified (by inspection, test, or analysis) is not a useful requirement. If you cannot prove it is met, it should not be in the specification.</p>
+</li>
+<li>
+<p><strong>Treating requirements as write-once.</strong> Requirements evolve through the iterative concept definition process. They should be regularly reviewed and updated as the design matures.</p>
+</li>
+<li>
+<p><strong>Ignoring operability.</strong> A system that works perfectly but is impossible to operate is a failure. The 9 aspects of operability should be considered as requirements from the start.</p>
+</li>
+</ol>
+<h3 id="key-takeaways-3">Key Takeaways </h3>
+<ul>
+<li>Requirements bridge the gap between <strong>user needs</strong> and <strong>engineering design</strong>.</li>
+<li>Three types: <strong>functional</strong> (how well), <strong>operational</strong> (how used), <strong>constraints</strong> (limitations).</li>
+<li>Each requirement needs: <strong>function</strong>, <strong>performance</strong>, <strong>verification method</strong>, and ideally <strong>reason</strong>.</li>
+<li>Requirements should state <strong>what</strong>, not <strong>how</strong>, to preserve design freedom.</li>
+<li>The 11-step baseline process is <strong>iterative</strong> -- assumptions are tested and reconciled at every level.</li>
+<li><strong>Operability</strong> (9 aspects) is critical because operations is often the largest cost driver over the mission lifetime.</li>
+<li>Verification is by <strong>inspection, test, or analysis</strong>.</li>
+</ul>
+<blockquote>
+<p><strong>Active Recall:</strong> Can you list the three types of requirements and give an example of each? Can you name at least 5 of the 9 aspects of operability from memory?</p>
+</blockquote>
+<hr>
+<h2 id="topic-5-specifications-and-standards">Topic 5: Specifications and Standards </h2>
+<h3 id="analogy-4">Analogy </h3>
+<p>Think of building codes for houses. The <strong>specification</strong> for your house describes the specific requirements for <em>your</em> house (square footage, number of rooms, materials). The <strong>standards</strong> are the industry-wide codes that all houses must follow (electrical codes, plumbing codes, fire safety codes). You write a specification for each project; you adopt existing standards that apply across all projects.</p>
+<h3 id="core-explanation-4">Core Explanation </h3>
+<p><strong>Specifications</strong> are formal documents that record the requirements for a specific system or subsystem. They are the contractual basis for what the developer must deliver.</p>
+<p><strong>Standards</strong> are industry-wide or government-wide documents that define best practices, processes, and minimum quality levels. They are developed by organizations like AIAA, IEEE, NASA, DoD, and others.</p>
+<p>In space mission design, the system specification captures the requirements developed through the process described in Topic 4. Standards provide the framework within which those requirements are developed and verified.</p>
+<p>The textbook refers to Section 6.6 (page 119) for detailed treatment of standards applicable to space missions.</p>
+<h3 id="key-standards-organizations-for-space">Key Standards Organizations for Space </h3>
+<table>
+<thead>
+<tr>
+<th>Organization</th>
+<th>Types of Standards</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AIAA</strong></td>
+<td>Technical standards for aerospace design and analysis</td>
+</tr>
+<tr>
+<td><strong>IEEE</strong></td>
+<td>Electrical, electronic, and software standards</td>
+</tr>
+<tr>
+<td><strong>NASA</strong></td>
+<td>NASA-specific standards for spacecraft design, testing, and operations</td>
+</tr>
+<tr>
+<td><strong>DoD</strong></td>
+<td>Military standards (MIL-STD) for defense space systems</td>
+</tr>
+<tr>
+<td><strong>ISO</strong></td>
+<td>International standards for quality management, environmental management</td>
+</tr>
+<tr>
+<td><strong>ECSS</strong></td>
+<td>European Cooperation for Space Standardization</td>
+</tr>
+</tbody>
+</table>
+<h3 id="practice-questions-4">Practice Questions </h3>
+<p><strong>Q1.</strong> What is the difference between a specification and a standard?</p>
+<details>
+<summary>Answer</summary>
+<p>A <strong>specification</strong> is project-specific: it documents the requirements for a particular system ("FireSat II shall detect temperature anomalies of 0.12 K..."). A <strong>standard</strong> is industry-wide: it defines best practices or minimum quality levels that apply across many projects ("All spacecraft electronic components shall be tested per MIL-STD-883"). You write a specification for each mission; you reference existing standards that apply.</p>
+</details>
+<p><strong>Q2.</strong> Why are standards important in space mission design?</p>
+<details>
+<summary>Answer</summary>
+<p>Standards ensure:</p>
+<ol>
+<li><strong>Consistency</strong> across programs and organizations</li>
+<li><strong>Minimum quality</strong> -- critical in space where repair is impossible</li>
+<li><strong>Interoperability</strong> between systems from different developers</li>
+<li><strong>Knowledge transfer</strong> -- lessons learned from past missions are encoded in standards</li>
+<li><strong>Contractual clarity</strong> -- standards provide agreed-upon definitions and processes</li>
+</ol>
+</details>
+<h3 id="common-pitfalls-4">Common Pitfalls </h3>
+<ol>
+<li><strong>Blindly applying all standards.</strong> Not every standard applies to every mission. Standards should be "tailored" to the specific program -- applying only relevant requirements.</li>
+<li><strong>Ignoring standards entirely.</strong> Standards encode decades of lessons learned. Ignoring them risks repeating past failures.</li>
+</ol>
+<h3 id="key-takeaways-4">Key Takeaways </h3>
+<ul>
+<li><strong>Specifications</strong> are project-specific documents recording mission requirements.</li>
+<li><strong>Standards</strong> are industry-wide documents defining best practices and minimum quality levels.</li>
+<li>Standards should be <strong>tailored</strong> to each mission -- apply what is relevant, exclude what is not.</li>
+<li>Key standards organizations: AIAA, IEEE, NASA, DoD, ISO, ECSS.</li>
+</ul>
+<hr>
+<h2 id="integrative-summary">Integrative Summary </h2>
+<p>Week 2 takes the architecture framework from Week 1 and shows you how to <strong>define, analyze, trade, and formalize</strong> a space mission:</p>
+<ol>
+<li>
+<p><strong>Concept Definition</strong> is a structured, iterative process involving users, developers, and sponsors moving from broad needs to specific designs.</p>
+</li>
+<li>
+<p><strong>Mission Analysis</strong> provides a toolkit of progressively detailed analytical methods -- start with quick feasibility checks, end with comprehensive utility assessments.</p>
+</li>
+<li>
+<p><strong>Trade Studies</strong> are the mechanism for choosing among alternatives. They are structured (5-step architecture derivation) and systematic (system trade process for parameters with multiple effects).</p>
+</li>
+<li>
+<p><strong>Requirements</strong> are the formal bridge between needs and design. They must be quantifiable, verifiable, and should state "what" not "how." Three types: functional, operational, constraints.</p>
+</li>
+<li>
+<p><strong>Specifications and Standards</strong> formalize requirements into contractual documents and ensure consistency with industry best practices.</p>
+</li>
+</ol>
+<p>The connecting thread: <strong>every decision flows from the mission objectives, through the requirements, into the design via trade studies.</strong> If you cannot trace a design choice back to a requirement, and that requirement back to a mission objective, something has gone wrong.</p>
+<div class="mermaid">graph LR
+    A[Mission Objectives] --&gt; B[Needs Analysis]
+    B --&gt; C[Requirements]
+    C --&gt; D[Trade Studies]
+    D --&gt; E[Selected Architecture]
+    E --&gt; F[Specifications]
+    F --&gt; G[Detailed Design]
+    G --&gt; H[Build &amp; Test]
+    H --&gt; I[Launch &amp; Operate]
+    I --&gt; J[End of Life Disposal]
+    C -.-&gt;|iterate| B
+    D -.-&gt;|iterate| C
+    E -.-&gt;|iterate| D
+</div><blockquote>
+<p><strong>Spaced Review Prompt:</strong> After 48 hours, try to:</p>
+<ol>
+<li>List the 6 types of mission analysis from memory</li>
+<li>Reproduce the 5-step Alternative Architecture Derivation process</li>
+<li>Name the 3 types of requirements with examples</li>
+<li>List the 11 steps of the requirements baseline process (at least 6 from memory)</li>
+<li>Name at least 5 of the 9 aspects of operability</li>
+</ol>
+</blockquote>
+<hr>
+<h2 id="glossary">Glossary </h2>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Alternative Architecture</strong></td>
+<td>A different combination of mission element options that could accomplish the mission objectives.</td>
+</tr>
+<tr>
+<td><strong>C3</strong></td>
+<td>Command, Control, and Communications architecture.</td>
+</tr>
+<tr>
+<td><strong>Concept Development</strong></td>
+<td>The subprocess of developing and assessing alternative mission architectures.</td>
+</tr>
+<tr>
+<td><strong>Concept Exploration</strong></td>
+<td>The early phase of mission definition where broad needs are identified and alternatives explored.</td>
+</tr>
+<tr>
+<td><strong>ConOps</strong></td>
+<td>Concept of Operations. A description of how the system will be used from the operator's and user's perspective.</td>
+</tr>
+<tr>
+<td><strong>Constraint</strong></td>
+<td>A limitation imposed on the system (cost, schedule, regulatory, environmental, etc.).</td>
+</tr>
+<tr>
+<td><strong>CONUS</strong></td>
+<td>Continental United States.</td>
+</tr>
+<tr>
+<td><strong>DT&amp;E</strong></td>
+<td>Developmental Test and Evaluation.</td>
+</tr>
+<tr>
+<td><strong>EELV</strong></td>
+<td>Evolved Expendable Launch Vehicle. A family of US launch vehicles (Atlas V, Delta IV).</td>
+</tr>
+<tr>
+<td><strong>Feasibility Assessment</strong></td>
+<td>Quick analysis to determine if an objective is achievable.</td>
+</tr>
+<tr>
+<td><strong>FireSat</strong></td>
+<td>The textbook's running example mission -- a satellite system for detecting forest fires via IR sensing.</td>
+</tr>
+<tr>
+<td><strong>Flowdown</strong></td>
+<td>The process of decomposing high-level requirements into successively more detailed subsystem and component requirements.</td>
+</tr>
+<tr>
+<td><strong>Functional Requirement</strong></td>
+<td>A requirement specifying how well the system must perform.</td>
+</tr>
+<tr>
+<td><strong>GEO</strong></td>
+<td>Geostationary Earth Orbit (~35,786 km altitude, equatorial, 24-hour period).</td>
+</tr>
+<tr>
+<td><strong>IR</strong></td>
+<td>Infrared. Electromagnetic radiation used for thermal detection.</td>
+</tr>
+<tr>
+<td><strong>LEO</strong></td>
+<td>Low Earth Orbit (~200-2,000 km altitude).</td>
+</tr>
+<tr>
+<td><strong>Life-Cycle Cost</strong></td>
+<td>Total cost from initial concept through disposal.</td>
+</tr>
+<tr>
+<td><strong>Mission Analysis</strong></td>
+<td>The set of analytical methods used to evaluate a mission concept.</td>
+</tr>
+<tr>
+<td><strong>Mission Concept</strong></td>
+<td>The overarching approach for how a mission accomplishes its objectives.</td>
+</tr>
+<tr>
+<td><strong>Needs Analysis</strong></td>
+<td>The subprocess of generating potential requirements from mission objectives and constraints.</td>
+</tr>
+<tr>
+<td><strong>NOAA</strong></td>
+<td>National Oceanic and Atmospheric Administration. US government agency operating weather satellites.</td>
+</tr>
+<tr>
+<td><strong>Operability</strong></td>
+<td>The ease with which a system can be operated, encompassing 9 defined aspects.</td>
+</tr>
+<tr>
+<td><strong>Operational Requirement</strong></td>
+<td>A requirement specifying how the system is to be used.</td>
+</tr>
+<tr>
+<td><strong>OT&amp;E</strong></td>
+<td>Operational Test and Evaluation.</td>
+</tr>
+<tr>
+<td><strong>Performance Assessment</strong></td>
+<td>Detailed analysis quantifying performance parameters for a particular approach.</td>
+</tr>
+<tr>
+<td><strong>Point Design</strong></td>
+<td>A single specific design demonstrating feasibility and providing a baseline for comparison.</td>
+</tr>
+<tr>
+<td><strong>QFD</strong></td>
+<td>Quality Function Deployment. A tool for translating customer needs into engineering requirements.</td>
+</tr>
+<tr>
+<td><strong>SCS</strong></td>
+<td>Satellite Communications System. A second example mission in the textbook.</td>
+</tr>
+<tr>
+<td><strong>Sizing Estimate</strong></td>
+<td>Quick estimate of basic parameters (size, weight, power, cost).</td>
+</tr>
+<tr>
+<td><strong>Specification</strong></td>
+<td>A formal document recording the requirements for a specific system.</td>
+</tr>
+<tr>
+<td><strong>Standard</strong></td>
+<td>An industry-wide document defining best practices and minimum quality levels.</td>
+</tr>
+<tr>
+<td><strong>Subject</strong></td>
+<td>The thing being observed, communicated with, or acted upon by the space mission.</td>
+</tr>
+<tr>
+<td><strong>System Driver</strong></td>
+<td>A parameter that has outsized influence on the overall mission design.</td>
+</tr>
+<tr>
+<td><strong>TDRS</strong></td>
+<td>Tracking and Data Relay Satellite. NASA's constellation for communicating with LEO spacecraft.</td>
+</tr>
+<tr>
+<td><strong>Trade Study</strong></td>
+<td>Systematic evaluation of alternative approaches to determine which best satisfies mission objectives.</td>
+</tr>
+<tr>
+<td><strong>Trade Tree</strong></td>
+<td>A combinatorial diagram of all possible combinations of tradeable mission elements.</td>
+</tr>
+<tr>
+<td><strong>TRL</strong></td>
+<td>Technology Readiness Level. A 1-9 scale measuring technology maturity.</td>
+</tr>
+<tr>
+<td><strong>Utility Assessment</strong></td>
+<td>Analysis quantifying how well the system meets overall mission objectives.</td>
+</tr>
+<tr>
+<td><strong>Verification</strong></td>
+<td>The process of confirming that a requirement is met, via inspection, test, or analysis.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="references">References </h2>
+<ol>
+<li>Wertz, J.R., Everett, D.F., and Puschell, J.J., <em>Space Mission Engineering: The New SMAD</em>, Microcosm Press, 2011. ISBN 978-1-881883-15-9. (Chapters 4, 5, 6)</li>
+<li>Chapter 4: "Requirements Definition" -- Mission concept definition, timeline, and concept exploration</li>
+<li>Chapter 5: "Space Mission Concept Development" -- Trade studies, alternative architectures, system trades</li>
+<li>Chapter 6: "Requirements and Specifications" -- Requirements development, critical issues, operability, standards</li>
+<li>Department of Defense, <em>Systems Engineering Fundamentals</em>, Defense Acquisition University, 2001.</li>
+<li>INCOSE, <em>Systems Engineering Handbook</em>, 4th Edition, Wiley, 2015.</li>
+<li>NASA, <em>NASA Systems Engineering Handbook</em> (SP-2016-6105 Rev2), 2016.</li>
+</ol>
+
+      </div>
+      
+      
+    
+    
+    <script type="module">
+// TODO: If ZenUML gets integrated into mermaid in the future,
+//      we can remove the following lines.
+
+
+var MERMAID_CONFIG = ({"startOnLoad":false});
+if (typeof MERMAID_CONFIG !== 'undefined') {
+  MERMAID_CONFIG.startOnLoad = false
+  MERMAID_CONFIG.cloneCssStyles = false
+  MERMAID_CONFIG.theme = "default"
+}
+
+mermaid.initialize(MERMAID_CONFIG || {})
+if (typeof(window['Reveal']) !== 'undefined') {
+  function mermaidRevealHelper(event) {
+    var currentSlide = event.currentSlide
+    var diagrams = currentSlide.querySelectorAll('.mermaid')
+    for (var i = 0; i < diagrams.length; i++) {
+      var diagram = diagrams[i]
+      if (!diagram.hasAttribute('data-processed')) {
+        mermaid.init(null, diagram, ()=> {
+          Reveal.slide(event.indexh, event.indexv)
+        })
+      }
+    }
+  }
+  Reveal.addEventListener('slidetransitionend', mermaidRevealHelper)
+  Reveal.addEventListener('ready', mermaidRevealHelper)
+  await mermaid.run({
+    nodes: document.querySelectorAll('.mermaid')
+  })
+} else {
+  await mermaid.run({
+    nodes: document.querySelectorAll('.mermaid')
+  })
+}
+</script>
+    
+    
+    
+  
+    </body></html>

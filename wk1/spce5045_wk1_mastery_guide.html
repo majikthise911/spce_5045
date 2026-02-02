@@ -1,0 +1,958 @@
+<!DOCTYPE html><html><head>
+      <title>spce5045_wk1_mastery_guide</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:////Users/jordanclayton/.cursor/extensions/shd101wyy.markdown-preview-enhanced-0.8.20-universal/crossnote/dependencies/katex/katex.min.css">
+      
+      
+      <script type="text/javascript" src="file:////Users/jordanclayton/.cursor/extensions/shd101wyy.markdown-preview-enhanced-0.8.20-universal/crossnote/dependencies/mermaid/mermaid.min.js" charset="UTF-8"></script>
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="spce-5045---space-mission-analysis-week-1-mastery-guide">SPCE 5045 - Space Mission Analysis: Week 1 Mastery Guide </h1>
+<h2 id="overview">Overview </h2>
+<p><strong>Session 1: Introduction and Definition of Terms</strong> covers the foundational vocabulary, architecture, and maturity frameworks used across all space missions. This material corresponds to Part 1, Chapters 1-3 of <em>Space Mission Engineering: The New SMAD</em> (Wertz, ISBN 978-1-881883-15-9).</p>
+<p>Before you can design a spacecraft, select an orbit, or plan a launch, you must understand the building blocks that every space mission shares and the language professionals use to describe them. This week establishes that shared framework.</p>
+<h3 id="topic-dependency-map">Topic Dependency Map </h3>
+<div class="mermaid">graph TD
+    A[Space Mission Architecture] --&gt; B[Mission Elements]
+    B --&gt; C[Subject]
+    B --&gt; D[Orbit &amp; Constellation]
+    B --&gt; E[Payload &amp; Space Element]
+    B --&gt; F[Launch Element]
+    B --&gt; G[Ground Element]
+    B --&gt; H[Mission Operations]
+    B --&gt; I[Command, Control &amp; Comms]
+    A --&gt; J[Technology Readiness Levels]
+    J --&gt; K[Hardware TRLs 1-9]
+    J --&gt; L[Software TRLs 1-9]
+    A --&gt; M[Professional Resources]
+    M --&gt; N[Societies]
+    M --&gt; O[Journals]
+    M --&gt; P[Conferences]
+</div><hr>
+<h2 id="topic-1-space-mission-architecture">Topic 1: Space Mission Architecture </h2>
+<h3 id="analogy">Analogy </h3>
+<p>Think of a space mission like a large-scale delivery service. You have:</p>
+<ul>
+<li><strong>The package</strong> (the payload/instrument that does the actual work)</li>
+<li><strong>The delivery truck</strong> (the spacecraft bus that carries and supports the payload)</li>
+<li><strong>The road network</strong> (the orbit the spacecraft follows)</li>
+<li><strong>The dispatch center</strong> (the ground element that tracks and commands everything)</li>
+<li><strong>The loading dock</strong> (the launch vehicle that gets the truck onto the road)</li>
+<li><strong>The radio system</strong> (the command, control, and communications architecture that ties it all together)</li>
+<li><strong>The customer</strong> (the subject being observed or served)</li>
+<li><strong>The operations manual</strong> (mission operations -- the people and procedures running the show)</li>
+</ul>
+<p>No delivery service works without all of these pieces coordinated. Similarly, a space mission is not just a satellite -- it is an <em>architecture</em> of interdependent elements.</p>
+<h3 id="core-explanation">Core Explanation </h3>
+<p>A <strong>space mission</strong> is not simply a satellite in orbit. It is a complete system-of-systems designed to accomplish a specific objective. The textbook (Figure 1-3) identifies a central <strong>Mission Concept</strong> surrounded by interconnected elements. Every space mission -- whether it is a weather satellite, a GPS constellation, or a Mars rover -- includes these same basic building blocks, though they vary enormously in complexity.</p>
+<p>The key insight is that these elements are not designed in isolation. Changing one element (say, the orbit altitude) ripples through every other element (ground station visibility, launch vehicle requirements, payload resolution, power needs, thermal environment, etc.). This interconnectedness is why <strong>systems engineering</strong> is central to space mission design.</p>
+<h3 id="formal-definitions">Formal Definitions </h3>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mission Concept</strong></td>
+<td>The overarching approach for how the mission will accomplish its objectives. It defines how information or services flow from the space system to the end user.</td>
+</tr>
+<tr>
+<td><strong>Subject</strong></td>
+<td>The thing being observed, communicated with, or acted upon (e.g., forest fires, ocean temperatures, military targets, cell phone users).</td>
+</tr>
+<tr>
+<td><strong>Orbit and Constellation</strong></td>
+<td>The path(s) in space that the spacecraft follows. A single satellite has an orbit; multiple coordinated satellites form a constellation.</td>
+</tr>
+<tr>
+<td><strong>Payload</strong></td>
+<td>The instrument(s) or equipment that directly perform the mission objective (e.g., an infrared sensor, a communications transponder, a scientific instrument).</td>
+</tr>
+<tr>
+<td><strong>Spacecraft Bus</strong></td>
+<td>The platform that supports the payload -- provides power, thermal control, attitude control, propulsion, structure, and data handling.</td>
+</tr>
+<tr>
+<td><strong>Space Element</strong></td>
+<td>The combination of payload + spacecraft bus (i.e., the complete satellite or space vehicle).</td>
+</tr>
+<tr>
+<td><strong>Launch Element</strong></td>
+<td>The rocket and associated infrastructure that places the space element into its intended orbit.</td>
+</tr>
+<tr>
+<td><strong>Ground Element</strong></td>
+<td>The facilities, hardware, and networks on Earth used to track, command, and receive data from the spacecraft.</td>
+</tr>
+<tr>
+<td><strong>Mission Operations</strong></td>
+<td>The people, procedures, and software that plan and execute the mission on a day-to-day basis.</td>
+</tr>
+<tr>
+<td><strong>Command, Control, and Communications (C3) Architecture</strong></td>
+<td>The end-to-end system for sending commands to the spacecraft and receiving data back, including relay satellites, ground stations, and data networks.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="worked-examples">Worked Examples </h3>
+<h4 id="example-1-firesat-simple-mission">Example 1: FireSat (Simple Mission) </h4>
+<p>FireSat is the textbook's running example -- a satellite system to detect forest fires using infrared (IR) sensors.</p>
+<ul>
+<li><strong>Subject:</strong> Forest fires (heat signatures)</li>
+<li><strong>Payload:</strong> Infrared sensor</li>
+<li><strong>Spacecraft Bus:</strong> Small, 3-axis stabilized</li>
+<li><strong>Orbit:</strong> Low Earth Orbit (LEO), ~700 km altitude, polar inclination</li>
+<li><strong>Launch Element:</strong> Pegasus or Minotaur (small launch vehicles)</li>
+<li><strong>Ground Element:</strong> Single dedicated ground station in CONUS (Continental United States)</li>
+<li><strong>C3 Architecture:</strong> TDRS (Tracking and Data Relay Satellite) data downlink; commercial links to users</li>
+<li><strong>Mission Operations:</strong> Single facility for fire detection analysis and commanding</li>
+<li><strong>Mission Concept:</strong> IR detection of fires with results mapped and transmitted to forest rangers</li>
+</ul>
+<h4 id="example-2-gps-complex-constellation">Example 2: GPS (Complex Constellation) </h4>
+<ul>
+<li><strong>Subject:</strong> GPS receivers on Earth (military, civilian)</li>
+<li><strong>Payload:</strong> Atomic clocks and L-band transmitters</li>
+<li><strong>Spacecraft Bus:</strong> Large, 3-axis stabilized with radiation-hardened electronics</li>
+<li><strong>Orbit:</strong> Medium Earth Orbit (MEO), ~20,200 km, 55-degree inclination, 6 orbital planes with 4+ satellites each (24-32 total)</li>
+<li><strong>Launch Element:</strong> Atlas V, Delta IV, or Falcon 9</li>
+<li><strong>Ground Element:</strong> Master Control Station (Schriever AFB, CO) + global monitor stations</li>
+<li><strong>C3 Architecture:</strong> Dedicated ground-to-satellite uplinks; satellite-to-user broadcast downlinks</li>
+<li><strong>Mission Operations:</strong> 24/7 operations center with large staff</li>
+<li><strong>Mission Concept:</strong> Provide precise position, navigation, and timing (PNT) to unlimited users worldwide</li>
+</ul>
+<h4 id="example-3-identify-the-elements-exercise">Example 3: Identify the Elements (Exercise) </h4>
+<p>Consider the Hubble Space Telescope. Try to identify each element before reading the answers:</p>
+<details>
+<summary>Click to reveal answers</summary>
+<ul>
+<li><strong>Subject:</strong> Distant galaxies, stars, nebulae (astronomical objects)</li>
+<li><strong>Payload:</strong> Optical/UV/IR telescope with multiple instruments (cameras, spectrographs)</li>
+<li><strong>Spacecraft Bus:</strong> Large, 3-axis stabilized, solar-powered, in LEO</li>
+<li><strong>Orbit:</strong> LEO, ~540 km altitude, 28.5-degree inclination</li>
+<li><strong>Launch Element:</strong> Space Shuttle Discovery (STS-31, April 1990)</li>
+<li><strong>Ground Element:</strong> Space Telescope Science Institute (STScI) in Baltimore, MD + NASA GSFC</li>
+<li><strong>C3 Architecture:</strong> TDRS relay for data downlink and commanding</li>
+<li><strong>Mission Operations:</strong> STScI manages science operations; GSFC manages spacecraft health</li>
+<li><strong>Mission Concept:</strong> Provide high-resolution astronomical observations above Earth's atmosphere</li>
+</ul>
+</details>
+<h3 id="practice-questions">Practice Questions </h3>
+<p><strong>Q1.</strong> What is the difference between the "payload" and the "spacecraft bus"?</p>
+<details>
+<summary>Answer</summary>
+<p>The <strong>payload</strong> is the instrument or equipment that directly accomplishes the mission objective (e.g., an IR sensor for fire detection, a camera for Earth observation). The <strong>spacecraft bus</strong> is everything else that supports the payload: power generation/storage, thermal control, attitude determination and control, propulsion, structure, and command/data handling. Think of the bus as the "utility vehicle" and the payload as the "cargo."</p>
+</details>
+<p><strong>Q2.</strong> Why is the mission concept placed at the center of the architecture diagram (Figure 1-3)?</p>
+<details>
+<summary>Answer</summary>
+<p>Because the mission concept is the unifying idea that drives all other design decisions. It defines <em>how</em> the mission will work -- how information or services flow from the space segment to the end user. Every other element (orbit, payload, bus, launch, ground, operations, C3) is designed to support the mission concept. Change the concept, and every element may need to change.</p>
+</details>
+<p><strong>Q3.</strong> A communications satellite in geostationary orbit serves cell phone users. Identify the "subject" of this mission.</p>
+<details>
+<summary>Answer</summary>
+<p>The <strong>subject</strong> is the cell phone users (or more precisely, the handheld receivers). The subject is what the mission is serving or observing. In a communications mission, the subject is the end user being served.</p>
+</details>
+<p><strong>Q4.</strong> Explain why changing the orbit altitude of a satellite affects the launch element, the payload, and the ground element.</p>
+<details>
+<summary>Answer</summary>
+<ul>
+<li><strong>Launch element:</strong> Higher orbits require more energy (delta-v), demanding a larger or more capable launch vehicle.</li>
+<li><strong>Payload:</strong> Higher altitude means the satellite is farther from the subject. For observation missions, this degrades resolution unless the aperture is increased. For communications, signal strength decreases with distance (inverse-square law).</li>
+<li><strong>Ground element:</strong> Higher orbits change the visibility windows -- geostationary orbits provide continuous coverage from one ground station, while LEO requires multiple stations or relay satellites for continuous contact.</li>
+</ul>
+</details>
+<h3 id="common-pitfalls">Common Pitfalls </h3>
+<ol>
+<li>
+<p><strong>Confusing "payload" with "satellite."</strong> The payload is only the mission-specific instrument. The satellite includes both the payload and the spacecraft bus.</p>
+</li>
+<li>
+<p><strong>Thinking of a space mission as just the satellite.</strong> The satellite is only the space element. A complete mission includes ground, launch, operations, and communications elements too.</p>
+</li>
+<li>
+<p><strong>Forgetting the subject.</strong> Students often focus on the spacecraft and forget to clearly define <em>what</em> is being observed or served. The subject drives the entire mission design.</p>
+</li>
+<li>
+<p><strong>Assuming elements are independent.</strong> Every element interacts with every other element. Orbit selection affects payload design, power requirements, thermal environment, communications architecture, launch vehicle selection, and ground station placement.</p>
+</li>
+</ol>
+<h3 id="key-takeaways">Key Takeaways </h3>
+<ul>
+<li>A space mission is a <strong>system-of-systems</strong> with interdependent elements, not just a satellite.</li>
+<li>The <strong>Mission Concept</strong> is the central organizing idea; all elements serve it.</li>
+<li>There are <strong>8 key elements</strong>: Subject, Orbit/Constellation, Payload, Spacecraft Bus (together forming the Space Element), Launch Element, Ground Element, Mission Operations, and C3 Architecture.</li>
+<li><strong>Systems engineering</strong> is essential because changing one element creates ripple effects across all others.</li>
+<li>The FireSat example will be used throughout the course as a reference mission.</li>
+</ul>
+<blockquote>
+<p><strong>Active Recall:</strong> Close this guide and sketch the mission architecture diagram from memory, labeling all 8 elements. Can you do it without looking?</p>
+</blockquote>
+<hr>
+<h2 id="topic-2-technology-readiness-levels-trls">Topic 2: Technology Readiness Levels (TRLs) </h2>
+<h3 id="analogy-1">Analogy </h3>
+<p>Imagine you are developing a new recipe for a restaurant:</p>
+<table>
+<thead>
+<tr>
+<th>TRL Equivalent</th>
+<th>Cooking Analogy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TRL 1</td>
+<td>You read about a new ingredient in a food science journal</td>
+</tr>
+<tr>
+<td>TRL 2</td>
+<td>You brainstorm a recipe idea that might use this ingredient</td>
+</tr>
+<tr>
+<td>TRL 3</td>
+<td>You test the ingredient in small lab-style taste tests</td>
+</tr>
+<tr>
+<td>TRL 4</td>
+<td>You cook a rough prototype dish in your home kitchen</td>
+</tr>
+<tr>
+<td>TRL 5</td>
+<td>You refine the dish and test it in a kitchen similar to the restaurant's</td>
+</tr>
+<tr>
+<td>TRL 6</td>
+<td>You prepare a near-final version in the actual restaurant kitchen</td>
+</tr>
+<tr>
+<td>TRL 7</td>
+<td>You serve it to a test group of diners in the restaurant</td>
+</tr>
+<tr>
+<td>TRL 8</td>
+<td>The dish is on the menu, fully tested under normal service conditions</td>
+</tr>
+<tr>
+<td>TRL 9</td>
+<td>The dish has been served successfully night after night with consistent results</td>
+</tr>
+</tbody>
+</table>
+<p>Each level represents increasing confidence that the technology (or dish) will work in its intended environment.</p>
+<h3 id="core-explanation-1">Core Explanation </h3>
+<p><strong>Technology Readiness Levels (TRLs)</strong> are a systematic framework, originally developed by NASA and adopted by the Department of Defense (DoD), for evaluating how mature a technology is. The scale runs from <strong>TRL 1</strong> (basic scientific principles observed) to <strong>TRL 9</strong> (actual system proven through successful mission operations).</p>
+<p>TRLs matter because space missions are expensive and cannot be easily repaired once launched. Using immature technology (low TRL) on a flight mission dramatically increases risk. Program managers use TRLs to:</p>
+<ul>
+<li>Assess whether a technology is ready for a particular program phase</li>
+<li>Identify what additional development, testing, or demonstration is needed</li>
+<li>Communicate technology maturity across organizations in a standardized way</li>
+<li>Make informed decisions about risk vs. schedule vs. cost</li>
+</ul>
+<p>The DoD defines separate TRL scales for <strong>hardware</strong> and <strong>software</strong> because the nature of maturation differs (hardware requires physical testing in increasingly realistic environments; software requires integration with increasingly complete systems).</p>
+<h3 id="formal-definitions-1">Formal Definitions </h3>
+<h4 id="hardware-trls-table-1-1">Hardware TRLs (Table 1-1) </h4>
+<table>
+<thead>
+<tr>
+<th>TRL</th>
+<th>Definition</th>
+<th>Description</th>
+<th>Supporting Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td>Basic principles observed and reported</td>
+<td>Lowest level. Scientific research translated into applied R&amp;D. Paper studies of basic properties.</td>
+<td>Published research identifying principles. References to who, where, when.</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>Technology concept and/or application formulated</td>
+<td>Invention begins. Practical applications speculated. No proof or detailed analysis. Limited to analytic studies.</td>
+<td>Publications outlining the application and providing analysis to support the concept.</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>Analytical and experimental critical function and/or characteristic proof of concept</td>
+<td>Active R&amp;D initiated. Analytical and lab studies validate predictions of separate technology elements. Not yet integrated or representative.</td>
+<td>Lab test results measuring parameters of interest, compared to analytical predictions.</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td>Component and/or breadboard validation in a laboratory environment</td>
+<td>Basic components integrated to show they work together. "Low fidelity" compared to eventual system. "Ad hoc" hardware in the lab.</td>
+<td>System concepts considered. Results from testing lab-scale breadboards.</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>Component and/or breadboard validation in a relevant environment</td>
+<td>Fidelity increases significantly. Components integrated with realistic supporting elements. Tested in simulated operational environment. "High-fidelity" lab integration.</td>
+<td>Results from testing a lab breadboard system integrated with supporting elements in a simulated environment.</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td>System/subsystem model or prototype demonstration in a relevant environment</td>
+<td>Representative model or prototype tested well beyond TRL 5, in a relevant environment. Major step up in demonstrated readiness. Prototype tested in high-fidelity lab or simulated operational environment.</td>
+<td>Lab testing of a prototype near desired configuration in terms of performance, weight, and volume.</td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td>System prototype demonstration in an operational environment</td>
+<td>Prototype near or at planned operational system. Major step from TRL 6. Demonstration in actual operational environment (aircraft, vehicle, or space).</td>
+<td>Results from testing a prototype in an operational environment.</td>
+</tr>
+<tr>
+<td><strong>8</strong></td>
+<td>Actual system completed and qualified through test and demonstration</td>
+<td>Technology proven in final form under expected conditions. End of true system development. Includes DT&amp;E (Developmental Test &amp; Evaluation).</td>
+<td>Results of testing in final configuration under expected range of environmental conditions.</td>
+</tr>
+<tr>
+<td><strong>9</strong></td>
+<td>Actual system proven through successful mission operations</td>
+<td>Actual application in final form under mission conditions. Includes OT&amp;E (Operational Test &amp; Evaluation).</td>
+<td>OT&amp;E reports.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="software-trls-table-1-2">Software TRLs (Table 1-2) </h4>
+<table>
+<thead>
+<tr>
+<th>TRL</th>
+<th>Definition</th>
+<th>Description</th>
+<th>Supporting Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1</strong></td>
+<td>Basic principles observed and reported</td>
+<td>New software domain investigated. Basic use, architecture, math formulations, and algorithms developed.</td>
+<td>Research articles, white papers, early lab models.</td>
+</tr>
+<tr>
+<td><strong>2</strong></td>
+<td>Technology concept and/or application formulated</td>
+<td>Practical applications speculated. Limited to analytic studies using synthetic data.</td>
+<td>Applied research, small code units, papers comparing technologies.</td>
+</tr>
+<tr>
+<td><strong>3</strong></td>
+<td>Analytical and experimental critical function and/or characteristic proof of concept</td>
+<td>Scientific feasibility demonstrated through analytical and lab studies. Limited functionality environments. Non-integrated components with partially representative data.</td>
+<td>Algorithms run on surrogate processor in lab, instrumented components in lab, validation of critical properties.</td>
+</tr>
+<tr>
+<td><strong>4</strong></td>
+<td>Module and/or subsystem validation in a laboratory environment</td>
+<td>Basic software components integrated. Relatively primitive. Architecture development initiated (interoperability, reliability, maintainability, extensibility, scalability, security). Prototypes demonstrate different aspects.</td>
+<td>Advanced development, stand-alone prototype solving a synthetic full-scale problem.</td>
+</tr>
+<tr>
+<td><strong>5</strong></td>
+<td>Module and/or subsystem validation in a relevant environment</td>
+<td>Ready for integration with existing systems. Implementations conform to target environment/interfaces. Experiments with realistic problems. Simulated interfaces. System software architecture established. Algorithms run on processor with characteristics expected in operational environment. COTS/GOTS components identified.</td>
+<td>Architecture diagram, critical performance requirements defined, processor selection analysis, Sim/Stim lab buildup plan, software under configuration management.</td>
+</tr>
+<tr>
+<td><strong>6</strong></td>
+<td>Module and/or subsystem validation in a relevant end-to-end environment</td>
+<td>Engineering feasibility demonstrated. Lab prototype implementations on full-scale realistic problems. Software partially integrated with existing hardware/software.</td>
+<td>Lab testing of prototype package near desired configuration (physical, logical, data, security interfaces).</td>
+</tr>
+<tr>
+<td><strong>7</strong></td>
+<td>System prototype demonstration in an operational, high-fidelity environment</td>
+<td>Program feasibility demonstrated. Operational environment prototype. Critical technical risk functionality available for demonstration. Well integrated with operational hardware/software.</td>
+<td>Critical properties measured against requirements in an operational environment.</td>
+</tr>
+<tr>
+<td><strong>8</strong></td>
+<td>Actual system completed and mission qualified through test and demonstration</td>
+<td>Software fully integrated with operational hardware and software. All functionality tested in simulated and operational scenarios.</td>
+<td>Published documentation, technology refresh build schedule, resource reserve measured and tracked.</td>
+</tr>
+<tr>
+<td><strong>9</strong></td>
+<td>Actual system proven through successful mission-proven operational capabilities</td>
+<td>Software readily repeatable and reusable. Fully integrated with operational systems. All documentation verified. Successful operational experience. Sustaining software engineering in place.</td>
+<td>Production configuration management reports. Technology integrated into a reuse "wizard."</td>
+</tr>
+</tbody>
+</table>
+<h3 id="worked-examples-1">Worked Examples </h3>
+<h4 id="example-1-classifying-a-new-solar-panel-technology">Example 1: Classifying a New Solar Panel Technology </h4>
+<p>A research team publishes a paper showing that a new perovskite-silicon tandem solar cell achieves 33% efficiency in the lab.</p>
+<ul>
+<li><strong>Current TRL:</strong> TRL 3 -- They have lab results validating analytical predictions for a key parameter (efficiency), but the cells are not yet integrated into a breadboard power system.</li>
+<li><strong>Next step to TRL 4:</strong> Integrate the cells into a small prototype solar panel assembly and demonstrate power output in a laboratory setting.</li>
+<li><strong>Next step to TRL 5:</strong> Test the prototype panel under simulated space conditions (vacuum, temperature cycling, UV exposure).</li>
+</ul>
+<h4 id="example-2-software-for-autonomous-fire-detection">Example 2: Software for Autonomous Fire Detection </h4>
+<p>An algorithm is written to automatically detect fires from IR satellite imagery. It has been tested on synthetic (simulated) IR data and shows promising detection rates.</p>
+<ul>
+<li><strong>Current TRL:</strong> TRL 2 -- Applications are speculative, studies use synthetic data, no proof in a real environment.</li>
+<li><strong>Next step to TRL 3:</strong> Run the algorithm on a surrogate processor using partially representative data (e.g., actual IR images from existing satellites), validate detection performance.</li>
+</ul>
+<h4 id="example-3-assigning-trl-to-a-known-system">Example 3: Assigning TRL to a Known System </h4>
+<p>The GPS Block IIF satellites have been operating successfully since 2010, providing position, navigation, and timing services.</p>
+<ul>
+<li><strong>TRL:</strong> TRL 9 -- The actual system is proven through successful mission operations over many years.</li>
+</ul>
+<h3 id="practice-questions-1">Practice Questions </h3>
+<p><strong>Q1.</strong> A startup company has built a prototype communications antenna using a new metamaterial. They have tested it in an anechoic chamber (a specialized lab that simulates free-space electromagnetic conditions). What TRL is this?</p>
+<details>
+<summary>Answer</summary>
+<p><strong>TRL 5.</strong> The antenna is a breadboard/prototype that has been tested in a relevant (simulated) environment. An anechoic chamber simulates the electromagnetic environment but is not the actual operational environment (space).</p>
+</details>
+<p><strong>Q2.</strong> Why does the DoD maintain separate TRL scales for hardware and software?</p>
+<details>
+<summary>Answer</summary>
+<p>Hardware and software mature differently. Hardware maturation involves physical fabrication, environmental testing, and demonstration in increasingly realistic physical environments. Software maturation involves integration with increasingly complete systems, validation against realistic data, and demonstration of reliability/scalability/security in operational computing environments. The milestones and evidence required at each level differ fundamentally.</p>
+</details>
+<p><strong>Q3.</strong> A program manager wants to include a TRL 4 component in a spacecraft scheduled for launch in 2 years. What are the risks?</p>
+<details>
+<summary>Answer</summary>
+<p>TRL 4 means only lab-level breadboard validation. To reach TRL 8 (flight-qualified) requires advancing through 4 more levels -- prototype testing in relevant environment (TRL 5), prototype in simulated operational environment (TRL 6), prototype in actual operational environment (TRL 7), and full qualification testing (TRL 8). Each step requires time, money, and may reveal problems. The risk is that the technology may not mature fast enough, causing schedule delays or requiring a fallback to a higher-TRL alternative. This is a significant programmatic risk.</p>
+</details>
+<p><strong>Q4.</strong> What is the key difference between TRL 6 and TRL 7?</p>
+<details>
+<summary>Answer</summary>
+<p><strong>TRL 6</strong> tests a prototype in a <strong>relevant</strong> environment (high-fidelity laboratory or simulated operational conditions). <strong>TRL 7</strong> tests a prototype in an <strong>actual operational</strong> environment (e.g., on an aircraft, in a vehicle, or in space). The jump from simulated to real operational environment is a major step in demonstrated readiness.</p>
+</details>
+<h3 id="common-pitfalls-1">Common Pitfalls </h3>
+<ol>
+<li>
+<p><strong>Confusing TRL with quality or reliability.</strong> A TRL 9 system can still fail. TRL measures maturity of the technology, not the reliability of a specific unit.</p>
+</li>
+<li>
+<p><strong>Skipping TRL levels.</strong> Each level builds evidence that reduces risk. Skipping levels (e.g., going from TRL 3 directly to TRL 7) dramatically increases the chance of discovering problems too late.</p>
+</li>
+<li>
+<p><strong>Assigning TRL to the wrong level of abstraction.</strong> A subsystem may be TRL 7 while a component within it is TRL 4. The system TRL is limited by its least mature critical component.</p>
+</li>
+<li>
+<p><strong>Confusing "tested in a relevant environment" with "tested in the operational environment."</strong> TRL 5-6 use simulated or lab-representative conditions. TRL 7 requires the actual operational environment. This distinction matters enormously for space systems where the operational environment (vacuum, radiation, microgravity) cannot be perfectly simulated on the ground.</p>
+</li>
+</ol>
+<h3 id="key-takeaways-1">Key Takeaways </h3>
+<ul>
+<li>TRLs provide a <strong>standardized language</strong> for communicating technology maturity across organizations.</li>
+<li>The scale runs <strong>1 (basic research) to 9 (proven in operations)</strong>, with each level requiring specific evidence.</li>
+<li><strong>Hardware and software</strong> have separate but parallel TRL definitions.</li>
+<li>Low-TRL technologies carry <strong>higher programmatic risk</strong> (cost, schedule, technical).</li>
+<li>The TRL of a system is bounded by its <strong>least mature critical component</strong>.</li>
+</ul>
+<blockquote>
+<p><strong>Active Recall:</strong> Without looking, list the 9 TRL levels for hardware by their one-line definitions. Can you remember the key distinction between TRL 5 and TRL 6? Between TRL 7 and TRL 8?</p>
+</blockquote>
+<hr>
+<h2 id="topic-3-space-industry-professional-resources">Topic 3: Space Industry Professional Resources </h2>
+<h3 id="analogy-2">Analogy </h3>
+<p>Just as medical professionals have the AMA (American Medical Association) and lawyers have the ABA (American Bar Association), space professionals have their own ecosystem of societies, journals, and conferences. Knowing where to find information and who the key players are is essential for any engineer entering the field.</p>
+<h3 id="core-explanation-2">Core Explanation </h3>
+<p>The space industry is supported by professional organizations that publish research, set standards, hold conferences, and connect practitioners. These resources are where you will find the latest research, established best practices, and networking opportunities throughout your career.</p>
+<h3 id="formal-definitions-2">Formal Definitions </h3>
+<h4 id="major-professional-societies-table-1-4">Major Professional Societies (Table 1-4) </h4>
+<table>
+<thead>
+<tr>
+<th>Acronym</th>
+<th>Full Name</th>
+<th>Focus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AIAA</strong></td>
+<td>American Institute of Aeronautics and Astronautics</td>
+<td>Largest American professional society with a major focus on astronautics. Publishes refereed journals and many books. Creates many industry standards.</td>
+</tr>
+<tr>
+<td><strong>AAS</strong></td>
+<td>American Astronautical Society</td>
+<td>Largest American society devoted exclusively to astronautics and space exploration. (Note: Not to be confused with the American Astronomical Society, which shares the same acronym.)</td>
+</tr>
+<tr>
+<td><strong>BIS</strong></td>
+<td>British Interplanetary Society</td>
+<td>One of the oldest professional societies in astronautics. Publishes papers on far-reaching topics like interstellar travel.</td>
+</tr>
+<tr>
+<td><strong>IAF</strong></td>
+<td>International Astronautical Federation</td>
+<td>Principal worldwide organization for astronautics. Holds annual International Astronautical Congress (IAC). A collection of organizations (not individuals). Associated with the IAA (International Academy of Astronautics) and IISL (International Institute of Space Law).</td>
+</tr>
+<tr>
+<td><strong>IEEE</strong></td>
+<td>Institute of Electrical and Electronics Engineers</td>
+<td>World's largest professional technical society. Focused on electrical engineering but publishes significant astronautics-related work.</td>
+</tr>
+<tr>
+<td><strong>INCOSE</strong></td>
+<td>International Council on Systems Engineering</td>
+<td>Founded in 1990. Focal point for dissemination of systems engineering knowledge. Particularly relevant to space mission design.</td>
+</tr>
+<tr>
+<td><strong>SEDS</strong></td>
+<td>Students for the Exploration and Development of Space</td>
+<td>Independent student organization (graduate and undergraduate) at universities worldwide.</td>
+</tr>
+<tr>
+<td><strong>NSS</strong></td>
+<td>National Space Society</td>
+<td>Independent educational organization formed in 1987 from the merger of the National Space Institute and the L5 Society. Dedicated to creating a spacefaring civilization.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="major-professional-journals-table-1-5">Major Professional Journals (Table 1-5) </h4>
+<table>
+<thead>
+<tr>
+<th>Publisher</th>
+<th>Journal</th>
+<th>Abbreviation</th>
+<th>Content Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AIAA</td>
+<td><em>Journal of Spacecraft and Rockets</em></td>
+<td>JSR</td>
+<td>Technical</td>
+</tr>
+<tr>
+<td>AIAA</td>
+<td><em>Journal of Guidance, Control, and Dynamics</em></td>
+<td>JGCD</td>
+<td>Technical</td>
+</tr>
+<tr>
+<td>AIAA</td>
+<td><em>Journal of Aerospace Computing, Information, and Communication</em></td>
+<td>--</td>
+<td>Technical</td>
+</tr>
+<tr>
+<td>AIAA</td>
+<td><em>Journal of Propulsion and Power</em></td>
+<td>JPP</td>
+<td>Technical</td>
+</tr>
+<tr>
+<td>AIAA</td>
+<td><em>Aerospace America</em></td>
+<td>AA</td>
+<td>Popular</td>
+</tr>
+<tr>
+<td>AAS</td>
+<td><em>Journal of the Astronautical Sciences</em></td>
+<td>JAS</td>
+<td>Technical (quarterly)</td>
+</tr>
+<tr>
+<td>AAS</td>
+<td><em>Space Times</em></td>
+<td>ST</td>
+<td>Popular (bi-monthly)</td>
+</tr>
+<tr>
+<td>BIS</td>
+<td><em>Journal of the British Interplanetary Society</em></td>
+<td>JBIS</td>
+<td>Technical</td>
+</tr>
+<tr>
+<td>BIS</td>
+<td><em>Spaceflight</em></td>
+<td>--</td>
+<td>Popular (running chronology of space missions)</td>
+</tr>
+<tr>
+<td>--</td>
+<td><em>Aviation Week and Space Technology</em></td>
+<td>Av Week</td>
+<td>News (weekly)</td>
+</tr>
+<tr>
+<td>--</td>
+<td><em>Space News</em></td>
+<td>SN</td>
+<td>News (weekly)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="representative-conferences-table-1-6">Representative Conferences (Table 1-6) </h4>
+<table>
+<thead>
+<tr>
+<th>Sponsor</th>
+<th>Conference</th>
+<th>Location</th>
+<th>Typical Month</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AIAA</td>
+<td>Aerospace Sciences Meeting</td>
+<td>Florida</td>
+<td>January</td>
+</tr>
+<tr>
+<td>AIAA, FAA</td>
+<td>Commercial Space Transportation Conference</td>
+<td>Varied (US)</td>
+<td>February</td>
+</tr>
+<tr>
+<td>AIAA, ASME, ASCE, AHS, ASC</td>
+<td>Structures, Structural Dynamics and Materials Conference</td>
+<td>Colorado</td>
+<td>April</td>
+</tr>
+<tr>
+<td>AIAA</td>
+<td>Atmospheric Space Environments Conference</td>
+<td>Hawaii</td>
+<td>June</td>
+</tr>
+<tr>
+<td>AIAA, ASME, SAE, ASEE</td>
+<td>Joint Propulsion Conference</td>
+<td>San Diego</td>
+<td>July</td>
+</tr>
+<tr>
+<td>AIAA</td>
+<td>Guidance, Navigation, and Control Conference</td>
+<td>Varied (US)</td>
+<td>August</td>
+</tr>
+<tr>
+<td>AIAA</td>
+<td>Space 20(year) (largest AIAA conference)</td>
+<td>Varied (US)</td>
+<td>September</td>
+</tr>
+<tr>
+<td>AAS</td>
+<td>Guidance and Control Conference</td>
+<td>Colorado</td>
+<td>February</td>
+</tr>
+<tr>
+<td>AAS, AIAA</td>
+<td>Space Flight Mechanics Conference</td>
+<td>Varied (US)</td>
+<td>February</td>
+</tr>
+<tr>
+<td>AAS</td>
+<td>Goddard Memorial Symposium</td>
+<td>NASA GSFC</td>
+<td>March</td>
+</tr>
+<tr>
+<td>AAS, AIAA</td>
+<td>Astrodynamics Specialist Conference</td>
+<td>Varied (US)</td>
+<td>July</td>
+</tr>
+<tr>
+<td>IAF, IISL</td>
+<td>International Astronautical Congress (IAC)</td>
+<td>Varied (Worldwide)</td>
+<td>October</td>
+</tr>
+<tr>
+<td>Utah State University, AIAA</td>
+<td>SmallSat Conference</td>
+<td>Logan, UT</td>
+<td>August</td>
+</tr>
+</tbody>
+</table>
+<h3 id="practice-questions-2">Practice Questions </h3>
+<p><strong>Q1.</strong> You need to find a peer-reviewed paper on a new propulsion technology. Which journals would be most relevant?</p>
+<details>
+<summary>Answer</summary>
+<p>The AIAA <em>Journal of Propulsion and Power</em> (JPP) is the most directly relevant. You might also check the AIAA <em>Journal of Spacecraft and Rockets</em> (JSR) or the AAS <em>Journal of the Astronautical Sciences</em> (JAS).</p>
+</details>
+<p><strong>Q2.</strong> What is the difference between AIAA and AAS?</p>
+<details>
+<summary>Answer</summary>
+<p><strong>AIAA</strong> covers all of aeronautics and astronautics (aircraft + spacecraft) and is the larger organization. <strong>AAS</strong> is devoted exclusively to astronautics and space exploration. Both publish technical journals and hold conferences, sometimes jointly.</p>
+</details>
+<p><strong>Q3.</strong> What does INCOSE stand for and why is it relevant to this course?</p>
+<details>
+<summary>Answer</summary>
+<p><strong>INCOSE</strong> = International Council on Systems Engineering. It is relevant because space mission design is fundamentally a systems engineering discipline -- integrating multiple subsystems (payload, bus, ground, launch, operations) to meet mission objectives. INCOSE provides the knowledge base, standards, and community for systems engineering practice.</p>
+</details>
+<h3 id="common-pitfalls-2">Common Pitfalls </h3>
+<ol>
+<li>
+<p><strong>Confusing AAS (American Astronautical Society) with AAS (American Astronomical Society).</strong> Both use the same abbreviation. The Astronautical Society focuses on space engineering and exploration; the Astronomical Society focuses on the science of celestial objects.</p>
+</li>
+<li>
+<p><strong>Ignoring professional resources.</strong> These societies, journals, and conferences are where current best practices are published and where standards originate. Using outdated or non-peer-reviewed information can lead to poor design decisions.</p>
+</li>
+</ol>
+<h3 id="key-takeaways-2">Key Takeaways </h3>
+<ul>
+<li>The space industry has a well-established ecosystem of <strong>professional societies</strong> (AIAA, AAS, IAF, IEEE, INCOSE, etc.).</li>
+<li><strong>Peer-reviewed journals</strong> (JSR, JGCD, JPP, JAS, JBIS) are the authoritative source for technical knowledge.</li>
+<li><strong>Conferences</strong> are where new work is presented and professional relationships are built.</li>
+<li>Familiarity with these resources is expected of working professionals in the field.</li>
+</ul>
+<hr>
+<h2 id="integrative-summary">Integrative Summary </h2>
+<p>Week 1 establishes three foundational layers:</p>
+<ol>
+<li>
+<p><strong>Architecture</strong> -- Every space mission is a system-of-systems built from the same set of interdependent elements (subject, orbit, payload, bus, launch, ground, operations, C3). You cannot design any one element without considering all the others.</p>
+</li>
+<li>
+<p><strong>Maturity</strong> -- Technology Readiness Levels provide a standardized 1-9 scale for assessing how ready a technology is for operational use. Lower TRL means higher risk. Both hardware and software have their own TRL definitions.</p>
+</li>
+<li>
+<p><strong>Resources</strong> -- The professional societies, journals, and conferences form the knowledge infrastructure of the space industry. Knowing where to find authoritative information is a core professional skill.</p>
+</li>
+</ol>
+<p>These three layers provide the vocabulary and mental models needed for every subsequent topic in the course. When we discuss orbit design, payload selection, or mission operations in later weeks, we will always be working within the mission architecture framework, assessing technology maturity, and referencing the professional literature.</p>
+<blockquote>
+<p><strong>Spaced Review Prompt:</strong> After 24 hours, try to:</p>
+<ol>
+<li>Draw the mission architecture diagram from memory (all 8 elements)</li>
+<li>List the 9 hardware TRL levels from memory</li>
+<li>Name at least 4 professional societies and their acronyms</li>
+</ol>
+</blockquote>
+<hr>
+<h2 id="glossary">Glossary </h2>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>AAS</strong></td>
+<td>American Astronautical Society. Largest American society devoted exclusively to astronautics.</td>
+</tr>
+<tr>
+<td><strong>AIAA</strong></td>
+<td>American Institute of Aeronautics and Astronautics. Largest American professional society for aeronautics and astronautics.</td>
+</tr>
+<tr>
+<td><strong>BIS</strong></td>
+<td>British Interplanetary Society. One of the oldest professional societies in astronautics.</td>
+</tr>
+<tr>
+<td><strong>C3</strong></td>
+<td>Command, Control, and Communications. The architecture for sending commands to and receiving data from spacecraft.</td>
+</tr>
+<tr>
+<td><strong>CONUS</strong></td>
+<td>Continental United States.</td>
+</tr>
+<tr>
+<td><strong>COTS</strong></td>
+<td>Commercial Off-The-Shelf. Pre-existing commercially available components.</td>
+</tr>
+<tr>
+<td><strong>DT&amp;E</strong></td>
+<td>Developmental Test and Evaluation. Testing during development to verify design meets specifications.</td>
+</tr>
+<tr>
+<td><strong>GOTS</strong></td>
+<td>Government Off-The-Shelf. Pre-existing government-developed components.</td>
+</tr>
+<tr>
+<td><strong>GEO</strong></td>
+<td>Geostationary Earth Orbit. Circular orbit at ~35,786 km altitude above the equator with a period of 24 hours.</td>
+</tr>
+<tr>
+<td><strong>GPS</strong></td>
+<td>Global Positioning System. US satellite navigation constellation providing position, navigation, and timing services.</td>
+</tr>
+<tr>
+<td><strong>IAA</strong></td>
+<td>International Academy of Astronautics. Worldwide association of astronautics professionals, associated with IAF.</td>
+</tr>
+<tr>
+<td><strong>IAC</strong></td>
+<td>International Astronautical Congress. Annual worldwide astronautics conference organized by IAF.</td>
+</tr>
+<tr>
+<td><strong>IAF</strong></td>
+<td>International Astronautical Federation. Principal worldwide organization for astronautics.</td>
+</tr>
+<tr>
+<td><strong>IEEE</strong></td>
+<td>Institute of Electrical and Electronics Engineers. World's largest professional technical society.</td>
+</tr>
+<tr>
+<td><strong>IISL</strong></td>
+<td>International Institute of Space Law. Focuses on legal and treaty issues in space exploration, associated with IAF.</td>
+</tr>
+<tr>
+<td><strong>INCOSE</strong></td>
+<td>International Council on Systems Engineering. Focal point for systems engineering knowledge.</td>
+</tr>
+<tr>
+<td><strong>IR</strong></td>
+<td>Infrared. Electromagnetic radiation with wavelengths longer than visible light, used for thermal detection.</td>
+</tr>
+<tr>
+<td><strong>LEO</strong></td>
+<td>Low Earth Orbit. Generally defined as orbits with altitudes between ~200 km and ~2,000 km.</td>
+</tr>
+<tr>
+<td><strong>MEO</strong></td>
+<td>Medium Earth Orbit. Orbits between LEO and GEO, typically ~2,000 km to ~35,786 km altitude.</td>
+</tr>
+<tr>
+<td><strong>Mission Architecture</strong></td>
+<td>The complete set of interconnected elements that make up a space mission.</td>
+</tr>
+<tr>
+<td><strong>Mission Concept</strong></td>
+<td>The overarching approach for how a mission accomplishes its objectives.</td>
+</tr>
+<tr>
+<td><strong>NSS</strong></td>
+<td>National Space Society. Educational organization dedicated to creating a spacefaring civilization.</td>
+</tr>
+<tr>
+<td><strong>OT&amp;E</strong></td>
+<td>Operational Test and Evaluation. Testing under actual mission/operational conditions.</td>
+</tr>
+<tr>
+<td><strong>Payload</strong></td>
+<td>The instrument(s) or equipment that directly perform the mission objective.</td>
+</tr>
+<tr>
+<td><strong>R&amp;D</strong></td>
+<td>Research and Development.</td>
+</tr>
+<tr>
+<td><strong>SEDS</strong></td>
+<td>Students for the Exploration and Development of Space. Independent student-based organization.</td>
+</tr>
+<tr>
+<td><strong>SMAD</strong></td>
+<td>Space Mission Analysis and Design. Refers to the textbook series; "The New SMAD" is the current edition titled <em>Space Mission Engineering</em>.</td>
+</tr>
+<tr>
+<td><strong>Spacecraft Bus</strong></td>
+<td>The platform that supports the payload, providing power, thermal control, attitude control, propulsion, structure, and data handling.</td>
+</tr>
+<tr>
+<td><strong>Space Element</strong></td>
+<td>The combination of payload and spacecraft bus -- the complete satellite or space vehicle.</td>
+</tr>
+<tr>
+<td><strong>Systems Engineering</strong></td>
+<td>The interdisciplinary approach to designing, integrating, and managing complex systems over their life cycles.</td>
+</tr>
+<tr>
+<td><strong>TDRS</strong></td>
+<td>Tracking and Data Relay Satellite. NASA's constellation of relay satellites for communicating with LEO spacecraft.</td>
+</tr>
+<tr>
+<td><strong>TRL</strong></td>
+<td>Technology Readiness Level. A 1-9 scale measuring the maturity of a technology.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="references">References </h2>
+<ol>
+<li>Wertz, J.R., Everett, D.F., and Puschell, J.J., <em>Space Mission Engineering: The New SMAD</em>, Microcosm Press, 2011. ISBN 978-1-881883-15-9. (Chapters 1-3)</li>
+<li>Department of Defense, <em>Technology Readiness Assessment (TRA) Deskbook</em>, DoD, 2009. (Source for Tables 1-1 and 1-2)</li>
+<li>NASA, <em>Definition of Technology Readiness Levels</em>, available at NASA website.</li>
+<li>AIAA -- <a href="http://www.aiaa.org">www.aiaa.org</a></li>
+<li>AAS (American Astronautical Society) -- <a href="http://astronautical.org">astronautical.org</a></li>
+<li>BIS -- <a href="http://www.bis-spaceflight.com">www.bis-spaceflight.com</a></li>
+<li>IAF -- <a href="http://www.iafastro.com">www.iafastro.com</a></li>
+<li>IEEE -- <a href="http://www.ieee.org">www.ieee.org</a></li>
+<li>INCOSE -- <a href="http://www.incose.org">www.incose.org</a></li>
+<li>SEDS -- <a href="http://seds.org">seds.org</a></li>
+<li>NSS -- <a href="http://www.nss.org">www.nss.org</a></li>
+</ol>
+
+      </div>
+      
+      
+    
+    
+    <script type="module">
+// TODO: If ZenUML gets integrated into mermaid in the future,
+//      we can remove the following lines.
+
+
+var MERMAID_CONFIG = ({"startOnLoad":false});
+if (typeof MERMAID_CONFIG !== 'undefined') {
+  MERMAID_CONFIG.startOnLoad = false
+  MERMAID_CONFIG.cloneCssStyles = false
+  MERMAID_CONFIG.theme = "default"
+}
+
+mermaid.initialize(MERMAID_CONFIG || {})
+if (typeof(window['Reveal']) !== 'undefined') {
+  function mermaidRevealHelper(event) {
+    var currentSlide = event.currentSlide
+    var diagrams = currentSlide.querySelectorAll('.mermaid')
+    for (var i = 0; i < diagrams.length; i++) {
+      var diagram = diagrams[i]
+      if (!diagram.hasAttribute('data-processed')) {
+        mermaid.init(null, diagram, ()=> {
+          Reveal.slide(event.indexh, event.indexv)
+        })
+      }
+    }
+  }
+  Reveal.addEventListener('slidetransitionend', mermaidRevealHelper)
+  Reveal.addEventListener('ready', mermaidRevealHelper)
+  await mermaid.run({
+    nodes: document.querySelectorAll('.mermaid')
+  })
+} else {
+  await mermaid.run({
+    nodes: document.querySelectorAll('.mermaid')
+  })
+}
+</script>
+    
+    
+    
+  
+    </body></html>
