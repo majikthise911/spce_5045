@@ -3,20 +3,204 @@
 **Course:** SPCE 5045 Space Mission Analysis
 **Assignment:** Homework #1 (50 points total, Chapter 1)
 **Semester:** Spring 2025
+**Author:** Jordan Clayton 
+**Date:** 2026-02-02
 
 ---
 
-## 1. Original Python Solution
 
-### Approach
+Chapter 1:
 
-I tackled this by building each stage from the top down — smallest first, since that's the natural direction given the physical stacking order. The key realization is that the mass rule ("each stage's mass equals everything above it plus the payload") forces the total to double every time you add a stage, which produces a clean exponential closed-form formula. The code runs both the iterative calculation and the closed-form version to make sure they agree.
+NOTE: Use the common terminology of stage number, i.e., “1st stage” is the bottom or biggest stage, 2nd stage is the next one “up”, etc.  (See discussion on pages 10 and 11 in the text for the ΔV required)
+	
+## Problem 1 (15 points)
 
-### Key Design Choices
+Assume that a single rocket stage can provide a delta V of 3 km/sec. Determine how many stages would it take to get to orbit from the surface of:
 
-- **Top-down construction**: Instead of working from the bottom up, the code starts with the topmost (smallest) stage and works downward. This follows the physical constraint naturally — you need to know what's above a stage before you can size it.
-- **Verification via closed-form**: The iterative stage-by-stage result is cross-checked against `Total = m_payload * 2^n`, so any bug in either path shows up as a mismatch.
-- **Visualization**: A log-scale bar chart makes the exponential growth of launch mass visually obvious across the three bodies.
+a) the Moon (ΔV=1.7 km/s)
+b) the Earth (ΔV=7.8 km/s)
+c) Jupiter (if it had a solid surface! ΔV= 42 km/s)
+
+---
+
+**Given:** Each rocket stage provides $\Delta V$ = 3 km/s. Delta-V values to reach orbit are taken from the textbook (Wertz et al., Ch. 1, pp. 10--11).
+
+**Method:** To find the minimum number of stages, divide the total required delta-V by 3 km/s and apply the ceiling function (round up) — you can't build a partial stage.
+
+$$n = \left\lceil \frac{\Delta V_{\text{required}}}{\Delta V_{\text{per stage}}} \right\rceil$$
+
+### (a) Moon — $\Delta V$ = 1.7 km/s
+
+$$n = \left\lceil \frac{1.7}{3.0} \right\rceil = \lceil 0.567 \rceil = 1$$
+
+Check: 1 stage provides 1 × 3.0 = 3.0 km/s ≥ 1.7 km/s ✓
+
+**Answer: 1 stage**
+
+### (b) Earth — $\Delta V$ = 7.8 km/s
+
+$$n = \left\lceil \frac{7.8}{3.0} \right\rceil = \lceil 2.6 \rceil = 3$$
+
+Note: 2 stages would only provide 2 × 3.0 = 6.0 km/s, which is less than the 7.8 km/s required, so 2 stages aren't enough.
+Check: 3 stages provide 3 × 3.0 = 9.0 km/s ≥ 7.8 km/s ✓
+
+**Answer: 3 stages**
+
+### (c) Jupiter — $\Delta V$ = 42.0 km/s
+
+$$n = \left\lceil \frac{42.0}{3.0} \right\rceil = \lceil 14.0 \rceil = 14$$
+
+This is an exact division — 14 × 3.0 = 42.0 km/s exactly. The ceiling of an integer is just that integer.
+
+**Answer: 14 stages**
+
+### Summary
+
+| Body | Required $\Delta V$ | Calculation | Stages Needed |
+|------|---------------------|-------------|---------------|
+| Moon | 1.7 km/s | $\lceil 1.7 / 3.0 \rceil = \lceil 0.567 \rceil$ | **1 stage** |
+| Earth | 7.8 km/s | $\lceil 7.8 / 3.0 \rceil = \lceil 2.6 \rceil$ | **3 stages** |
+| Jupiter | 42.0 km/s | $\lceil 42.0 / 3.0 \rceil = \lceil 14.0 \rceil$ | **14 stages** |
+
+---
+
+## Problem 2 (30 points)
+
+Assume that the mass of each rocket stage is equal to the mass of all the stages above it plus the 100 kg payload. Based on the number of stages determined in problem #1, if you wanted to put a 100 kg payload into orbit around the Moon, calculate the total mass of the rocket (all stages and the 100 kg payload) lifting off from the Moon.  Answer the same question for lifting off from the Earth and likewise for Jupiter. Round up the values you determine since stages are not fractional.
+
+---
+
+**Given:** Payload mass $m_p$ = 100 kg. The mass rule from the problem statement: each stage's mass equals the mass of everything above it (all higher stages + payload).
+
+**Stage numbering convention** (per the problem): Stage 1 = bottom (largest, fires first at liftoff), Stage $n$ = top (smallest).
+
+**Construction approach:** I work from the top stage downward, since each stage's mass depends on what's sitting above it. At each step, the new stage mass equals the cumulative mass above, which means the running total doubles every time a stage is added.
+
+### (a) Moon — 1 stage
+
+Only one stage is needed. The only thing above Stage 1 is the payload.
+
+- Mass above Stage 1 = payload = 100 kg
+- Stage 1 mass = mass above = **100 kg**
+- Total = payload + Stage 1 = 100 + 100 = **200 kg**
+
+| Component | Mass (kg) |
+|-----------|-----------|
+| Stage 1 (bottom) | 100 |
+| Payload | 100 |
+| **Total** | **200 kg** |
+
+### (b) Earth — 3 stages
+
+Building from the top stage downward:
+
+**Stage 3 (top):** Only the payload is above it.
+- Mass above = 100 kg
+- Stage 3 mass = 100 kg
+- Cumulative total so far = 100 + 100 = 200 kg
+
+**Stage 2:** Everything above is Stage 3 + payload = 200 kg.
+- Mass above = 200 kg
+- Stage 2 mass = 200 kg
+- Cumulative total so far = 200 + 200 = 400 kg
+
+**Stage 1 (bottom):** Everything above is Stage 3 + Stage 2 + payload = 400 kg.
+- Mass above = 400 kg
+- Stage 1 mass = 400 kg
+- Cumulative total = 400 + 400 = 800 kg
+
+| Component | Mass (kg) |
+|-----------|-----------|
+| Stage 1 (bottom) | 400 |
+| Stage 2 | 200 |
+| Stage 3 (top) | 100 |
+| Payload | 100 |
+| **Total** | **800 kg** |
+
+Verification: 100 + 100 + 200 + 400 = **800 kg** ✓
+
+### (c) Jupiter — 14 stages
+
+The same doubling pattern continues for 14 stages. Each stage's mass is double the one above it, starting from the top stage at 100 kg:
+
+| Stage (top to bottom) | Mass above (kg) | Stage mass (kg) | Cumulative total (kg) |
+|-----------------------|-----------------|-----------------|----------------------|
+| Stage 14 (top) | 100 | 100 | 200 |
+| Stage 13 | 200 | 200 | 400 |
+| Stage 12 | 400 | 400 | 800 |
+| Stage 11 | 800 | 800 | 1,600 |
+| Stage 10 | 1,600 | 1,600 | 3,200 |
+| Stage 9 | 3,200 | 3,200 | 6,400 |
+| Stage 8 | 6,400 | 6,400 | 12,800 |
+| Stage 7 | 12,800 | 12,800 | 25,600 |
+| Stage 6 | 25,600 | 25,600 | 51,200 |
+| Stage 5 | 51,200 | 51,200 | 102,400 |
+| Stage 4 | 102,400 | 102,400 | 204,800 |
+| Stage 3 | 204,800 | 204,800 | 409,600 |
+| Stage 2 | 409,600 | 409,600 | 819,200 |
+| Stage 1 (bottom) | 819,200 | 819,200 | 1,638,400 |
+
+Computing $2^{14}$: $2^{10} \times 2^4 = 1{,}024 \times 16 = 16{,}384$
+
+$$M_{\text{total}} = 100 \times 16{,}384 = \textbf{1,638,400 kg}$$
+
+That's roughly **1,638 metric tons** — in the same ballpark as a Saturn V. It really drives home why reaching orbit from a high-gravity body like Jupiter would be extraordinarily difficult.
+
+---
+
+## Problem 3 (5 points)
+
+Based on the above problems, what would be a simple mathematical relationship you could use for an “n” stage rocket and 100 kg payload?
+
+---
+
+### General Mathematical Relationship
+
+For an **$n$**-stage rocket with payload mass **$m_p$**, where each stage's mass equals the total mass above it plus the payload:
+
+$$\boxed{M_{\text{total}} = m_p \times 2^n}$$
+
+### Derivation
+
+Each stage's mass equals the cumulative mass above it. Starting from the top:
+
+- Top stage mass = $m_p$ (only payload above)
+- Next stage mass = $m_p + m_p = 2m_p$ (top stage + payload above)
+- Next stage mass = $2m_p + m_p + m_p = 4m_p$ (cumulative above)
+- Pattern: stage masses are $m_p, \; 2m_p, \; 4m_p, \; \ldots, \; 2^{n-1}m_p$
+
+The individual stage masses form a geometric series with first term $m_p$ and common ratio 2:
+
+$$\text{Sum of all stage masses} = m_p + 2m_p + 4m_p + \cdots + 2^{n-1}m_p = m_p \sum_{k=0}^{n-1} 2^k = m_p(2^n - 1)$$
+
+Adding the payload:
+
+$$M_{\text{total}} = m_p + m_p(2^n - 1) = m_p \cdot 2^n$$
+
+For the specific case of $m_p = 100$ kg:
+
+$$M_{\text{total}} = 100 \times 2^n \quad \text{kg}$$
+
+### Verification
+
+**Checking the formula against our computed values:**
+
+| Body | $n$ | $100 \times 2^n$ | Computed Total | Match? |
+|------|-----|-------------------|----------------|--------|
+| Moon | 1 | 200 | 200 | Yes |
+| Earth | 3 | 800 | 800 | Yes |
+| Jupiter | 14 | 1,638,400 | 1,638,400 | Yes |
+
+**Limiting cases:**
+- $n = 0$ (no stages, payload only): $100 \times 2^0 = 100$ kg ✓
+- $n = 1$: $100 \times 2^1 = 200$ kg — matches the Moon result ✓
+- Each additional stage doubles the total, confirming the $2^n$ relationship ✓
+
+---
+
+## Appendix A: Python Code
+
+The following Python script implements the calculations above. It computes stage counts and masses both iteratively (stage by stage) and via the closed-form formula, then verifies they match. A log-scale bar chart visualizes the exponential growth in launch mass.
 
 ```python
 """
@@ -191,7 +375,7 @@ if __name__ == "__main__":
     main()
 ```
 
-### Expected Output (abbreviated)
+## Appendix B: Program Output (abbreviated)
 
 ```
 =================================================================
@@ -236,103 +420,3 @@ SPCE 5045 Homework #1 -- Multi-Stage Rocket Analysis
   For n stages and payload mass m_p:
     Total_mass = m_p * 2^n
 ```
-
----
-
-## Problem 1 (15 points)
-
-**Given:** Each rocket stage provides delta-V = 3 km/s. Delta-V values are taken from the textbook (Wertz et al., Ch. 1, pp. 10--11).
-
-To find the minimum number of stages, divide the total required delta-V by 3 km/s and round up — you can't build half a stage.
-
-| Body | Required delta-V | Calculation | Stages Needed |
-|------|-----------------|-------------|---------------|
-| **(a) Moon** | 1.7 km/s | ceil(1.7 / 3.0) = ceil(0.567) | **1 stage** |
-| **(b) Earth** | 7.8 km/s | ceil(7.8 / 3.0) = ceil(2.6) | **3 stages** |
-| **(c) Jupiter** | 42.0 km/s | ceil(42.0 / 3.0) = ceil(14.0) | **14 stages** |
-
----
-
-## Problem 2 (30 points)
-
-**Given:** Payload = 100 kg. Each stage's mass equals the mass of everything above it (all higher stages + payload).
-
-**Stage numbering convention:** Stage 1 = bottom (largest), Stage n = top (smallest).
-
-### Construction Rule
-
-Working from the top stage downward:
-- The top stage only has the payload above it, so its mass is 100 kg
-- Each stage below that has mass equal to everything sitting on top of it
-- Net effect: the cumulative total **doubles** with every stage you add
-
-### (a) Moon -- 1 stage
-
-| Component | Mass (kg) |
-|-----------|-----------|
-| Stage 1 (bottom) | 100 |
-| Payload | 100 |
-| **Total** | **200 kg** |
-
-### (b) Earth -- 3 stages
-
-| Component | Mass (kg) |
-|-----------|-----------|
-| Stage 1 (bottom) | 400 |
-| Stage 2 | 200 |
-| Stage 3 (top) | 100 |
-| Payload | 100 |
-| **Total** | **800 kg** |
-
-Here's how it builds up: the top stage supports just the 100 kg payload, so it masses 100 kg. Stage 2 has 200 kg above it (payload + top stage), giving it a mass of 200 kg. Stage 1 sits under 400 kg, so that's its mass. Add it all together: 100 + 100 + 200 + 400 = 800 kg.
-
-### (c) Jupiter -- 14 stages
-
-| Stage (top to bottom) | Mass (kg) |
-|-----------------------|-----------|
-| Stage 14 (top) | 100 |
-| Stage 13 | 200 |
-| Stage 12 | 400 |
-| Stage 11 | 800 |
-| Stage 10 | 1,600 |
-| Stage 9 | 3,200 |
-| Stage 8 | 6,400 |
-| Stage 7 | 12,800 |
-| Stage 6 | 25,600 |
-| Stage 5 | 51,200 |
-| Stage 4 | 102,400 |
-| Stage 3 | 204,800 |
-| Stage 2 | 409,600 |
-| Stage 1 (bottom) | 819,200 |
-| Payload | 100 |
-| **Total** | **1,638,400 kg** |
-
-That's roughly **1,638 metric tons** — in the same ballpark as a Saturn V. It really drives home why reaching orbit from a high-gravity body like Jupiter would be extraordinarily difficult.
-
----
-
-## Problem 3 (5 points)
-
-### General Mathematical Relationship
-
-For an **n**-stage rocket with payload mass **m_p**, where each stage's mass equals the total mass above it plus the payload:
-
-$$\boxed{M_{\text{total}} = m_p \times 2^n}$$
-
-**Derivation:** Every stage you add doubles the cumulative mass. The individual stage masses form a geometric series:
-
-$$\text{Sum of stages} = m_p + 2m_p + 4m_p + \cdots + 2^{n-1}m_p = m_p(2^n - 1)$$
-
-Adding the payload back: $M_{\text{total}} = m_p + m_p(2^n - 1) = m_p \times 2^n$.
-
-For the specific case of m_p = 100 kg:
-
-$$M_{\text{total}} = 100 \times 2^n \quad \text{kg}$$
-
-**Checking the formula against our computed values:**
-
-| Body | n | 100 x 2^n | Computed Total | Match? |
-|------|---|-----------|----------------|--------|
-| Moon | 1 | 200 | 200 | Yes |
-| Earth | 3 | 800 | 800 | Yes |
-| Jupiter | 14 | 1,638,400 | 1,638,400 | Yes |
