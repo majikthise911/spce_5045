@@ -1,0 +1,521 @@
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Right. Greetings and welcome to Space Mission Analysis SPC 5045.
+
+This first week we will be covering a number of administrative items.
+
+As you see on these this slide in the next few slides,
+
+including a syllabus and an overview of the class description and the goals that we are setting for this class.
+
+And then in fact, we launch into the first couple of chapters of our book called Space Mission Analysis and Design the News mad by microcosm.
+
+I hope you've all had a chance to acquire that textbook.
+
+It is different than previous editions of SMD, so please be sure you have this big £7 book that's quite heavy, has a lot of material in it,
+
+most of which we will cover in some amount of detail, varying detail depending upon the subject,
+
+some of which we will not spend a great deal of time on.
+
+Because this is an engineering class, and my intention is to focus on the technical and engineering aspects of space,
+
+mission analysis, as well as design some of the concepts.
+
+I will be quickly looking over our cost analysis and administrative type functions,
+
+which for this class are going to take a second seat to the engineering and technical topics.
+
+So let us proceed on. Take a look through this first few, these first few slides.
+
+You'll see where we're going.
+
+The syllabus is relatively dynamic and that as I come across new material, updated material things that I think we should emphasize,
+
+I may in fact, from time to time change the syllabus around just a little bit.
+
+But in any event, let's get started with space mission analysis and design.
+
+Okay. Here is a description of what we're going to be doing in this class.
+
+And remember that this is an engineering class.
+
+As I mentioned in the very first slide that we'll be looking at.
+
+But in a very high level,
+
+some of the information in this mad textbook that is not really geared toward the engineering aspects that I want to emphasize.
+
+Uh, we'll be covering briefly such things as the management and cost accounting types of things,
+
+but only in so much as they apply to the analysis of our mission itself.
+
+But basically, what we need to do is start off with what the mission requirements are.
+
+What are we trying to do with our space mission? Those mission requirements are generally for engineering people,
+
+broken up into specifications and configuration control documents and things like that.
+
+So we'll be discussing mission requirements and how we identify those requirements,
+
+what we do with them and then how they are implemented in the design.
+
+The next thing we'll be looking at is the environment in which the satellite or other space mission is going to operate.
+
+What is that environment going to do to the design?
+
+Are we going to have to deal with thermal issues or long range communications and things like this?
+
+In order to understand the environment, we're going to need to look at the orbit.
+
+And if we're flying more than one satellite that has to work with other satellites,
+
+then we're going to need to talk about a constellation of satellites.
+
+So orbit and constellation considerations are very important in order to meet our mission objectives.
+
+So that's going to be a very important subject to discuss.
+
+And then of course the subsystems that make up the spacecraft subsystems include such things as communications,
+
+uh, thermal control, propulsion, attitude control, attitude determination.
+
+All these subsystems must work together in order for the spacecraft or the satellite to meet the mission objectives.
+
+So payload design is going to be a very, um, intense discussion about our space mission analysis.
+
+How do we design that payload? Um, according to that, also the subsystems will include propulsion, as I mentioned, attitude determination and control.
+
+How are we going to know where to point this, these satellite or spacecraft.
+
+Are we going to know how to get the satellite to a specific place where it can do its mission?
+
+Onboard data processing is going to be necessary because as you will see when we talk about communications for some missions,
+
+the communications time that the satellite has in view of the ground station is going to be very limited.
+
+So if there's a lot of data that has been collected in order to meet these mission requirements,
+
+that data is going to have to be transmitted to the ground to the users in a very short time.
+
+Well, how do we do that? Perhaps we should process some of that data on the spacecraft before we try to send it to the ground,
+
+in order to limit the communications requirements,
+
+we're going to need, of course, a power supply to generate electricity to perform mission requirements such as imaging,
+
+communications, attitude control, things like this.
+
+So power supply requirements as a subsystem are very important.
+
+And then next, certainly not last or least is the thermal and structural issues dealing with building our spacecraft.
+
+How well will that spacecraft have to deal with thermal issues?
+
+Will it be in the sun most of the time,
+
+or it's going to have to reflect a lot of heat so that it doesn't overheat the internal components of the spacecraft?
+
+Or if the spacecraft goes into eclipse periods where it's no longer heated by the sun,
+
+how are we going to keep it warm enough to carry out its mission requirements?
+
+Is the structure sufficient to maintain integrity of the spacecraft during the launch?
+
+During the early orbit operations, during subsequent orbit changes and things like this where will certainly be known.
+
+Necessary to in order to design the structure to maintain the integrity of the payload.
+
+So all of these things go into making up the structure and therefore the method by which our missions requirements are met.
+
+So we'll just proceed on. And we're going to start looking at some of these mission requirements in the first few chapters of our textbook.
+
+Here is the grading policy for this class for the semester.
+
+As you can see here, there are going to be essentially four major areas of grades.
+
+Homework sets. And before you ask how many homework sets will there be?
+
+Well, typically six, seven, maybe eight throughout the semester.
+
+It's hard to tell. I provide homework when it's necessary to make sure that the concepts have been discussed in the class.
+
+Material need to be, uh, fully explained and experimented with.
+
+So there will be homework sets that may just crop up when we come across material that I think.
+
+Well, wait a minute. We should explore some of the math behind this or some of the other concepts.
+
+Typically, as I say, however, there should be homework about every other week.
+
+We'll also have the midterm exam. As you can see, this is a take home exam.
+
+Of course, since this is an online class, the exam will be provided as incidental as the homework.
+
+I'll provide the exam on the Sunday evening prior to a week of material reading so that as you read through the material,
+
+you'll see the homework, how it applies to the material and for the exam.
+
+As you read through the exam, you will see backwards how the exam material reflects the information that we've already covered.
+
+So the midterm exam will cover, of course, the first eight weeks or so of class,
+
+the final exam, obviously another take home exam will cover the material since the midterm.
+
+However, since during the first part of the semester, we will be developing tools to use during our space mission analysis.
+
+And because of that, the final exam will make use of those tools to cover the material since the midterm exam.
+
+So that in a way, in a nutshell, is the way the final exam will be.
+
+Both of those exams, incidentally, will be one week in duration.
+
+As I mentioned, they will be posted on the Sunday evening prior to a week of material or exam work.
+
+They will be due no later, no later than 5 p.m. Mountain time on the Monday following the Sunday in which they have been posted, plus a week.
+
+So let me make that clear. It didn't appear clear to me.
+
+I will post the exams and the homework on a Sunday evening.
+
+You will have one week to work on the homework and the exams following that week.
+
+The homework and or exams will be due no later than 5 p.m. on the Monday.
+
+So that's one week plus a few hours, and then the exams and homework will be due no later than 5 p.m.
+
+Should you be on travel or other extenuating circumstances for either the homework or the exams?
+
+You must let me know as soon as possible so that we can reschedule for you when those items will be due.
+
+If there's no rational reason for the exams being late,
+
+then I'm fortunately to make sure that everything is done according to the graduate school requirements.
+
+We need to consider a deduction in the points, and I will have to deduct like five points for each day that you might be late.
+
+If there have been no prior discussions about rescheduling,
+
+and I think you will find this kind of typical with classes is that they are due when they are due,
+
+and if there is no reason for delaying that, then there has to be some kind of a deduction.
+
+The term project will round out the four major areas of grades for the semester.
+
+The term project is in the form of a term paper, which will be a reverse engineering of an existing space mission,
+
+or a new space mission that may not have ever been done, but you think that it would be interesting to do.
+
+And so in that case, you would produce a top level discussion of the requirements for the mission and how that mission would be accomplished.
+
+So two two separate ways of attacking this term.
+
+Project one is a complete reverse engineering of the as built space mission that may be in existence or have already been in existence,
+
+and reverse engineer how it got back to the requirements.
+
+So that's one way. And the other one is, as I mentioned, a new mission that you have thought of.
+
+That would be interesting, in which case you apply the tools that we will have learned in this semester to designing at a top level the space mission.
+
+So those four items homework, midterm, final and term project equally contribute to the final grade.
+
+Below on this slide you will see the grade scale that is used by the SPC department.
+
+And this will be held to in our class also.
+
+So each assignment whether it's homework or midterm will be graded in the term of points.
+
+The points then will be added and referred back to this scale at the conclusion of the semester.
+
+So with that, let us continue on with our space mission analysis and we'll be looking at the schedule next.
+
+And as I mentioned before, the schedule is pretty much to be adhered to.
+
+But occasionally I will slide things around a little bit when I come across information that I think necessitates
+
+delaying a scheduled topic so that we can go on and discuss in more detail some new type of information.
+
+So let's take a look now at the schedule. Continuing on with our overview.
+
+I just want to point out that, as usual, the slides are a top level view of the material that we're going to be presenting,
+
+and I will be augmenting much of the material with narrative,
+
+and I will be adding from time to time material that I've collected from other sources that is germane to our study.
+
+So the textbook is essentially the basis for our class, but it will be augmented by a great many other things as we go through.
+
+And I do invite you, as you are certainly engineering students, as you come across information that you think might be pertinent to our class.
+
+Please send it to me and I'll consider adding it, and we'll press on from there as it shows on this slide.
+
+We will be requiring some type of mathematics to understand how to analyze and design our space mission.
+
+I'm not looking for a major, uh, course of study person from calculus, an advanced mathematics or advanced physics.
+
+But certainly by this time you have all been exposed to and become somewhat familiar with basic differential equations.
+
+And the reason for that requirement is that when we start talking about orbital mechanics, we're talking about velocity and position and time.
+
+And as all you all know, the first derivative of position.
+
+The is velocity, the next derivative of that second derivative of position D2X over dt squared is acceleration.
+
+All of those concepts deal with orbits.
+
+And orbits of course are required for our space mission.
+
+So to that extent, be familiar with the ability to at least take a couple of differential equations from now, from time to time.
+
+Basic physics means that you have an understanding of power and force and acceleration, Newton's laws and things like that.
+
+So that's the type of physics that we'll be discussing as we go along.
+
+That's about it as far as the requirements are concerned.
+
+Continuing on with her over the overview.
+
+Homework and exams for the class may require the use of some type of computer tools, such as Excel or Matlab or math,
+
+CAD, etc. or you can certainly do things by hand if you choose to use a computer tool such as those mentioned here,
+
+please include that code or the Excel spreadsheet as an appendix to your homework so that if our answers differ,
+
+I can take a look at your computer program or the tool that you use to see where our answers differ and try to figure out what happened there.
+
+If you're doing things by hand, certainly you can do that. And the only thing I would request then is be sure that the math that you include, uh,
+
+on your homework paper is sufficiently clear so that I can follow the steps through.
+
+And that's essentially, of course, what I would be doing with the computer tools.
+
+And also the final exam, as it shows here, is going to relate to items covered after the midterm exam.
+
+And the midterm exam will focus on the information that we are using to build the tools,
+
+or to fill our toolbox with the correct tools to be able to do the space mission analysis,
+
+uh, for various types of missions, which will be focusing on in the second part of the class.
+
+The next bullet just says that these slides are certainly talking points.
+
+I will be augmenting the slide material and the textbook material with sources of information that I come across from time to time.
+
+And I would certainly invite you, if you find information that you think is appropriate to the class,
+
+send it to me and I'll see about including it in the in the class notes or as an additional, uh, posting.
+
+So the idea here is we're all in this together, and I know each of you has a different background and may,
+
+in fact, have information that everybody else would like to benefit from and share.
+
+I will also, from time to time, be including web pages.
+
+But primarily what I'll do in that case is just provide the link to those web pages.
+
+In that case, then you can go use the link to find the material yourself.
+
+I won't bother trying to copy it.
+
+A lot of things are happening in the field of space mission analysis now nowadays, so there will be a lot of new information that comes almost weekly,
+
+and I try to include all that pertinent information so that our mission
+
+analysis stays up to date with what's going on in this field of space missions.
+
+You will notice from the syllabus that at the very end of the semester, there will be a term paper, uh, otherwise known as term project.
+
+And as it shows on this slide, the topic is your choice based on the principles that we've discovered in our space mission analysis discussions.
+
+So you can choose to do this term paper in one of two flavors.
+
+One flavor is to take an existing space mission that you might read about or be interested in, and reverse engineer it.
+
+That means go back to the mission requirements for that specific mission and applying the tools that we developed during the class.
+
+Reverse engineer the final product all the way back to the mission requirements so that you can say,
+
+uh, this is why they use a particular communication system.
+
+This is why they designed, uh, they used a specific orbit for the mission.
+
+So that's the flavor I'm looking for. It's not a book report.
+
+It's a reverse engineering. Why? The system ended up as built based on the mission requirements.
+
+The second flavor of the your term paper is to come up with a mission that's interesting to you that may not be in existence.
+
+Something that you might want to do around the Earth, around some other planet in our solar, you know,
+
+solar system type mission, but come up with some kind of mission that would be interesting to you.
+
+Apply the tools that we have developed during the term to a high level.
+
+Discuss where you would put this mission, how you would get it there.
+
+What type of payload it's going to carry, all the constraints necessary to accomplish that mission.
+
+Dealing with power, uh, propulsion, thermal and structural analysis.
+
+This would be at a high level. You certainly don't need to go down to the nuts and bolts,
+
+but I would like to have a discussion of why you chose a particular communication frequency.
+
+What kind of power level you think you might need in that communications system to get from wherever your mission is to the Earth.
+
+How often you need to be in contact with the ground.
+
+So that would drive how much on boards there?
+
+Uh, data storage you would need things like that.
+
+Just envelope type discussion. So that's the second flavor of the term paper.
+
+As you see, the rest of the discussion here on this page simply says that I would like to know by shortly after
+
+the midterm what the topic is that you think you would be interested in doing for one of two reasons.
+
+One is, I want to make sure that there aren't so many people doing the same thing that, um, they are going to be, uh, essentially duplicating effort.
+
+Another reason is that I want to make sure that I know there is enough information out there for you to be able to do a good job at your term paper.
+
+And, uh, third reason is I want to make sure that there is not too much data available that would require you to down scope your project to,
+
+for example, uh, looking at, um, observation satellite.
+
+You may end up with a satellite that has, uh, um, great many different.
+
+Observation sensors on board. If you tried to do a reverse engineering of all of them, you would end up with hundreds of pages of documentation.
+
+So if there's too much information available or too many different sensors,
+
+for example, I suggest that you down scope down to a few sensors or 1 or 2,
+
+even so, that you can do a really good reverse engineering job without having to spend the rest of your life doing the project.
+
+So that's the type of thing I'm looking for. Pardon the dogs as it shows on the rest of this slide.
+
+Approximately 15 pages, more or less, with um, footnotes and charts and mathematics support added as appendices to your report,
+
+and make sure that you do it in a format which is a professional in nature,
+
+so that you would be pleased to submit this as part of a performance review to your supervisor,
+
+or to your academic supervisor as a potential thesis project.
+
+It doesn't have to be a thesis, but it has to be a professional type of presentation.
+
+You can use whatever typical, uh, typical format you want, whether it's an AI, triple,
+
+standard AI, or any other type of formatting standard that you are comfortable with.
+
+That doesn't particularly bother me which format you use, and the project will be due after the final exam being turned in.
+
+So I normally ask for the final exam to come in two weeks prior to the end of the term and the final term project one week prior to the semester end,
+
+so that I have time to review all of those items before the end of the semester.
+
+So there you are. That's a high level overview.
+
+We will be discussing the term project in a much more detail later on in the semester.
+
+As you see on this slide, you may certainly contact me at any time if you have questions on the homework or the material.
+
+Anything that you need to clarify for this class, please contact me either at this email address or in fact,
+
+if it's a little more urgent or you require some discussion back and forth rather than doing it by email,
+
+please feel free to call me at the phone number you see here.
+
+Additionally, I have in the past made use of Skype to converse with students from time to time, and sometimes that helps too.
+
+So either way, please be sure that you contact me if there's anything that you need to have clarified in the way of questions or material.
+
+That's what an instructor is for. So let's press on.
+
+The first chapter in the textbook is at a very, very high level for this class,
+
+but it does set the stage for much more detailed discussions that will be carrying on afterwards.
+
+So if you look through it, you will see that there is a discussion on the so-called TRL levels.
+
+If any of you are actually in the business of working for space mission companies, you will know that of course,
+
+a particular space mission and the equipment that is used for that mission, some of it is very state of the art.
+
+Some of it may also already have been space qualified.
+
+All of this type of information goes into the discussion of the technical readiness level of a particular mission.
+
+And so that's one of the things that is important. And understand that there is such a thing.
+
+And as we go through our mission analysis, you will see how it all relates to the risk involved in carrying out the mission.
+
+Also notice on the inside cover of the text is a website address and a password
+
+to interactive tables that are associated with the material in this textbook.
+
+If you see such a notation as shown here on this slide, then you can go to that website,
+
+find the interactive table or calculation and use it for your information or for it perhaps for some homework assignments.
+
+Now I must also add that some of the interactive items do not work correctly.
+
+I have contacted the publisher and I have copies of the correct interactive uh, tables and figures, etc.
+
+So as we go along, I will be of course looking at the assignments that you are going to be working with.
+
+And if I know that there is an interactive table or figure that doesn't work out of the textbook linkage,
+
+I will in fact include that on canvas or as part of the assignment for the homework.
+
+But please do take a look at all these interactive tables, because they allow you two very different parameters in the design of,
+
+for example, communications or thermal or of imaging types of systems.
+
+And you can vary the parameters and see what happens if you are trying to accomplish a specific mission.
+
+Vary the parameters and see how much propulsion you might need if you double the weight.
+
+Uh, for example, of the payload. So these are very interesting things,
+
+and certainly something that you can keep as reference material if you are in fact in the business of designing space missions.
+
+This table shows a list of.
+
+Not an exhaustive list, but at least a list of some of the most major astronautics and professional societies dealing with space missions.
+
+If you have not joined or do not, are not a member of any of these, um, technical and professional societies, I would strongly encourage that.
+
+If you intend to use space mission processes in the future or at the present time.
+
+Some of them are quite interesting and have regional as well as global meetings, of which there are a number of papers presented.
+
+Those papers are also available through downloads.
+
+So a lot of these things have very good information.
+
+I belong to quite a number myself, even though the cost is not cheap.
+
+But nevertheless the papers and the material available through these professional societies
+
+is quite good and does provide you with a really good background for your career.
+
+Okay. Next week you're already behind. So next week you need to really catch up on your reading.
+
+I know there's a lot of reading to be done in these first couple of chapters, first few chapters,
+
+but it's all provides you with the background necessary to be able to carry on with the more technical details that we will be coming across very,
+
+very soon. So catch up on your reading.
+
+Don't let it go. Read through as much as you can on the details.
+
+Look at the information that's available on the slides and in the textbook.
+
+Don't forget that inside the front cover of your textbook is a website that leads
+
+you to the ability to work with these interactive tables and figures in the text.
+
+We will be using that capability as part of the toolbox that we will be developing during this first semester, first part of the semester.
+

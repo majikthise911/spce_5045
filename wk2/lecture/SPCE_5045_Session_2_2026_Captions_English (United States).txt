@@ -1,0 +1,637 @@
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Okay, here we are with week number two. We're going to start off this class with, uh, discussion of the space mission concept definition.
+
+We're going to define what it is or what we want to do for this mission.
+
+We're going to have to then analyze the mission to see how we're going to do it,
+
+not just what we're going to do, but let's come up with some ideas on how we might accomplish the mission.
+
+Amongst those ideas, there will be several alternatives that we're going to need to look at based on cost and schedule and difficulty.
+
+And so we'll come up with some trade studies that will help us define the way we're going to proceed with the mission.
+
+And then once we get all those things settled, we're going to come up with some detailed requirements,
+
+processes, how we're going to go ahead and proceed with the development of the mission of the mission,
+
+all the various formal requirements that will need to be accomplished over a given timeline,
+
+so we can check up on the process and the progress of our mission development.
+
+I will also then look into the specifications, their formal specifications, um, for developing any kind of a program.
+
+Space missions have specifically, uh, space oriented specifications.
+
+And we'll look at those. And then lastly, we'll talk about some of the standards that are available by which you can judge the performance and the
+
+progress of your system as it goes from the mission analysis to trade studies all the way to production.
+
+These first few chapters up through and including chapter 6th May seem like just a lot of reading,
+
+and they're not really particularly engineering oriented,
+
+except for the fact that they lay the groundwork for the technically detailed mission requirements and system design attributes.
+
+So we'll be looking at from then on. But you need to be aware of what the ground rules are, all the requirements for specific types of space missions.
+
+And that's what's discussed in these first six chapters.
+
+They look like they're more administrative in nature.
+
+But I guess you you might be right in that, because no mission is really it's strictly a technical mission design.
+
+You have to be doing that design in view of other constraints such as funding and requirements, timelines, trade studies.
+
+And that's what's discussed in these first six chapters.
+
+So read through these chapters, looking at the tables, looking at the highlights of how space missions are actually run.
+
+And then beginning in chapter seven, we'll start talking about the actual engineering aspects of it,
+
+dealing with the environment, etc. that the space mission has to operate in.
+
+That's not very good English, but that's the way it is in any event.
+
+Um, please do read through these things. There's a lot of pages involved, but the important things to remember are summarized in the tables,
+
+and that's the type of thing you should be aware of.
+
+And, uh, in your job as being a mission designer.
+
+The textbook uses as an example of a space mission, a hypothetical system called Viasat.
+
+It was originally proposed some years back, but at that time it was going to be pretty expensive to build,
+
+so it was never really built in the form that you will read about in the text.
+
+Nevertheless, the concepts of Behind the Fire Sad mission are part of the normal space mission type of process development process.
+
+So here's a graphic that shows basically how the mission concept takes into account a
+
+number of different things that we're going to have to consider not only for Viasat,
+
+but for all space missions. So take a look at this graphic.
+
+Read the section in the book that deals with the space mission architecture,
+
+so that you see how all these various pieces and parts will come to play in defining the mission itself,
+
+and then proceeding toward the development activities. This slide simply shows some of the things behind the concept, exploration and definition here.
+
+For example, on the left side of the chart,
+
+it shows the various needs that have to be accomplished because not to generate the potential requirements based on all these various things.
+
+And so on the right hand side of this slide. And it talks about the concept development in order to satisfy those needs, the potential requirements.
+
+This table in your book on page 74 outlines some of the problems associated with space mission analysis, particularly the timelines required.
+
+If you look just at the very first line. A particular mission will have certain funding issues associated with it,
+
+but at the same time, and often in conflicting um situations, are when it is required.
+
+For example, way back in the Voyager spacecraft days, the alignment of the planets in the solar system to enable the Voyagers to,
+
+um, pass by all of the planets in the outer solar system.
+
+Was very stringent. It was only going to happen every 100 years or so.
+
+And so there was a very hard date that was required to have that system ready.
+
+If it wasn't ready at that time, the entire mission would have been scrapped or at least severely downscale.
+
+So the need date is a definite issue when you're designing a mission.
+
+You must, as an engineer, then be able to tell the users that by if they need the system by a specific date,
+
+that there are going to be constraints on the mission payload or other technical parameters.
+
+This is all part of the space mission analysis. Funding also, of course, is a big issue.
+
+Just recently there have been some spacecraft programs that NASA is coming up with that.
+
+Um, when they were started were quite grandiose, if you will, in their design requirements.
+
+But funding has limited the number and type of different sensors to be put on the various spacecraft.
+
+So here's your juggling situation. The users require certain types of data for their mission, at least in their minds, to be satisfied.
+
+And as an engineer, it's the job to accommodate all those needs,
+
+and yet be realistic enough to know that they have to be met within funding constraints and specifically mission timelines.
+
+So if you look at the rest of this chart, you'll see some of the other conflicting requirements that are necessary.
+
+I think you all have come across some of these things in your daily life, but here it is spelled out that there is no free lunch.
+
+As an engineer, you may be called upon to perform a quick look at a particular mission to see whether, in fact, it is even feasible to do that.
+
+If you look at this slide, you'll notice that it's divided essentially into two different sections.
+
+The top part is the quick look with the limited detail.
+
+And then the next part is more detailed complex trade studies.
+
+So if we look at the feasibility assessment,
+
+you may be asked as an engineer to quickly determine whether some particular mission is even possible to do.
+
+And if it is how much approximately this is called back of the envelope type of discussions.
+
+I'm sure you've all run into this before,
+
+but just give me a quick back of the envelope cost and weight estimation so that the mission designers can have something to go on,
+
+and the managers can, in fact determine whether this this particular mission is even possible within budget constraints and time constraints, etc.
+
+Once you have past that type of benchmark, then the next step would be to take those back of the envelope calculations.
+
+And now let's perform some more detailed trade studies to see whether there are some
+
+alternatives that might still allow the mission to be accomplished within different,
+
+and perhaps cheaper budget constraints or timelines.
+
+So this chart does provide a a way of looking at a mission at a high level.
+
+And then okay, it looks like it might be workable.
+
+So let's go on and get some more detail to see whether, in fact,
+
+our back of the envelope calculations really will help us come up with a reasonable, uh, estimate on the time and cost of this mission.
+
+If you look carefully through the information on this slide, most of it will make sense to you.
+
+For example, some of the system drivers that will determine the cost and schedule and things like that are shown on the left hand side of the chart.
+
+The simplest ones are how big is this spacecraft going to be?
+
+That, in fact can drive the, uh, be limited by the shroud that goes on the top of the rocket.
+
+The available throw weight of the booster.
+
+In other words, how big of a booster can we get? How much is that going to cost?
+
+And things like that on orbit weight. How are we going to control the attitude of the spacecraft?
+
+How are we going to, um, achieve the desired orbit?
+
+And a number of other things that you can see are, in fact, logical system drivers all the way down to the bottom one about operations.
+
+Who's going to run this thing, who's going to monitor it, where are the ground sites going to be?
+
+How are we going to get data from the ground sites back to the control center?
+
+All these things are system drivers for any space mission.
+
+As part of the job of a space mission engineer,
+
+one of the types of things you must always be looking at are alternative architectures to accomplish the mission.
+
+Here are five different steps that are typically looked at for alternatives.
+
+If you look at a obviously the ability to identify those particular elements of the mission that can be subject to trade studies, maybe.
+
+And as a chosen B, you can identify some main options for each of these elements.
+
+So there on the table, if you look at the rest of these things on this chart,
+
+you'll see that now it's the job of the engineer to look at the trade studies, the available options, try to eliminate unrealistic combinations.
+
+Remember talking about a mission that is most likely very complex.
+
+So just because a particular subsystem might be subject to trade study where you could reduce
+
+the cost or the power or the weight that might have impact on some of the other subsystems.
+
+So it's important to look not just that a, you know, at a microscopic view, but as a macroscopic view of the entire mission,
+
+and then look for other alternatives that can, in fact, have a big impact on how the mission is accomplished.
+
+From the generic trade study table.
+
+On the preceding slide, we now look at for specifically the case of the fire set example.
+
+And here are some of the trade study areas that we would look at for this mission
+
+that the textbook follows from the onset of the mission throughout the end of it.
+
+You'll notice also that the appropriate chapters in the book are also noted here, and we will eventually get to all of those.
+
+So take a look at this. You might even one nail this up on your wall.
+
+So that as we proceed through the text, you can see how we relate back to these various areas for system trade studies.
+
+This is a good summary of some areas in which trade offs can be achieved, and you'll see that some of them can and some of them can't.
+
+For example, yeah, the mission concept, it's open to some alternative approaches for accomplishing the mission.
+
+But the basic subject of the mission itself is pretty well designed or defined.
+
+The principal investigator you'll you'll come across this term and in reading, not only in this class but in other scientific endeavors.
+
+The P.I. principal investigator came up with an idea, and that idea was what he used to go solicit funds for his idea.
+
+And if it was approved now at the principal investigator as his marching orders, you came to us with a particular idea.
+
+We approved the idea. Now go off and do it.
+
+And so the Pi is saying, fine, I'll do it.
+
+I know there are trade offs and constraints associated with it,
+
+but the basic goal that I have in mind is well-defined, and that's the direction that we're proceeding.
+
+So yes, the payload can be subject to trade offs.
+
+It can be designed a little bit differently to accomplish the mission.
+
+The bus certainly itself is subject to trade studies, the launch system maybe not so much, because if you end up with a mission,
+
+a payload that is of a specific weight and you're trying to put that payload into a specific type of orbit,
+
+you are today constrained to only certain types of boosters that are available within a cost constraints that you have available to your mission.
+
+Can the orbit be traded off? Well, perhaps, but maybe not so much.
+
+So instead of saying yes, I would kind of put yes, maybe the ground system,
+
+perhaps it could be a trade off between the more frequent data transfers or using,
+
+um, ground stations, ground systems that are shared with other systems.
+
+So you have a scheduling issue there. Can the communication architecture be traded off?
+
+Well, maybe not, because the mission operation may dictate when that's that payload will be in view of the ground stations.
+
+And therefore the communication system has to get the data to the ground station at a specific time.
+
+And the last item on this slide. Can the mission operation itself be subject to a trade study?
+
+Well, yes, perhaps it can. There are certain missions which can be conducted in what's called lights out situations.
+
+That's where the mission itself is.
+
+Um, subject to software being uploaded to, for example, um, an Earth observation mission.
+
+You can upload software commands to the satellites saying at this time you'll be over this area.
+
+And so you need to take this many observations.
+
+And if that timeline is loaded into the satellite, then the engineers can go home and turn off the lights.
+
+However, usually in a lights out situation like that,
+
+there are triggers so that there if there are any anomalies that occur on board the satellite, that the ground station automatically can,
+
+in fact, uh, call one of the engineers by virtue of a beeper or, uh,
+
+message system or something like that, to come and take a look at what's going on.
+
+So lights out operation certainly can be a trade area for mission operations and therefore the cost.
+
+If you don't have to have a crew on duty, that's going to save you money.
+
+Now that you've looked at what the definitions of some of these trade study areas are, here is an example for the fire set system.
+
+And you will notice that it goes into such things as the payload options, the spacecraft bus options, orbit options,
+
+and a number of different trade studies that will be applied as we go through the text to the fire set system.
+
+With all these trade offs that are inevitable in the system design.
+
+Here is a trade process table that looks at some of the parameters that have interaction with other.
+
+Parameters. And if you look in that last column, you'll see that we are have.
+
+Laid out for us in this textbook at least where some of these these issues are discussed in the text.
+
+You'll notice in the Viasat two example, the middle column.
+
+Now we're beginning to get into true engineering aspects of our space mission.
+
+We're looking at orbit issues, power issues, thermal issues, environment issues.
+
+And so this table is the first one so far in the text that we'll give you, as an engineer,
+
+a look ahead as to the types of things that we're going to have to be discuss.
+
+We will be discussing in order to accomplish this space mission.
+
+So this is a look ahead insofar as some of the system trade processes are concerned and their impact on the mission,
+
+and vice versa, the mission requirements and its impact on the trade studies.
+
+Chapter six. In your book, beginning with table six, one identifies the issues that are going to be run across as we develop the requirements process.
+
+You will notice that there are a number of things that are in the subsystem and subsystem requirements.
+
+All these things are based on the fundamental mission objectives as it shows in this slide.
+
+We're going to come up with some constraints, some operational requirements, some functional requirements.
+
+And all of these things need to be identified and satisfied.
+
+We're going to have to identify these requirements and then somehow figure out how to satisfy the requirements.
+
+And you'll notice that typically the requirements are satisfied by one of three different types of things.
+
+Either the function of identifying what has to be done, the performance requirement where we will specify how well that function has to be performed,
+
+and then how are we going to verify that the function is actually operating as it should.
+
+That in turn is broken down into three different parts inspection, test and analysis.
+
+We either have to inspect it like you would with code to make sure that it's working properly.
+
+Testing for hardware, you need to make sure it's going to perform properly.
+
+And then finally by analysis where you want to actually do either inspection or test,
+
+but by reasoning you will look at the identified system or subsystem and say, yes, analytically this thing should work.
+
+Once the concept is validated, we have to make sure that we have tailored our system and segment definitions so that everything fits together.
+
+We're going to look at some preliminary internal interface requirements, sometimes called ICDs, the interface control document.
+
+We're going to look at some of the preliminary standards that we might employ to make sure that the system will function properly.
+
+Look at our preliminary requirements and how they flow down into actual hardware and software.
+
+We'll look at integrating the system for testing when we're through by subsystems.
+
+Transition from subsystem testing to system testing.
+
+And look at some validation. Validating technologies some way that we might be able to actually make sure that the testing that we have done is true.
+
+Then the last part of this slide talks about the design and implementation.
+
+We're going to look at the detailed requirements. Now after we've done our preliminary requirements we're going to develop formal design documentation
+
+and interface control that we use for testing and integrating the various subsystems.
+
+Finally, we'll demonstrate and verify the overall system.
+
+And then to complete the process. We'll develop test procedures and reports for subsequent iterations of the system itself.
+
+So here is the requirements baseline. The first thing we need to do is make sure that we know what the customer wants.
+
+So that means we have to know exactly who the customer is.
+
+If you're dealing with a military, you may be dealing with, for example,
+
+Air Force Space Command as a procuring agent, but they may not be the absolute ultimate user.
+
+So you need to understand who the actual customer is and what they want.
+
+Then you need to identify and prioritize their objectives.
+
+And as you evolve heard, sometimes the customer changes their mind in the middle of things.
+
+And that means that the designer has to go back to the beginning or some preceding stage and reinvent things.
+
+So you need to be able to identify the needs and objectives at the beginning.
+
+Define your internal and external constraints. What kind of dollar figure are we talking about?
+
+What kind of timeline are we talking about? The requirements from the customer.
+
+And so as you look through the rest of these things on this particular slide,
+
+you will see all these steps above require some iterations with preceding activities necessary to both make sure that your assumptions are correct.
+
+Make sure your customer hasn't changed his mind somewhere along the line.
+
+Make sure that the technology that you propose is actually achievable.
+
+Don't tell the customer you can do something. Betting on processes that may not have been developed yet.
+
+So all of these requirements form the requirements baseline.
+
+Your book succinctly discusses table 62 on page 107, but it bears repeating that the top level mission requirements there.
+
+There are three basic types of these requirements. As you see in the and the.
+
+On page 107, the functional requirements are those that are levied on us,
+
+that tell us what this system is supposed to do to satisfy the customer, and how well it must do that.
+
+The next type of requirement is the operational requirement.
+
+How is it going to be used?
+
+Is it going to be used by an intermediate customer or public customer or military customer, or is it going to be used only for internal use?
+
+And then of course, the third one is constraints. Do we have cost constraints?
+
+Well, of course we do. Do we have a schedule? Yes we do.
+
+If you may remember, the schedule for that Voyager concept that I mentioned before,
+
+that had to do with the alignment of the planets in the solar system.
+
+That schedule was hard and fast.
+
+There was nothing that could be done to change it. Certainly you're not going to move the planets around.
+
+So schedule is certainly one of those constraints that has to be taken into account.
+
+Regulations. Now here's an interesting thing. There are today regulations that are in place, as you may know, for uh, orbital, uh,
+
+space missions, in that it's been agreed internationally that low Earth orbiting systems,
+
+when they reach their end of life, must be orbited or otherwise disposed of so that the issue of space debris is mitigated.
+
+In fact, a mission ended spacecraft must be orbited within 25 years,
+
+and so that requires us to have an outer space mission design some type of mechanism
+
+to assure that the satellite will in fact deorbit within that time frame,
+
+whether it's additional fuel so that we can cause a a burn of the propulsion system to lower the altitude of the spacecraft,
+
+therefore, it in putting it into more dense atmosphere and causing the drag to decay the orbit rapidly,
+
+or a solar sail that may accomplish the same thing by increasing the drag,
+
+or somehow otherwise putting that satellite into an orbit where it's not going to cause any issues.
+
+Most likely it'll be due orbited for geo, geosynchronous or geostationary communications satellites.
+
+That's a different story. There's so much energy required to deorbit a satellite from that altitude that the accepted way of disposing of
+
+an end of life communications satellite is to boost its orbit slightly higher on the order of 1 or 200km maximum,
+
+into what's called a graveyard orbit that gets the satellite out of the orbital plane
+
+of the geosynchronous geostationary communications satellites that are still active.
+
+And yet it doesn't require so much additional propellant to be on board.
+
+That makes the weight of the system, um, a severe issue for the mission itself.
+
+So there are international regulations that are required.
+
+Law and policy must be adhered to politically.
+
+Oh, there's a big one.
+
+As you may know, uh, a lot of the inner planet, inner planets of the solar system, space probes use solar panels for their energy source.
+
+However, that's limited for the, um, the outer planets, the gas giants.
+
+There isn't enough solar energy at those distances to enable a spacecraft to actually function properly.
+
+Therefore, the outer planets have been explored by space missions that use, uh, radioactive power supplies.
+
+RTG as it's called, radio thermal generators.
+
+Those generators use some type of, uh, a rear radiator radioactive decay to generate heat,
+
+which is then turned by thermocouples into electrical energy.
+
+That's a big deal, because there's a lot of, um, pushback for using the plutonium based RTG.
+
+In fact, the Cassini spacecraft and the New Horizons spacecraft, which went off course to Pluto, use those types of power supplies,
+
+and in the mission for those satellites required them to get a gravitational boost to view, if possible, by multiple flybys of the inner planets.
+
+And in fact, the Cassini spacecraft, one on its way to Saturn, passed very close to the Earth.
+
+And there were people who are very vocally concerned about, well, what if that satellite doesn't graze the Earth's gravitational field,
+
+but in fact impacts the Earth and spreads, um, plutonium debris all over the place is very, very toxic material.
+
+And so there was a lot of pushback on, um, to NASA on their choice of that power supply, but there was no other choice.
+
+You couldn't use solar energy at that distance.
+
+So an RTG was the only way to do it. That did cause us a lot of, um, public.
+
+Well, I wouldn't say a lot, but some public outcry about NASA's use of that.
+
+So you have to be aware of the political aspects of your mission, as well as whether it's an international mission or not.
+
+As you may know, for example, communications satellites are in various orbital slots.
+
+The slots above particular countries are subject to auctions.
+
+A country, for example, maybe over in Africa, which has no need for or desire to have communications satellites.
+
+They have, by international law, a reserved spot above their country, which is theirs.
+
+And so if I wanted to put a communications satellite in that particular geographic slot to accomplish some particular mission,
+
+I have to negotiate with that particular country to buy if that particular area of the orbital plane.
+
+So there are a lot of international laws dealing with this.
+
+Recently, the U.S. has made, um,
+
+some headlines because of the satellite navigation systems that are in orbit or will be in orbit that pass over the U.S. for example,
+
+I have a a GPS receiver made by Garmin that also incorporates Glonass.
+
+That's the Russian satellite navigation system. It has that receiver in this little tiny box.
+
+Your new iPhones have a Glonass receiver.
+
+Now wait a minute. The US Federal Communications Commission.
+
+Says that. Well, wait a minute. You can't broadcast signals to us users that aren't licensed by the U.S. FCC.
+
+So there have been some, uh, head knockings about that.
+
+Who owns the right to transmit a radio signal from their satellite down to the Earth?
+
+If it's over a sovereign country, does that sovereign country have the right to say who is allowed to do that or not?
+
+So there are all kinds of constraints in an international world, um, considerations for these types of things.
+
+Let's see. The last one is, of course, the, um, sponsoring organization.
+
+What right do they have? Well, they're paying for this thing, so they have the right to say, oh, we can't afford that,
+
+or I want you to use my money, but I need this particular aspect to be added to your space mission.
+
+So bottom line, there are an awful lot of constraints and requirements that have to be dealt with.
+
+When we're designing a space mission, it's not just an engineer turn loose to accomplish a mission.
+
+There are all kinds of legal things international ramifications, political cost financing and things like that.
+
+They go into the overall mission. In addition to the top level mission requirements that you saw on the preceding slide.
+
+We have the aspects of operability, and that's more engineering than it is scheduling and cost,
+
+etc. so take a look at these aspects of operability and they will become important as we go further into the design of our space mission.
+
+Rather than simply reiterate what's all in section 6.6.
+
+I just direct you to take a look at some of the the extra tabs on the textbook where you can go look at some of these standards.
+
+There are quite a few of them that, as you can see reading through this section,
+
+it's most of the hardware testing actually ends up traceable back to the National Institute of Standards and Time up in Boulder, Colorado.
+
+That is where most of the electrical and time standards are kept.
+
+In fact, electrical and radio frequency testing equipment all must be traceable back to the nest standards for any type of production type of system.
+
+It is through these developments of the standards that we can assure our customer
+
+that the device that we are going to build the spacecraft functioning well,
+
+in fact, meet their requirements. Okay.
+
+So far, we've discussed some of the administrative aspects in dealing with mission analysis and design for our space systems.
+
+So with these rules and guidelines and considerations in our back pocket,
+
+now it's time to get on to the the enjoyable parts of the textbook where we started looking at the detail,
+
+the engineering aspects of space mission analysis.
+
+Chapter seven and eight deal with the space environment and that includes radiation, solar pressure,
+
+all kinds of interesting things that we have to be concerned with as we take a requirement from
+
+our users and generate space mission design satellite designs based on those requirements.
+
+So chapter seven deals with that. Chapter eight is uh, goes into how we select the appropriate orbit for our our space mission.
+
+And in order to do that, we have to cover some of the basics dealing with orbit orbital mechanics.
+
+That's nothing that's severely, um, detailed or difficult to handle, but it's information that we need to know.
+
+And developing our toolbox for how we go about building and flying a space mission.
+
+So there will be some mathematical homework dealing with chapter eight, but only that which is necessary,
+
+so that you get a good idea of the considerations necessary to, uh,
+
+satisfy the mission requirements and select the appropriate, uh, orbit, altitude, timing, etc.
+
+And these are dealing with Kepler's laws as well as the Newtonian physics.
+
+So be careful when you read chapter eight not to gloss over some of the math.
+
+I'll have some examples that will be added in chapter eight, uh, to chapter eight in our class notes for next week.
+
+And after you have digested the information from chapters seven and eight, then I will,
+
+um, ask for you to apply some of that information in the way of homework.
+
+So I'll be issuing the homework simultaneously with the reading material,
+
+but certainly go through the reading material and the class notes first before you tackle the homework.
+
+The homework one will not be that, uh, lengthy or difficult.
+
+That wouldn't give you time to read first and then do the homework.
+
+So chapter seven and eight don't get too far behind, because now we're getting into the engineering aspects of our space mission analysis,
+
+analysis and design, which of course is the basic purpose of our class.
+

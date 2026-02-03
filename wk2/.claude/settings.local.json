@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get directory structure with sizes)",
+      "Bash(dir /s \"C:\\\\Users\\\\jclay\\\\Desktop\\\\main\\\\code\\\\spce_5045\\\\wk1\")",
+      "Bash(xargs:*)"
+    ]
+  }
+}
