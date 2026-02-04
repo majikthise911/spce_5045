@@ -15,6 +15,55 @@ It's structured in phases that follow the natural problem-solving flow: understa
 
 ---
 
+## Overview
+
+This tutorial covers multi-stage rocket sizing—a foundational topic in space mission engineering. You'll learn how to determine the number of rocket stages needed to reach orbit from different celestial bodies, compute total rocket mass using a simplified staging model, and derive a general formula that reveals the exponential nature of rocket mass growth.
+
+### Topic Dependencies
+
+```mermaid
+flowchart TD
+    A[Delta-V Concept] --> B[Stage Counting]
+    B --> C[Mass Rule Application]
+    C --> D[Total Mass Calculation]
+    D --> E[General Formula Derivation]
+    E --> F[Verification & Sanity Checks]
+
+    G[Ceiling Function] --> B
+    H[Payload Definition] --> C
+    I[Geometric Progression] --> E
+    J[Tsiolkovsky Equation] -.->|"Connection"| E
+
+    subgraph "Core Problem Flow"
+        B
+        C
+        D
+        E
+    end
+
+    subgraph "Prerequisites"
+        A
+        G
+        H
+    end
+
+    subgraph "Validation"
+        F
+    end
+```
+
+### Big Picture
+
+The central challenge of spaceflight is this: rockets must carry their own fuel, but that fuel has mass, which requires more fuel to lift, which has more mass... This creates an exponential relationship between the velocity change (delta-V) a rocket needs and its total mass. In this tutorial, we explore this relationship through a simplified staging model where each stage's mass equals everything above it plus the payload. This model, while not physically exact, captures the essential truth: **escaping deeper gravity wells costs exponentially more mass.**
+
+By the end, you'll understand:
+- Why we need multiple stages (and how many for different destinations)
+- How mass compounds through a rocket stack
+- The mathematical formula $M = m_p \times 2^n$ and why it works
+- How this connects to the real Tsiolkovsky rocket equation
+
+---
+
 ## Prerequisite Definitions
 
 Before diving in, let's nail down precise definitions for every term you'll run into. Having these down cold will save you a lot of confusion later.
@@ -60,6 +109,12 @@ Before diving in, let's nail down precise definitions for every term you'll run 
 
 ## Phase 1: Understanding What the Problem Asks
 
+### Analogy
+
+Think of delta-V like the **total distance a car can drive on a full tank of gas**. If you need to drive 300 miles and your car gets 100 miles per tank, you'll need to stop and refuel 3 times (or carry 3 tanks). But here's the twist: imagine your car gets heavier the more fuel tanks you carry, and heavier cars burn fuel faster. That's the rocket problem—except instead of getting slightly worse mileage, rockets face an exponential penalty.
+
+The "3 km/s per stage" in our problem is like saying "each fuel tank gets you 100 miles." If your destination requires 260 miles, two tanks (200 miles) won't cut it—you need three, even though you'll have 40 miles of range left over when you arrive.
+
 ### Guiding Questions
 
 1. **What does it mean for a single stage to "provide" 3 km/s of delta-V?** Think about what physical property of the stage (propellant fraction, exhaust velocity, etc.) determines this number. For our purposes, we're taking it as a given — each stage contributes exactly 3 km/s, regardless of size.
@@ -92,9 +147,40 @@ They build on each other sequentially: Problem 1's output feeds into Problem 2, 
 
 At its core, this problem is about **exponential growth** — a concept that shows up everywhere in space mission design. The mass rule creates a geometric progression where each stage doubles the total, and that's why getting to orbit from a high-gravity body like Jupiter demands an absurdly massive rocket.
 
+### Practice Questions
+
+**Q1.1:** Mars requires approximately 3.8 km/s of delta-V to reach orbit. If each stage provides 3 km/s, how many stages are needed?
+
+**Q1.2:** A small asteroid has an escape delta-V of 0.5 km/s. How many stages would our rocket need?
+
+**Q1.3:** Venus requires about 9.2 km/s to reach orbit. Calculate the minimum number of stages.
+
+**Q1.4:** If we improved our engine technology so each stage provides 4 km/s instead of 3 km/s, how would this change the stage count for Earth (7.8 km/s)?
+
+<details>
+<summary><strong>Answer Key</strong></summary>
+
+**A1.1:** $n = \lceil 3.8 / 3.0 \rceil = \lceil 1.27 \rceil = \boxed{2 \text{ stages}}$
+
+**A1.2:** $n = \lceil 0.5 / 3.0 \rceil = \lceil 0.167 \rceil = \boxed{1 \text{ stage}}$ (one stage is more than enough)
+
+**A1.3:** $n = \lceil 9.2 / 3.0 \rceil = \lceil 3.07 \rceil = \boxed{4 \text{ stages}}$
+
+**A1.4:** $n = \lceil 7.8 / 4.0 \rceil = \lceil 1.95 \rceil = \boxed{2 \text{ stages}}$ (down from 3 stages—better engines make a big difference!)
+
+</details>
+
+### Spaced Review Prompt
+
+📅 **Return to this section in 2 days:** Without looking at the notes, write down (1) the formula for calculating the number of stages, (2) the stage counts for Moon, Earth, and Jupiter, and (3) explain in one sentence why we use the ceiling function instead of rounding.
+
 ---
 
 ## Phase 2: Solving Problem 1 -- Number of Stages
+
+### Analogy
+
+Imagine you're climbing a ladder where each rung is exactly 3 feet apart. If you need to reach a shelf that's 7.8 feet high, how many rungs must you climb? Two rungs get you to 6 feet—not high enough. You must climb to the third rung (9 feet), even though you'll overshoot by 1.2 feet. You can't climb 2.6 rungs; rungs are discrete. The ceiling function captures this: $\lceil 7.8/3 \rceil = 3$ rungs.
 
 ### Guiding Questions
 
@@ -147,9 +233,46 @@ This is an exact division: 14 x 3 = 42 km/s exactly. No excess delta-V. Note: $\
 
 This phase is straightforward arithmetic, but it sets up the critical inputs for Problem 2. The number of stages grows linearly with the delta-V requirement, but as we'll see next, the *mass* grows exponentially. That gap between linear and exponential scaling is one of the deepest insights in rocket engineering — it's why Tsiolkovsky called rockets "cruel" machines.
 
+### Practice Questions
+
+**Q2.1:** A mission to Titan (Saturn's moon) requires 10.5 km/s. How many stages are needed?
+
+**Q2.2:** What is the minimum delta-V requirement that would necessitate exactly 5 stages? What is the maximum?
+
+**Q2.3:** If we had an engine providing 5 km/s per stage, how many stages would Jupiter (42 km/s) require? How does this compare to the 3 km/s case?
+
+<details>
+<summary><strong>Answer Key</strong></summary>
+
+**A2.1:** $n = \lceil 10.5 / 3.0 \rceil = \lceil 3.5 \rceil = \boxed{4 \text{ stages}}$
+
+**A2.2:**
+- Minimum: Just above 4 stages worth = just above 12 km/s → **12.01 km/s** (or any value > 12)
+- Maximum: Exactly 5 stages worth = **15 km/s**
+- Range: $12 < \Delta V \leq 15$ km/s requires exactly 5 stages
+
+**A2.3:** $n = \lceil 42 / 5 \rceil = \lceil 8.4 \rceil = \boxed{9 \text{ stages}}$ (compared to 14 stages with 3 km/s engines). Better engine performance dramatically reduces stage count.
+
+</details>
+
+### Spaced Review Prompt
+
+📅 **Return to this section in 3 days:** Calculate the number of stages for a hypothetical super-Earth requiring 12 km/s, then for a gas giant requiring 35 km/s. Check your answers against the ceiling formula.
+
 ---
 
 ## Phase 3: Understanding the Mass Rule (Problem 2 Setup)
+
+### Analogy
+
+Imagine stacking people for a human pyramid. The rule is: **each person must be strong enough to support everyone above them.** If the top person weighs 100 lbs, and each person below must match the total weight above them:
+
+- Top person: 100 lbs
+- Second person: must support 100 lbs, so they weigh 100 lbs → running total: 200 lbs
+- Third person: must support 200 lbs, so they weigh 200 lbs → running total: 400 lbs
+- Fourth person: must support 400 lbs, so they weigh 400 lbs → running total: 800 lbs
+
+Each level doubles the total! This is exactly what happens with our rocket stages—each stage must "carry" everything above it, and the problem's mass rule creates this doubling pattern.
 
 ### Guiding Questions
 
@@ -232,9 +355,56 @@ This is a **geometric progression** with common ratio 2.
 
 The doubling pattern is the key insight here. Recognizing it turns an iterative stage-by-stage grind into a simple closed-form expression. This pattern comes from the specific mass rule in the problem — it's a simplified model, not how real rockets work (real rockets have mass ratios governed by the Tsiolkovsky rocket equation). But it does a great job of illustrating why **getting to orbit from a deep gravity well is exponentially expensive in mass.**
 
+### Practice Questions
+
+**Q3.1:** Using the mass rule, calculate the mass of each stage for a 4-stage rocket with a 50 kg payload. What is the total mass?
+
+**Q3.2:** If the top stage has mass 100 kg, what is the cumulative mass above the 3rd stage from the top? What is the mass of the 3rd stage from the top?
+
+**Q3.3:** In a 5-stage rocket with 100 kg payload, what fraction of the total mass is the bottom stage? What fraction are the bottom two stages combined?
+
+<details>
+<summary><strong>Answer Key</strong></summary>
+
+**A3.1:**
+| Component | Mass (kg) | Cumulative (kg) |
+|-----------|-----------|-----------------|
+| Payload | 50 | 50 |
+| Stage 4 (top) | 50 | 100 |
+| Stage 3 | 100 | 200 |
+| Stage 2 | 200 | 400 |
+| Stage 1 (bottom) | 400 | 800 |
+
+**Total mass = 800 kg** (or $50 \times 2^4 = 800$ kg)
+
+**A3.2:**
+- Cumulative above stage 3 from top = payload + stage 4 + stage 3 = 100 + 100 + 200 = **400 kg**
+- Mass of 3rd stage from top = cumulative above it = **400 kg**
+
+**A3.3:**
+- Total mass = $100 \times 2^5 = 3200$ kg
+- Bottom stage mass = $100 \times 2^4 = 1600$ kg → **1/2 of total (50%)**
+- Bottom two stages = 1600 + 800 = 2400 kg → **3/4 of total (75%)**
+
+</details>
+
+### Spaced Review Prompt
+
+📅 **Return to this section in 4 days:** Without looking, draw a table showing the mass of each component for a 3-stage rocket with a 200 kg payload. Verify your total using the formula $M = m_p \times 2^n$.
+
 ---
 
 ## Phase 4: Computing the Answers (Problem 2)
+
+### Analogy
+
+Think of compound interest, but in reverse. If you put $100 in a bank that doubles your money each year:
+- Year 0: $100
+- Year 1: $200
+- Year 2: $400
+- Year 3: $800
+
+After $n$ years, you have $100 \times 2^n$. Our rocket mass works the same way, except we're "compounding" stages downward instead of time forward. Each stage you add below doubles the total mass, just like each year doubles your savings. The difference? With money, exponential growth is great. With rockets, it's devastating—you're paying that exponential cost in fuel, structure, and engineering complexity.
 
 ### Guiding Questions
 
@@ -331,9 +501,51 @@ Notice that the bottom stage alone (819,200 kg) is exactly half the total rocket
 
 The exponential scaling from Moon (200 kg) to Jupiter (1,638,400 kg) — a factor of 8,192 — really drives home why **gravity is the fundamental enemy of space access.** Jupiter's delta-V requirement is only 24.7 times the Moon's (42/1.7), but the mass ratio is 8,192 times larger. That's the tyranny of the rocket equation, even in this simplified form.
 
+### Practice Questions
+
+**Q4.1:** Calculate the total rocket mass to deliver a 250 kg payload to Mars orbit (2 stages needed, from Q1.1).
+
+**Q4.2:** If Jupiter's gravity were somehow reduced so that only 30 km/s of delta-V were needed (instead of 42), how many stages would be required? What would the total mass be? How does this compare to the original Jupiter answer?
+
+**Q4.3:** What payload mass would result in a total rocket mass of exactly 6,400 kg for a 5-stage rocket?
+
+**Q4.4:** For the Earth case (3 stages, 100 kg payload), verify that the sum of individual stage masses plus payload equals the formula result.
+
+<details>
+<summary><strong>Answer Key</strong></summary>
+
+**A4.1:** $M = 250 \times 2^2 = 250 \times 4 = \boxed{1000 \text{ kg}}$
+
+**A4.2:**
+- Stages: $n = \lceil 30/3 \rceil = 10$ stages
+- Mass: $M = 100 \times 2^{10} = 100 \times 1024 = \boxed{102{,}400 \text{ kg}}$
+- Comparison: Original Jupiter was 1,638,400 kg. Reducing delta-V by 29% (from 42 to 30) reduces mass by **94%**! This shows exponential sensitivity to delta-V.
+
+**A4.3:** $m_p \times 2^5 = 6400$ → $m_p \times 32 = 6400$ → $m_p = \boxed{200 \text{ kg}}$
+
+**A4.4:**
+- Stage 3 (top): 100 kg
+- Stage 2: 200 kg
+- Stage 1 (bottom): 400 kg
+- Payload: 100 kg
+- Sum: 100 + 200 + 400 + 100 = **800 kg** ✓
+- Formula: $100 \times 2^3 = 800$ kg ✓
+
+</details>
+
+### Spaced Review Prompt
+
+📅 **Return to this section in 5 days:** Without notes, calculate the total mass for (a) a 6-stage rocket with 100 kg payload, and (b) a 4-stage rocket with 500 kg payload. Then verify by building the stage-by-stage table for case (b).
+
 ---
 
 ## Phase 5: Deriving the General Formula (Problem 3)
+
+### Analogy
+
+The formula $M = m_p \times 2^n$ is like a recipe that tells you exactly how much dough you need to make a layered pastry. Each layer doubles the dough requirement because each layer must support all the layers above it. If your final pastry topping (the "payload") weighs 100 grams and you want 3 layers, you need $100 \times 2^3 = 800$ grams of dough total. You don't have to calculate each layer individually—the formula captures the entire pattern in one expression.
+
+Mathematical induction is like proving that this doubling rule works for *any* number of layers: if it works for $n$ layers and you can show that adding one more layer follows the same pattern, then it works for all possible pastries (or rockets).
 
 ### Guiding Questions
 
@@ -402,9 +614,49 @@ This equation also produces exponential mass growth with increasing delta-V, but
 
 The formula $M = m_p \times 2^n$ is the central result of this homework. It captures a fundamental truth about rocket staging under this mass rule: **total mass grows exponentially with the number of stages.** Since stage count grows linearly with the required delta-V (Problem 1), total mass grows exponentially with the delta-V requirement. That exponential relationship between mass and delta-V is the core challenge of spaceflight — it's why we don't casually fly to Jupiter.
 
+### Practice Questions
+
+**Q5.1:** Prove by induction that for the modified mass rule "each stage's mass equals *three times* the mass above it," the total mass formula becomes $M = m_p \times 4^n$.
+
+**Q5.2:** Using our standard formula, what is the maximum number of stages you can have if your total mass budget is 1,000,000 kg and your payload is 100 kg?
+
+**Q5.3:** Derive the formula for the mass of just the stages (excluding payload) in terms of $m_p$ and $n$.
+
+**Q5.4:** If we define payload fraction as $f = m_p / M_{\text{total}}$, express $f$ as a function of $n$ only.
+
+<details>
+<summary><strong>Answer Key</strong></summary>
+
+**A5.1:**
+- Base case ($n=1$): Top stage = 3 × (payload) = $3m_p$. Total = $m_p + 3m_p = 4m_p = m_p \times 4^1$ ✓
+- Inductive step: Assume total for $k$ stages = $m_p \times 4^k$. Adding stage below: new stage = $3 \times (m_p \times 4^k) = 3m_p \times 4^k$. New total = $m_p \times 4^k + 3m_p \times 4^k = 4m_p \times 4^k = m_p \times 4^{k+1}$ ✓
+
+**A5.2:** Solve $100 \times 2^n \leq 1{,}000{,}000$
+→ $2^n \leq 10{,}000$
+→ $n \leq \log_2(10{,}000) = 13.29$
+→ $\boxed{n = 13 \text{ stages maximum}}$
+
+**A5.3:** Stage mass only = Total - Payload = $m_p \times 2^n - m_p = \boxed{m_p(2^n - 1)}$
+
+**A5.4:** $f = \frac{m_p}{m_p \times 2^n} = \boxed{\frac{1}{2^n} = 2^{-n}}$
+
+(Note: This shows payload fraction halves with each additional stage!)
+
+</details>
+
+### Spaced Review Prompt
+
+📅 **Return to this section in 1 week:** Write out the induction proof for $M = m_p \times 2^n$ from memory. Then derive what the formula would be if each stage's mass equaled *half* the mass above it (hint: the base changes).
+
 ---
 
 ## Phase 6: Verification and Sanity Checks
+
+### Analogy
+
+Verification is like proofreading a recipe by actually baking the dish. You can check a math formula symbolically (does it have the right units? does it reduce to sensible values at the extremes?), just like you might read a recipe and think "that sounds right." But the real test is making the dish and seeing if it tastes good—or in our case, computing specific examples and checking if the numbers match reality.
+
+The limiting case $n=0$ is like asking: "What if I follow this recipe but skip all the steps? Do I just get the raw ingredients?" For our rocket: skip all the stages and you're left with just the payload—exactly 100 kg. The formula correctly gives $100 \times 2^0 = 100$ kg. Recipe checks out.
 
 ### Guiding Questions
 
@@ -459,9 +711,48 @@ The model is intentionally simplified — no Tsiolkovsky equation, no structural
 
 Verification isn't optional in engineering — it's a core professional practice. In mission design, an unchecked calculation can lead to mission failure. The Mars Climate Orbiter was lost in 1999 because of an unchecked unit conversion error (pound-seconds vs. newton-seconds). Always verify.
 
+### Practice Questions
+
+**Q6.1:** The formula predicts Earth (3 stages) needs 800 kg total. A real Falcon 9 is ~550,000 kg to put ~22,800 kg to LEO. Calculate the real payload fraction and compare to our model's 12.5%.
+
+**Q6.2:** Verify the bottom-stage-equals-half rule for $n = 5$ stages with a 100 kg payload by computing: (a) total mass using the formula, (b) mass of just stage 1, (c) their ratio.
+
+**Q6.3:** Our model gives 200 kg to orbit 100 kg from the Moon (payload fraction 50%). The Apollo Lunar Module ascent stage had dry mass ~2,150 kg and carried ~2,350 kg of propellant to lift off ~4,700 kg total with crew. Estimate its effective payload fraction and compare.
+
+<details>
+<summary><strong>Answer Key</strong></summary>
+
+**A6.1:**
+- Falcon 9 payload fraction: $22{,}800 / 550{,}000 = 4.1\%$
+- Our model: 12.5%
+- **Our model is ~3× more optimistic**, which makes sense because we ignore propellant mass fraction, structural mass, gravity losses, and drag.
+
+**A6.2:**
+- (a) Total: $100 \times 2^5 = 3{,}200$ kg
+- (b) Stage 1 mass = cumulative above = $100 \times 2^4 = 1{,}600$ kg
+- (c) Ratio: $1{,}600 / 3{,}200 = \boxed{0.5 = 50\%}$ ✓
+
+**A6.3:**
+- Apollo LM ascent stage "payload" (crew + samples + life support ≈ 500 kg?) vs. total liftoff mass 4,700 kg
+- Rough payload fraction: $500 / 4{,}700 \approx 10\%$
+- But if we count the crew cabin structure as "payload delivered to lunar orbit": ~2,150 kg / 4,700 kg ≈ 46%
+- This is close to our model's 50%, showing the model captures the right order of magnitude for low-gravity bodies.
+
+</details>
+
+### Spaced Review Prompt
+
+📅 **Return to this section in 1 week:** Look up the actual mass and payload capacity of the Saturn V rocket. Calculate its payload fraction to LEO. Compare to our model's prediction and explain why they differ.
+
 ---
 
 ## Phase 7: Python Implementation
+
+### Analogy
+
+Writing code to verify calculations is like using a calculator to check your mental math. You could multiply $100 \times 2^{14}$ by hand, but it's error-prone. The code acts as an independent check—if your hand calculation and your code disagree, one of them has a bug, and you need to find it before trusting either.
+
+Building stages "top-down" in code mirrors how we reason about the physical system: the top stage's mass depends only on the payload (known), so we start there. Each subsequent stage depends on what we've already computed. This is called a **recurrence relation**—each value depends on previous values. Top-down construction respects this dependency ordering.
 
 ### Guiding Questions
 
@@ -494,6 +785,102 @@ math.isclose(a,b)  # Tests if two floats are approximately equal
 ```
 
 **Why `math.isclose` instead of `==`?** Floating-point arithmetic can produce tiny rounding errors (e.g., 0.1 + 0.2 = 0.30000000000000004 in IEEE 754). For this particular problem with integer-valued results, `==` would work fine, but `isclose` is safer practice in numerical code.
+
+### Practice Questions
+
+**Q7.1:** Write a Python function `stage_masses(n, payload)` that returns a list of individual stage masses from top to bottom.
+
+**Q7.2:** Write a Python function `stages_needed(delta_v, delta_v_per_stage)` that returns the minimum number of stages.
+
+**Q7.3:** What would happen if you built stages bottom-up instead of top-down? Would it still work? Why or why not?
+
+<details>
+<summary><strong>Answer Key</strong></summary>
+
+**A7.1:**
+```python
+def stage_masses(n, payload):
+    """Return list of stage masses from top to bottom."""
+    masses = []
+    cumulative = payload
+    for i in range(n):
+        stage_mass = cumulative  # Each stage = cumulative above
+        masses.append(stage_mass)
+        cumulative += stage_mass  # Update running total
+    return masses
+
+# Example: stage_masses(3, 100) returns [100, 200, 400]
+```
+
+**A7.2:**
+```python
+import math
+
+def stages_needed(delta_v, delta_v_per_stage):
+    """Return minimum stages needed for given delta-V."""
+    return math.ceil(delta_v / delta_v_per_stage)
+
+# Example: stages_needed(7.8, 3.0) returns 3
+```
+
+**A7.3:** Building bottom-up would **not work directly** because the bottom stage's mass depends on the cumulative mass above it—which you haven't computed yet if you're starting at the bottom. You'd need to either:
+- Use the closed-form formula to compute each stage's mass directly: stage $k$ from bottom has mass $m_p \times 2^{n-k}$
+- Or work backward from the total mass
+
+Top-down is more natural because it follows the dependency chain.
+
+</details>
+
+### Spaced Review Prompt
+
+📅 **Return to this section in 2 weeks:** Without looking at your old code, write a Python script from scratch that: (1) computes the number of stages for a user-input delta-V, (2) calculates total mass, (3) prints a breakdown table of each stage's mass. Test it with delta-V = 25 km/s and payload = 150 kg.
+
+---
+
+## Integrative Summary
+
+This tutorial explored multi-stage rocket sizing through a simplified model that reveals fundamental truths about spaceflight. Let's connect all the pieces:
+
+### The Core Chain of Reasoning
+
+```mermaid
+flowchart LR
+    A["Delta-V Requirement<br/>(from destination)"] --> B["Number of Stages<br/>n = ⌈ΔV/3⌉"]
+    B --> C["Mass Rule Application<br/>(each stage = mass above)"]
+    C --> D["Total Mass<br/>M = mₚ × 2ⁿ"]
+    D --> E["Payload Fraction<br/>f = 1/2ⁿ"]
+```
+
+### Key Insights and Their Connections
+
+| Insight | Where It Appears | Why It Matters |
+|---------|-----------------|----------------|
+| Ceiling function rounds up | Phase 1, 2 | Partial stages don't exist; we must overprovision |
+| Mass doubles with each stage | Phase 3, 4 | Creates exponential growth—the core "tyranny" |
+| Formula $M = m_p \times 2^n$ | Phase 5 | Captures the pattern without iterative calculation |
+| Bottom stage = half total | Phase 6 | Engineering insight: most mass is at the bottom |
+| Linear ΔV → Exponential mass | All phases | Why high-gravity destinations are so costly |
+
+### Cross-Topic Connections
+
+1. **Ceiling function (Phase 2) ↔ Stage count (Phase 1):** The ceiling function translates continuous delta-V requirements into discrete stage counts. This discretization is why missions to bodies with delta-V just above a multiple of 3 km/s are disproportionately expensive.
+
+2. **Mass rule (Phase 3) ↔ Geometric progression (Phase 4):** The mass rule creates a recurrence relation where each term doubles the cumulative. This is a geometric series with ratio 2, giving the closed-form formula.
+
+3. **Formula (Phase 5) ↔ Tsiolkovsky equation:** Our $M = m_p \times 2^n$ is a simplified analog of the real rocket equation $\Delta V = v_e \ln(m_0/m_f)$. Both show exponential mass dependence on delta-V, but the real equation involves the natural logarithm and exhaust velocity.
+
+4. **Verification (Phase 6) ↔ Real rockets:** Comparing our model to actual rockets reveals what's missing (propellant fraction, structural mass, gravity losses) while confirming the qualitative trend is correct.
+
+### The Big Picture
+
+Space travel is constrained by an exponential relationship between the "difficulty" of a destination (delta-V) and the "cost" of getting there (mass). This tutorial used a simplified model to make that relationship stark: every 3 km/s of additional delta-V doubles your rocket mass. In reality, the relationship is governed by the Tsiolkovsky equation, but the exponential nature remains.
+
+This is why:
+- Moon missions are feasible (low ΔV → manageable mass)
+- Earth orbit requires huge rockets (moderate ΔV → large mass)
+- Jupiter is essentially unreachable with chemical rockets (high ΔV → absurd mass)
+
+Understanding this exponential relationship is foundational to all space mission design.
 
 ---
 
