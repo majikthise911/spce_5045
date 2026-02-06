@@ -19,6 +19,30 @@ It's structured in phases that follow the natural problem-solving flow: understa
 
 This tutorial covers multi-stage rocket sizing—a foundational topic in space mission engineering. You'll learn how to determine the number of rocket stages needed to reach orbit from different celestial bodies, compute total rocket mass using a simplified staging model, and derive a general formula that reveals the exponential nature of rocket mass growth.
 
+---
+
+SPCE 5045 
+Homework #1
+2025
+
+50 points total
+
+Chapter 1:
+
+NOTE: Use the common terminology of stage number, i.e., “1st stage” is the bottom or biggest stage, 2nd stage is the next one “up”, etc.  (See discussion on pages 10 and 11 in the text for the ΔV required)
+	
+1. (15 points) Assume that a single rocket stage can provide a delta V of 3 km/sec. Determine how many stages would it take to get to orbit from the surface of:
+
+a) the Moon (ΔV=1.7 km/s)
+b) the Earth (ΔV=7.8 km/s)
+c) Jupiter (if it had a solid surface! ΔV= 42 km/s)
+
+2. (30 points) Assume that the mass of each rocket stage is equal to the mass of all the stages above it plus the 100 kg payload. Based on the number of stages determined in problem #1, if you wanted to put a 100 kg payload into orbit around the Moon, calculate the total mass of the rocket (all stages and the 100 kg payload) lifting off from the Moon.  Answer the same question for lifting off from the Earth and likewise for Jupiter. Round up the values you determine since stages are not fractional.
+
+3. (5 points) Based on the above problems, what would be a simple mathematical relationship you could use for an “n” stage rocket and 100 kg payload?
+
+---
+
 ### Topic Dependencies
 
 ```mermaid
