@@ -1,0 +1,1217 @@
+[Auto-generated transcript. Edits may have been applied for clarity.]
+Session three is very lengthy, as you can see from the number of slides, and it covers two chapters in your text.
+
+Chapter seven dealing with space environment and chapter eight dealing with satellite relative motion.
+
+Now, you may think this is a lot of material,
+
+and in fact is because we are still building our toolbox and we have to have these concepts
+
+well in grain before we can actually do a decent job of designing a space mission.
+
+So chapter seven and eight covered in session three.
+
+And here's the rub. I will have two homework assignments, one for each chapter, one for seven and one for eight.
+
+I strongly suggest that you read the material through the beginning of the section on chapter eight.
+
+Stop at that point and work on homework number two.
+
+Then once you have that done, continue on with the remaining part of the material on the slide presentations and completing that.
+
+Then tackle the homework. Number three.
+
+Now in order to do number three, which is a homework number three, which is uh,
+
+based on chapter eight, you will need what's called the live calc table 812 on page 186.
+
+If you look at the inside cover of your textbook, you will see how to access the website for the publisher and log on to these live calc tables.
+
+However, however very important, a lot of those well, let's say some of those live calc,
+
+uh, Excel spreadsheets and tables and figures on the website don't function.
+
+And I contacted the publisher and they said they were working on it.
+
+However, they are not fixed yet, but they did share with me the correct operating correctly operating figures and tables and live calc format.
+
+So I will beginning with this session and chapter eight.
+
+I will include the Live Calc Excel spreadsheet that you will need to complete the homework assignment for,
+
+and that is based on table eight, dash 11 and your textbook.
+
+So that's what it will will be later listed on your tab for the session three Live Calc table 811.
+
+And from now on, as we go through the text and I find places where you will need to use the live calc calculations for your work.
+
+I will include those tables and figures as part of the session material,
+
+so that you do not have to go to the website and then find that a particular live calc, um, figure or table doesn't work.
+
+So that's what it's all about. Two homework sessions this time.
+
+Please split the session up into chapter seven.
+
+Do that homework, turn it in, and then finish the material for chapter eight.
+
+All this is so that we can press on the chapter nine,
+
+which in itself is going to lay the foundations for selecting orbits for our space mission analysis and design.
+
+So that's why we're going that's why this is a fairly lengthy session.
+
+And there are two homework assignments I will grant you about a week and a half, maybe a little less.
+
+The idea is get the homework assignments turned in as soon as possible so that as you start with session for chapter nine,
+
+you won't be having to play catch up with the homework or then the work for chapter nine.
+
+So that's where we're going recently.
+
+Um, in fact, on the 18th of January, that was only a couple weeks ago.
+
+Now, I guess one week ago, the sun released a coronal mass ejection that was extremely strong, that particular CME.
+
+Impacted the Earth as an x 1.9 flare from the sun.
+
+And that, in fact created aurora that we're seeing as far south as Alabama.
+
+And that's very unusual. So even though we're supposedly on the downslope of solar activity, that hasn't really occurred since only a week ago,
+
+on the 18th of January and 2026, there has been a very, very large solar event that created a big disruption to the Earth's geomagnetic field.
+
+So this is something that in your text you can read more about it.
+
+But this is an event that recently happened and there's no real telling when the next one will occur.
+
+The website that you see here on this slide is a good place to go to see what the mean.
+
+Daily flux of solar activity was in terms of solar flux units.
+
+And you see what that the term means there on the notes to the side of the the slide.
+
+But the idea here is that as you are designing your space mission,
+
+you have to take a look at what the predicted solar activity is going to be for not only the time of launch,
+
+but of course, the entire lifetime of your space mission,
+
+so that you can adequately prepare the mission in terms of shielding and perhaps redundancy for dealing
+
+with the excess solar radiation that occurs during maximum cycles or maximum periods of solar activity.
+
+So take a look at this. Go to the website and check out the most current information just to see what it's looking like.
+
+Here's an interesting graphic of a solar coronal mass ejection effect.
+
+If you look at this and there's also a YouTube link there that you can look at.
+
+That's a pretty good, um, video of real CME effects from eruptions from the sun.
+
+But the whole situation here is that when a CME occurs, if it is directed toward the Earth,
+
+and there's certainly a lot of coronal mass ejection events that occur when the sun,
+
+when those events are not directed toward the Earth, because they can occur anywhere on the sun's surface.
+
+But in this particular case, if the solar the CME is directed towards the Earth,
+
+it reaches the Earth in the form of a shockwave of traveling mass of solar energetic particles.
+
+And that causes a geomagnetic storm that may in fact disrupt the Earth's magnetosphere,
+
+compressing it as shown on this slide on the dayside and extending and dragging it essentially on the nightside toward,
+
+uh, the different the distance away from the sun.
+
+When this magnetosphere reconnects on the night side, remember magnetic lines of flux, uh,
+
+always reconnect when and when the magnetosphere does reconnect on the nightside of the Earth, it releases power on the order of terawatts.
+
+And that power can be directed back toward the Earth's upper atmosphere.
+
+That process causes particularly strong aurora in the in large regions around the Earth's magnetic poles.
+
+And of course, aurora we know as northern lights. But the CMEs, along with solar flares,
+
+can disrupt radio transmissions and cause severe damage to satellites as well as terrestrial electrical transmission lines.
+
+The reason for that is, as you know, if you take, um, a long line of conducting material such as power lines,
+
+and you pass that line of conducting metal through a changing magnetic field, electricity is generated in the electrical wires.
+
+And that's the way, of course, an alternator or generator works.
+
+But in this particular case, we have fixed power lines fixed to the ground.
+
+But the magnetic field fluctuates wildly and strongly.
+
+And that's the same type of effect. And so it induces additional voltage in the power lines.
+
+And what happened back in the 80s was that a severe CME effect caused such a fluctuation in the Earth's
+
+magnetic field that it induced overload voltages in the power distribution lines in the northeastern section,
+
+um, provinces of Canada. The extreme overvoltage tripped circuit breakers and power substations,
+
+and essentially shut down the entire northeastern part of Canada from the power grid, simply due to the CME effects on the Earth's magnetic field.
+
+So humans in space, of course, at high altitudes, in air or in airplanes,
+
+risk exposure to the intense CME radiation that is, and DIC induced into the Earth's atmosphere.
+
+This is one reason why, uh, airline crews that fly over the North Pole frequently may, in fact,
+
+end up with a higher total lifetime radiation dosage than the rest of us who don't do such travel.
+
+So keep in mind the effects of CMEs when you design your your space mission.
+
+Definitely something that we need to consider for shielding communications issues,
+
+uh, electrical power sources as well as, uh, onboard processing redundancy.
+
+This graphic shows some of the details of the Earth's magnetosphere.
+
+You can see the bow shock, which is of course, toward the sun,
+
+and shows you how the magnetosphere of the Earth causes the solar particles to stream around the Earth.
+
+Not only do they impact the Earth on the sun side,
+
+but the layer of high energy particles as much closer to the Earth on the sun side than it is on the dark side.
+
+The Van Allen radiation belts that surround the Earth are a function of the Earth's magnetic field,
+
+trapping and deflecting the high energy particles from the sun that we talked about on the previous slide.
+
+You'll notice that there are, in fact, on this drawing two radiation belts.
+
+In fact, most recently, a third radiation belt has been detected.
+
+It is believed. But the point here is that notice, because of the misalignment of the Earth's magnetic poles with the rotation axis of the Earth,
+
+that the radiation belts actually come closer to the Earth in the Southern hemisphere than they do in the Northern hemisphere.
+
+So as you plan your right, your space mission, you're going to have to determine whether the altitude required by your mission
+
+will place your satellite in one or the other of these radiation belts.
+
+It might be good if you can design and such to put your satellite either below the inner radiation belt or between the two of them.
+
+If, however, that's not going to be feasible,
+
+then you're going to have to shield your satellite sensors and onboard processing and communication system from this radiation.
+
+Now, from a human standpoint,
+
+the space the Apollo astronauts as they traveled to the moon pass through the radiation belts, of course, but fortunately,
+
+their exposure was minimized by following a trajectory that went along the edge of the belts that avoided the strongest areas of radiation.
+
+So that space mission actually had to change the trajectory of the flight to avoid the heaviest areas of radiation.
+
+The. Because of that, the total radiation exposure to the astronauts was estimated to be much less than the five rem,
+
+which stands for radiation equivalent man. The set by the Atomic Energy Commission for people who work with radioactivity.
+
+Bottom line notice where the radiation belts are.
+
+They strengthen and weaken because of the solar activity.
+
+Plan your space mission appropriately, either with shielding or placing your orbit where it's not impacted by the radiation belts.
+
+Because of the the non-alignment of the Earth's rotational axis and the magnetic polar axis.
+
+As we showed on that previous slide, the radiation belts actually are closer to the Earth's surface in the southern Hemisphere.
+
+And you'll notice in this graphic that the inner Van Allen radiation belt actually comes very low in the South Atlantic area of the world.
+
+And this is what gives rise to the so-called South Atlantic Anomaly, where low Earth orbiting spacecraft experienced very high radiation levels.
+
+Now, to accommodate that, many times, satellites that are.
+
+Predicted to fly through the South Atlantic Anomaly.
+
+The owner operators will turn off sensors that are extremely sensitive to radiation effects.
+
+As the satellites pass through that area and or the satellite operators will, once the satellite emerges from the radiation belt,
+
+the owner operators may in fact reboot the onboard processing because of a potential for having induced single event
+
+upsets or latch ups caused by the extreme radiation effects on the integrated circuitry of the onboard processors.
+
+So another thing to consider if your satellites are going to be in and latitudes such that it passes through the South Atlantic Anomaly,
+
+you better take care to either shield that properly or have some mitigating procedures
+
+to overcome any potential upsets or latch ups or degradation in your space mission.
+
+I mentioned the so-called South Atlantic Anomaly before, and here's a graphical picture of it as a, um.
+
+Uh, chart of the total electron counts that occur over this particular part of the South Atlantic.
+
+And you'll notice some of the reasoning behind it. The Van Allen belt actually dips toward that South Atlantic area.
+
+And so satellites that are flying in fairly low Earth orbit in that,
+
+that pass through that area are subject to potential effects because of the radiation.
+
+Since we're dealing in this chapter with the solar environment or space environment.
+
+Here are some of the health hazards that are associated with those radiation belts that we've seen in the preceding slides.
+
+Not only that, but we have some other radiation hazards due to the galactic cosmic radiation.
+
+Radiation from those trapped particles in the magnetic field of the Earth, and also periodic or direct radiation from the solar flares themselves.
+
+They may impact manned space vehicles or unmanned space vehicles, regardless of what's on the space vehicle.
+
+One has to take the health hazards or the electronic hazards into account from these three main components of ionizing radiation.
+
+You might think that the GCR effects would be strongest during, um, periods of active solar,
+
+um, flares, etc. but actually it's not the case during a very active sun cycle.
+
+The magnetosphere of the Earth is energized, so to speak, by the constant bombardment of high energy particles from the sun.
+
+So during a minimum of the solar cycle, the magnetosphere is actually the least strong and therefore does not deflect the galactic
+
+cosmic radiation as much as it would when it's energized during high periods of solar activity.
+
+This chart is a little bit outside the scope of our normal space mission analysis, but it's a cross-section of a typical semiconductor device.
+
+And in this particular case, if you look at the left side of the chart,
+
+you'll see the impact from a fast charge particle from a galactic cosmic ray, for example.
+
+And what happens when that particle impacts this type of material?
+
+It creates ionization or free electrons within the material.
+
+Those free electrons then pass through the remaining circuitry in the form of a signal.
+
+And of course, it's a bogus signal compared to what the sensor the device was supposed to be doing.
+
+But nevertheless, it is an electrical signal. And therefore in space mission analysis design,
+
+you're going to need to protect this device if there is the potential for having impacts from not only GCR effects,
+
+but all sources of ionizing radiation.
+
+Because remember, ions are free electrons and free nuclear particles, and the free electrons are what causes signals in our semiconductor devices.
+
+Well to continue. Um, a lot of satellites are designed so that the charge that builds up on it can bleed off.
+
+For example, there will be insulating sections to satellite structures so that a charge, uh, cannot build up over the whole vehicle.
+
+Also, uh, number of satellites that are subject to static charge build up will have electron guns
+
+mounted on the satellite that actually bleed off and that squirts the electrons off that,
+
+um, off the satellite to build up this charge.
+
+So, uh, engineers have to go through a fair amount of pain and agony to design a satellite to, uh, deal with a static charge build up.
+
+Single event upsets. Are manifested in the form of bit flips, as you know.
+
+Of course, digital circuitry is um. Zeros and ones.
+
+That's the way it works. And a single event upset caused by ionizing radiation can in fact cause what's named bit flip.
+
+So it can change the state of a bit in memory or in the processor.
+
+And this effect can certainly damage stored data so that it might not be, uh, usable anymore.
+
+It can cause uploaded software to be corrupted and therefore not work.
+
+So you'll have to somehow design into your system the ability to either have a redundant copy of your operating software,
+
+or put in such things as forward error correction, where you can in fact detect and correct some single event bit flips.
+
+These are different ways of mitigating it.
+
+You can, uh, single event ups that can actually halt processors if it affects the software in a specific way.
+
+So the cause for this is direct ionization of the silicon, as I showed on one of those previous slides,
+
+by a high energy ionizing radiation that passes through the material.
+
+Satellites that are generally less than fourth or Earth radii are really also affected by the radiation belts.
+
+So your space mission has to take into account the potential of single event upsets, and you must design into your system a way to mitigate that.
+
+If you notice that you have a totally corrupted, um, piece of operating software, your system should be designed so that you can,
+
+from the ground, upload a pure version and have the system go back to its nominal operating state.
+
+This is particularly important if you're doing the inter solar missions, where you may be sending a spacecraft to Mars or one of the other planets.
+
+If that spacecraft software becomes corrupted due to single event upsets, you could have a big issue.
+
+And so you need to design your missions so that you can provide some types of mitigating circumstances or procedures to avoid this type of issue.
+
+So how does a spacecraft engineer mitigate the effects of single event upsets?
+
+Well, one choice is by using radiation hardened, um, components.
+
+Unfortunately, those are expensive. Um, considerably more expensive than normal, uh, hardware.
+
+Um, they could also use older technology. A large feature size and solid state memory tends to mitigate the use.
+
+And, uh, unfortunately, if you do that, if you use older technology, your mission performance requirements may suffer.
+
+So there's kind of a trade off there. You can also use redundancy and memory.
+
+In fact, triple redundancy is one of the frequently used methods to mitigate.
+
+But unfortunately the trade off there is weight and additional power requirements.
+
+Headache, memory, error detection and correction.
+
+Memory and processors are another way of, uh, mitigating this.
+
+In fact, what you do is run these error detection algorithms at frequent intervals to detect any lurking single event upsets that have occurred.
+
+Also, uh, typically when a satellite passes through the South Atlantic Anomaly,
+
+it is programmed to reset or reboot the processor just to, uh, take into account any possible skew effects caused by that anomaly.
+
+This drawing is quite famous, and I'm sure you've most likely seen one like it before, but this is a graphic depicting Leo tracked space objects.
+
+On this particular drawing, there are approximately 15,000 objects, 95% of which are labeled as debris by the NASA tracking system.
+
+So the idea here is, yes, it really looks crowded.
+
+Other folks will say, well, space is a big place and you don't really need to worry about it.
+
+However, there have been several instances of satellites that have had collisions with other space objects, debris, or other active satellites.
+
+So the issue here is if you are going to put your satellite into low-Earth orbit,
+
+firstly, you must be aware that there are other satellites in that environment.
+
+Secondly, you must be comply.
+
+You must comply with the most recent international agreements, which say that after your satellite has achieved its mission end,
+
+you must have developed some type of mechanism by which your Leo satellite will be orbited.
+
+And that takes the form of a number of different ways.
+
+You can either have sufficient propellant onboard to.
+
+Do you orbit the satellite or you must have some other mechanism.
+
+And one popular way now is to deploy some type of a solar sail, which will, for low-Earth orbit and satellites,
+
+cause enough drag thanks to the thin but present atmosphere at low-Earth orbit.
+
+The drag will eventually cause the orbit to decay into the atmosphere, and the satellite will burn up.
+
+The requirements are that your satellite must be de-orbit it after 25 years, 25 years after it has been declared mission ended.
+
+So something else to include in your space.
+
+Mission analysis and design is a way to get rid of your satellite.
+
+Even today, we note that the Chinese space station is which is no longer inhabited, is going to return to Earth sometime in the first half of 2018.
+
+It's a very big and very non symmetrical object.
+
+So the atmospheric drag that is associated with that satellite is unpredictable.
+
+And therefore the time and place when that space station actually orbits and impacts the Earth parts of it will anyway is unknown.
+
+This has happened many many times in the past. The Soviet Mir space station, the U.S. space, Earth's correction, Skylab mission from the 80s.
+
+These are just representative samples of some of the bigger space objects that
+
+have been orbited through natural occurrences in an unpredictable fashion.
+
+So be aware. When you design your space mission,
+
+you must comply with these international requirements and contain in your design some type of material
+
+or processor or mechanism that will allow your satellite to deorbit within that specified time frame.
+
+Stepping out from the earth a little bit to the geosynchronous belt.
+
+You can see here a concentration in that ring around the Earth of the geostationary tracked objects.
+
+There is also a fair amount of, um, dots in this, in this chart representing the higher latitude objects, which are primarily due to Russian objects.
+
+Since Russia has a great deal of its landmass in the northern latitudes.
+
+They have a lot of communication satellites that have a pretty high inclination to their orbit,
+
+and that's what is responsible for a lot of the dots that you see out of the plane of the geostationary belt in this graphic.
+
+The last graphic was kind of an equatorial plane in plain view of the geosynchronous belt.
+
+If you look at this graphic, we're looking also at the Geo belt but from above.
+
+So in this polar view you see a clearly see how the geostationary belt satellites form a nice ring around the Earth.
+
+But you also see a lot of other things going on.
+
+Now a lot of this material that's in space gets degraded due to the something called atomic oxygen, which we'll hear about is very corrosive.
+
+And solar heating and solar radiation has also resulted in the production of a lot of particulates,
+
+such as paint flakes and bits of multilayer insulation from spacecraft,
+
+etc. solid rocket motors that are used to boost satellite orbits have produced a lot of debris items,
+
+too, including motor casings, aluminum oxide exhaust particles, slag from the nozzles itself, motor liner,
+
+residual solid fuel fragments, and exhaust cone bits that result from erosion during the burn.
+
+A major contributor to orbital debris background has been object breakup.
+
+More than 100 and some odd breakups have been verified, and most are believed to have occurred due to explosions.
+
+Batteries when they freeze tend to explode collisions with other space objects, but the majority seem to have occurred from explosions,
+
+either fuel tanks that are ruptured, batteries that have ruptured, etc. explosions can occur when the propellant and oxidizer inadvertently mix.
+
+Residual propellant becomes over pressurized due to solar heating, and therefore brass breaks the pressurization container or vessel.
+
+Batteries become over pressurized and explode, and some satellites have been deliberately detonated for one reason or another.
+
+Explosions can also be indirectly triggered by collisions with other debris.
+
+Three collisions are known to have occurred since the beginning of the Space Age, and that's between active objects or objects and other debris.
+
+In addition, there is a debris research community that has concluded that at least one additional breakup was caused by a collision.
+
+That group has estimates that the cause of approximately 22% of observed break ups is unknown.
+
+At this point,
+
+approximately 70,000 objects estimated to be at least two centimeters in size have been observed between 850 and 1000km and their altitude,
+
+and NASA has hypothesized that these objects are frozen bits of nuclear react and cooling that are leaking from a number of
+
+Russian radar satellites that use radar radio thermo generators as their power source at altitudes higher or lower than 2000km,
+
+is generally believed that most of the debris population dominates the natural
+
+meteoroid population that has objects at least a millimeter in size and larger,
+
+so there's a lot of stuff up there that you're going to have to keep in mind as you design, build, and fly your space mission.
+
+So here you can see a graph representing the catalogued low earth objects.
+
+And the amount of debris. Notice how much debris in the form of rocket bodies and other things are compared to true payloads.
+
+Again, this is low Earth orbit. This table in your text shows the top ten as of May 2010.
+
+Historical breakups of space vehicles you notice right at the top is the Chinese weather satellite Yung one C,
+
+which was deliberately shot down by the Chinese and a demonstration of their anti-satellite capabilities.
+
+It is created, as you can see, a tremendous amount of debris, most of which has been cataloged,
+
+but some of which, obviously because of the small size, has escaped tracking.
+
+From there you can see some accidental collisions.
+
+Some explosions not shown on this table was the deliberate exploding of an American satellite by an American Asat capability.
+
+Although that particular satellite didn't create a lot of debris, nevertheless,
+
+there still is some of it up there, and it's supposed to be orbiting fairly soon.
+
+But nevertheless, as soon as you do anything in space, you're going to be causing some kind of debris.
+
+Okay, onward and upward to chapter eight. Now things start to get pretty interesting from a geometry standpoint, from a mathematical standpoint,
+
+and you're going to have to put on your thinking cap on when you read through the section of the book on the celestial
+
+sphere and the way a coordinate system based on a celestial sphere works to help us design our space mission.
+
+So, as I said earlier, settle back. This chapter eight is pretty detailed and needs to be read carefully.
+
+This drawing goes along with the drawings in figure eight seven on page 154.
+
+It's describing graphically the position of the sun with respect to a spacecraft.
+
+And the idea here is that we have to be concerned about that in order to make sure
+
+that our solar arrays are oriented properly according to the position of the sun,
+
+so that we get the maximum electrical power generated.
+
+It goes along with the discussion on the eclipse issues for low Earth orbiting satellites.
+
+That's described in chapter 8.1.1.
+
+It's a little difficult to grasp, but take a close look at it,
+
+because your mission analysis definitely requires the ability to determine how much electrical power your satellite can derive from the sun,
+
+particularly in low-Earth orbit satellites. You're going to run into the issue of eclipse,
+
+and that means you're going to have to size your onboard electrical power system to be able to handle the eclipse time.
+
+By using batteries, you'll have to store energy, and that means you're going to have to when you come out of the eclipse,
+
+orient the solar arrays properly to recharge the batteries, as well as provide power to the payload.
+
+Obviously, in a low Earth orbiting satellite, the motion of the solar arrays is going to be virtually continuous as it circles the Earth.
+
+Particularly for satellites that are whose mission involves looking at the ground so that the satellite is oriented toward the ground,
+
+either for communications or for imaging, for example.
+
+But the solar arrays have to be oriented to the sun.
+
+So this drawing, as I say, is commensurate with the figure eight seven.
+
+And it also describes, of course, the different angles involved in making sure that the solar arrays are always pointed at the sun.
+
+One of the first things we have to do when we start looking at the the, um, information here in chapter eight is to decide on our coordinate systems.
+
+We talked about that briefly a little earlier, but here,
+
+for example from the book figure eight eight are some of the coordinate systems that we need to deal with.
+
+So be sure you understand which ones are which and how they work.
+
+The first one of course, is based on the spacecraft itself.
+
+And that's where you as an engineer come into play. You know what the payload of your spacecraft is.
+
+And if it's, for example, an imager that has to look at the ground, you can define what your coordinate axis is.
+
+In plot B, you can see the typical Earth fixed coordinate system.
+
+Now the interesting thing is you see the Greenwich meridian.
+
+That's longitude zero.
+
+And the x axis is traditionally identified as passing from the center of the Earth through the equator, where the longitude zero is.
+
+Then y and z are orthogonal to that axis.
+
+In C, you can realize how a spacecraft in orbit around the Earth will move,
+
+you can roll, it can pitch, and it can your and those terms are identified in your text.
+
+And be sure you understand.
+
+When I talk about a roll axis or a pitch axis, what we really mean with regard to the satellite in its orbit around the Earth.
+
+And then finally in picture D, we see another coordinate system which is the celestial coordinate system.
+
+In this case, the x axis goes from the center of the Earth through the equator in the direction of the vernal equinox.
+
+So in the constellations of star, you will see this chart, uh, next week when we talk in much more detail about orbits.
+
+But I wanted you to at least get familiar with the graphic that describes the road, the motion of a satellite around a central attracting body.
+
+And here you can see the references to the vernal equinox.
+
+That's the little V shaped object.
+
+On the right hand side, you can see the definition of the argument of periapsis, true anomaly, and some of the other.
+
+The terms that we will be discussing in much more detail next week.
+
+But they all originate at a common origin.
+
+And that's why it's important to understand about coordinate systems.
+
+Chapter 8.2 in your text is fairly long and fairly detailed, but it begins to point out the issues in dealing with spherical geometry.
+
+In this particular case, the text uses the example of a sun sensor.
+
+The sun sensor is a planar array of photosensitive elements, and it's looking at the celestial sphere, which by its very name is very cool.
+
+So in the discussion in the text, it points out that one can easily determine the field of view, as shown in figure 815 on page 163,
+
+simply by using geometry, and you can calculate the area of the sensor as it would see the sky.
+
+But as it shows and take your 816. This is a very straightforward solution.
+
+But it is wrong because we are dealing with spherical geometry.
+
+The remainder of section 8.2 goes into some more detail, geometrically speaking, about the spherical issues in dealing with sensors.
+
+Looking at the sky, the celestial sphere, and the other way around, we're going to be looking at the ground.
+
+Perhaps for some space missions. And the Earth or other planets are not flat and they're not planar.
+
+They're round. So if we have a planar sensor that's trying to image and a space object, even though it may not be perfectly spherical, we will do.
+
+We will definitely have to deal with physical issues dealing with spherical geometry.
+
+So read through section 8.2. It gets very convoluted, but read through to make sure that you understand because one.
+
+By the time we get to section 8.3 where the title is looking at the earth from space,
+
+then you will see why it's important to understand about spherical geometry,
+
+and particularly in subsection 8.3.1, when we have to transform between the Earth and spacecraft coordinates.
+
+So in this particular subchapter,
+
+we begin to discuss the issue of looking at a spherical Earth from a planar sensor and what type of view you're going to have.
+
+What type of projected area on to the the sensor array.
+
+And so all the way through section 8.4, you'll see very specific and simple math.
+
+But the concepts may be difficult to grasp initially.
+
+But if you're trying to project or trying to image the earth or even send a radio signal to the Earth,
+
+it's necessary to take into account the spherical nature of the Earth.
+
+And so far as the the position and orientation of the satellite.
+
+So section of chapter eight is definitely not the most straightforward concept.
+
+The math is simple, and certainly if you look at, for example, table eight, dash 11,
+
+page 184, you will see a summary of computations that we may need to determine.
+
+Ground station passes from the observing standpoint of a Leo satellite.
+
+If we have to image the Earth, acquire data, transmit the data to the ground,
+
+we have to know where the ground station is and when will be in view of it.
+
+If we are trying to observe a particular area on the earth,
+
+we need to know when that area is going to be available and how long it'll be available for imaging from the satellite.
+
+And you'll notice that table eight, dash 11 is one of these Excel spreadsheets, which is a live calculation type of system.
+
+If you remember, we discussed the fact that you can log on to the microcosm website.
+
+Go to this particular table and then adjust the parameters for the particular mission that you have in mind.
+
+And so you may want to dog here this page,
+
+because sooner or later you will end up having to calculate the position of a ground station, the area of imaging from a satellite.
+
+And that's a big, very big hint. Your book goes into a fair amount of detail about the celestial sphere.
+
+It can be a little confusing, so I've included this additional chart just to perhaps help you in eye and understanding how this celestial
+
+sphere relates to mapping of a satellite imaging system onto the ground or satellite path onto the Earth.
+
+So now that you've at least been exposed to the fact that we have to deal with spherical geometry,
+
+let's start looking at the Earth as viewed from space with spherical geometry in mind.
+
+In this situation, we need to be able to determine the relative geometry of objects on the Earth as viewed from the satellite.
+
+For example, where is the target? How do we identify the target coordinates on Earth?
+
+Well, that's fairly simple. Latitude and longitude. Right? But how do we relate that to our satellite position vector.
+
+And what is the relative geometry. The next few slides will discuss this concept.
+
+In this graphic you can see how FAA satellite is looking straight down or what we say as we say that
+
+this sub satellite point is that neighbor directly below the satellite as it passes over the Earth.
+
+The object that we will see on the ground will look like a round circle.
+
+But as you can imagine, if we start looking off to the side of our pass,
+
+you'll notice that the illuminated or the imaged section of the Earth is no longer round, even on a spherical Earth, but it's an ellipsoid shape.
+
+And that's when things start to get really interesting from a geometry standpoint.
+
+So on this slide, the things to remember are we're looking at nadir, which is straight down.
+
+Our field of view of the satellite is represented by the dotted lines,
+
+the dashed lines representing the extreme edge of the field of view of the satellite.
+
+And we have the other imaging satellite, which is now shown to be looking offset from its nominal path.
+
+Figure 826 in your book is a little bit different than what I have on this slide, but there are some angles here that you need to be aware of.
+
+The first one is, as the book points out, angle row, which is the angular radius of the Earth.
+
+From the spacecraft angle, Lambda sub zero is measured from the Earth center to the intercepting point on the surface of the Earth,
+
+from the spacecraft's viewpoint, hidden very small small.
+
+On this drawing in your book, there's another angle Epsilon.
+
+Epsilon is what is known as the grazing angle or the spacecraft elevation angle, measured at the target between the spacecraft and the local horizon.
+
+So you're standing here on the Earth, and you see the spacecraft at a certain elevation above the horizon, and that's angle epsilon.
+
+Now, epsilon depends upon the height of the satellite, and that's about it.
+
+So the imaging system is where angle rho comes into play.
+
+If you look at the equations over on page 173 and drawing figure 828.
+
+Be careful that you don't get confused about all these various angles.
+
+Here we're using the law of cosines and the law of sines to determine some very important aspects of our mission.
+
+And those angles and distances are related to each other through the spherical geometry and the law of cosines.
+
+Look carefully at those equations to make sure that you understand.
+
+For example, on figure 828. Where angle epsilon is.
+
+We just mentioned that the grazing angle angle lambda is the angle between the observer,
+
+the target point, and the earth center compared to the satellite sub satellite point angle.
+
+Theta is the nadir angle as viewed from the spacecraft to the ground.
+
+All of these angles become important when you're trying to determine distances involved and angles of observation.
+
+Okay, now we're going to get down to some nitty gritty math.
+
+Take a look on page 174 at that table 8-8 that shows you the mathematics involved in determining the access
+
+area for a satellite that has a certain sub satellite point and a target that's at a different place.
+
+So take a look at this. Read section 8.3.1 and you'll see the terminologies.
+
+And through the table 8-8. Become very familiar with how you would calculate those areas.
+
+And this is a transformation between latitude longitude access area coordinates and the spacecraft nadir coordinates.
+
+It's a very important table. You should probably copy it and nail it on your wall because you will see it again.
+
+This is a different way of looking at, uh, similar, um, characteristics from the previous slide.
+
+But here we have a satellite that has a certain height h above the Earth.
+
+There is a target located not directly below the satellite.
+
+And in fact the target is located at a latitude difference lambda from the sub satellite point.
+
+If you are at the target, you would have a look angle to the satellite of Epsilon.
+
+And as you can see, the higher the satellite goes, the greater that angle epsilon would be here in this drawing,
+
+the satellite has an imaging system that has a certain field of view, that angular field of view, that half angle on this drawing as rho.
+
+And so what we want to know is can this satellite image the target, given that we know where the target is from the latitude on the Earth,
+
+we know what the height of the satellite is and what m where its sub satellite point is.
+
+So if you look at this geometry, you should be able to determine that.
+
+Yes. Given some of these other parameters such as field of view rho, we can determine whether we will be able to see a target or not.
+
+And for completeness sake, here is a different view showing the total cap lambda field of view of the satellite
+
+and some of the other parameters such as where the horizon is on the satellite.
+
+How far can it see around the earth? So now you can see that it's beginning to get a little more complicated when we're trying to deal with the
+
+real world of observation or communications capabilities from a satellite in orbit around a spherical object.
+
+Look carefully here on page 174, the different transformations between latitude,
+
+longitude, area, access coordinates and the spacecraft nadir coordinates.
+
+Figure 829 shows, for example, the relationship between a target and a sub satellite point on the Earth's surface.
+
+If you read through all these angles and equations, you'll see that some of them are fairly straightforward.
+
+Others are not particularly straightforward since you may be primarily used to dealing with planar geometry.
+
+So read through this. Be able to understand, because, as I'm pointed out on the previous slide, you will need to know this.
+
+If you are trying to plan a space mission which has to have certain areas of coverage on a spherical Earth,
+
+and know when and where those areas of coverage occur.
+
+Again, this is a more satellite view from an observer standpoint.
+
+And you can see from the geometry on this slide the ability that you have to determine field of view.
+
+Look at angle from the target to the satellite. The distance through which the satellite and the ground site are actually in view.
+
+And that's important if you are a communications person and you are trying to download data from the satellite,
+
+you want to be able to determine how long will that satellite be in view, even if it's not passing directly overhead?
+
+You want to be able to figure that out. This chart kind of goes along with the discussion on page 177, uh,
+
+eight and nine in your textbook showing what the view from 1000km is from a spacecraft above the Earth,
+
+and how the portion of the Earth that can be seen varies from whether you are looking at the Earth projection on the left side of this chart,
+
+or the celestial sphere projection spacecraft centered on the right that represents the same view.
+
+Just be sure you understand why they look different.
+
+Here is a simple chart showing a satellite with a field of view as it's going around the earth and its ground track.
+
+Now, the interesting point here is you will notice that as the Earth turns underneath the satellite,
+
+there will be some overlap between different passes of the satellite.
+
+And that's probably a good thing because as you can see from this chart,
+
+the field of view of the satellite is larger than the difference between subsequent orbits.
+
+So you're guaranteed coverage of the Earth, even though the Earth is turning underneath the satellite.
+
+This drawing is from a previous version of smash, and it shows the ground path for satellites that have different differences in the
+
+change of longitude for successive crossings of the equator on the ascending path.
+
+For example, the path shown in figure A or letter A on this chart had the satellite there.
+
+The difference between longitudes of successive crossings of the equator on the ascending node path is 335 degrees.
+
+If you look at path E, the difference in ascending node longitudes is zero.
+
+What this shows is the ground path for a geosynchronous satellite, not necessarily geostationary.
+
+Remember we talked about that geosynchronous may have inclinations other than zero whereas geostationary.
+
+In other words the satellite stays at a fixed point in in the sky.
+
+The geostationary satellite has an inclination of zero, as well as a difference in longitudes of ascending node passes of zero degrees.
+
+Now the next slide shows representative types of satellites that fly in these ground with these ground paths.
+
+So look at these two charts. The two slides together.
+
+And you'll get an idea of the type of mission that can be accomplished.
+
+To fly a satellite for these paths that you see on these two charts.
+
+This drawing shows for various types of missions with which you are probably familiar what the ground path looks like.
+
+Now, most of them are fairly explanatory, remembering, of course, that this is a two dimensional view of the satellite ground path.
+
+But if you take a look at the path shown is letter D, as in dog.
+
+This is kind of a very interesting, um, orbit,
+
+so that it represents a communications satellite flying in an orbit that was first designed by a Russian many, many years ago.
+
+And the idea here was that a great deal of the Russian land masses in very northern latitudes,
+
+in order to provide satellite communications to that part of the country.
+
+It was not possible to use a geostationary satellite, because at the northern latitudes,
+
+the look angle from a ground station to a satellite orbiting over the equator in a geostationary orbit would be very,
+
+very low in mountainous terrain or in terrain where there are other obstructions,
+
+and a ground based antenna would be looking very close to the horizon trying to see us geostationary satellite.
+
+And that's not going to work very well. So the Russians designed a small Nya type of orbit, which results in a very eccentric orbit.
+
+If you look on the notes pages, the centricity is 0.75 and the inclination is 63.4 degrees.
+
+What happens now is from a ground station perspective, as the satellite passes to apogee,
+
+it appears to be relatively stationary in the sky because it's very far out,
+
+and the orbit is so centric that the satellite, as it approaches apogee, is virtually motionless or very close to it in the sky.
+
+But as it passes through apogee on its way back to perigee, then the orbital speed,
+
+remember, we're going to be talking about Kepler's laws in the next chapter.
+
+The orbital speed increases in the satellite as it approaches perigee comes very close to the Earth.
+
+In fact, um, the the apogee here, as you see, is 26,600km, whereas the perigee is very low on the order of several hundred kilometers.
+
+And that lets the satellites sweep through the low part of its orbit very rapidly,
+
+and then head back to the far reaches of its orbit again, assuming a relatively, uh, low rate of motion in the sky for northern latitudes.
+
+The Russians use this quite extensively for communications to the northern part
+
+of the of the landmass by having several millennia satellites in the same orbit,
+
+but phased differently so that as one satellite begins to move from its apogee point toward perigee.
+
+Another satellite is just approaching, uh, a correction apogee and therefore takes over the duties of communications for those northern latitudes.
+
+Quite an ingenious orbit. And there'll be some mathematics involved in developing this orbit that you should become familiar with,
+
+because the Monier type of orbit is quite useful for various types of missions,
+
+not only communications, but for example, suppose you wanted to do early warning for missile launches over a particularly northern latitude landmass.
+
+You might want to have that satellite hover, if you will, over that area.
+
+And that would be a little interesting to do for any orbital type orbit type other than a highly elliptical heliocentric orbit.
+
+So take a look at this chart. Uh, this drawing compared to the previous one,
+
+to get an idea of the types of missions and the resulting ground paths that are
+
+determined by the centricity and inclination of the low Earth orbiting satellites.
+
+Going to begin a discussion now in section 8.5 about satellite relative motion.
+
+In this particular case, look at figure eight, dash 41, page 187.
+
+You'll see where we have two satellites in different orbits.
+
+They may have the same characteristics of altitude and be the same eccentricity, but they have different inclinations.
+
+And so here we have an example of a potential relative motion between these two satellites.
+
+And it really only depends upon the inclination and the phasing of the satellites.
+
+Now this could be important if you are planning a mission in which you want to have satellites in such orbits because you don't want them to bump.
+
+And so there we're going to discuss a little bit about the satellite relative motion.
+
+More in depth is covered in astro dynamics when, uh, we're dealing with a so-called Clohessy Wilshire equations,
+
+which are relatively interesting and complex, because that is how a resupply vehicle,
+
+for example, going to the International Space Station or when the space shuttle was flying,
+
+when we have those two objects, two different objects in different orbits, but yet we want them to meet up.
+
+So the relative motion is extremely important.
+
+We have to know where are the other satellite is, when it's going to be in a particular place, and if we're going to be there at the same time.
+
+And of course, what is the relative closing velocity between the two satellites?
+
+So relative motion is extremely important if you want to do rendezvous and or proximity operations of satellites,
+
+for example, you want to do resupply of a satellite by adding more fuel to it's.
+
+Assume, for example, that it's a geostationary communication satellite that is performing very well,
+
+but it's running out of fuel necessary to keep it in his allocated slot in the geosynchronous belt.
+
+Geostationary belt. So you want to add fuel to it. You're going to send up a robotic spacecraft to meet up with a satellite and transfer a fuel.
+
+Relative motion between the two satellites will become extremely important.
+
+Here is another example of relative motion of satellites. This comes from figure eight dash 42 in your book.
+
+In this particular case, the satellites have the same inclination, but their longitude of ascending nodes are different.
+
+But that does mean that these two orbits are going to intersect.
+
+For example, the GPS constellation. The satellites are in six different planes of orbits.
+
+They are spaced the different longitudes of ascending nodes, but the inclinations are the same.
+
+So the phasing between the satellites in adjacent orbits is very important.
+
+You'll notice that as the inclination increases in these orbits, if you have multiple orbits, multiple planes of orbits,
+
+the satellites will come very close to each other, closer to the poles, to the northern and southern poles of the orbit.
+
+And this is very important if you don't want them to collide, but yet you want to have multiple satellites and constellations,
+
+which will result in greater ground coverage and or greater revisit times on the ground.
+
+So read through the math behind this type of information on page 187,
+
+and you'll see how it's very important that we be able to know where the satellites are with respect to each other.
+
+Continuing, you can look at the relative motion reference frame frame as shown in figure eight.
+
+Dash 43. It may be advisable and sometimes to change your coordinate reference frame and
+
+establish that as a moving reference frame with respect to the Earth at least,
+
+but base it on a specific satellite. If you're trying to do a constellation of satellites moving with respect to each other, for example,
+
+the uh Surrey Space Technology uh company or university in England has developed a constellation of what's called the disaster monitoring satellites.
+
+And the purpose behind those satellites is to provide rapid revisit times over any specific area of the Earth in order to cover natural disasters.
+
+And so the idea here is if you have multiple satellites, how do you maintain the relative position and knowledge of the positions of those satellites?
+
+So this section in your textbook goes into a fair amount of detail.
+
+And it also describes some of the other aspects of relative motion without getting into.
+
+As I mentioned before, the classic Wiltshire very detailed mathematics about relative closing velocities and other parameters.
+
+So this section will give you at least a an introduction to the necessity of determining constellations.
+
+Satellite relative positions. Let us assume that you have communications satellites such as Globalstar or Iridium,
+
+and you want to provide instantaneous access over very, very large areas of the Earth.
+
+And the issue here now becomes, how can I relay communications data from a point on the ground for low Earth orbiting satellites,
+
+where we know from first part of this chapter that the ground coverage area may be quite small, depending upon the altitude, the satellite.
+
+And yet we still want to have that ground coverage area provide, for example,
+
+an observer communication to a totally different area on the Earth, perhaps even on the other side of the Earth.
+
+How do we do that? And the idea here is that we need to be able to understand inter satellite visibility in our constellation.
+
+We need this in order to determine how many satellites will need in a particular constellation,
+
+flying at a specific altitude in order to have coverage of globally, if so to speak.
+
+So the idea here is to look at the requirements for determining inter satellite visibility.
+
+Again we're dealing with spherical geometry. But figure eight dash 47 goes into a little bit more detail on how to do this.
+
+So read through these because it definitely does have an impact on space mission analysis.
+
+If this is your mission to provide communication globally from low Earth orbiting satellites.
+
+The next section that we're going to be discussing is mapping and pointing errors
+
+associated with the fact that we're dealing with a satellite flying over spherical Earth.
+
+We've already talked about communications issues where our ground station might not be directly below the satellite,
+
+and yet we have to communicate to it. So where is it?
+
+When will we be in sight of the ground station?
+
+If we kind of flip things around, if we're going to observe the ground with an imaging system, where is that target that we have to look at?
+
+When will we see it? How long will we see it? And all of that hinges upon adequate knowledge of where the satellite is and where it's pointing.
+
+And so the discussion of mapping and pointing errors is very germane to our whole topic of mission planning.
+
+And that's what we're going to cover in the remaining portions of this chapter.
+
+This chart shows some of the major contributors to Mapping Error.
+
+One source that we have to consider is the fact that the Earth isn't round.
+
+Although the spacecrafts orbit. Well, usually we're going to consider that orbit to be circular,
+
+but it's circular with regard to the center of mass of the Earth, the gravitational attractive center.
+
+So as the satellite goes around the Earth, it's going to run into issues of oblate ness of the Earth.
+
+Now, typically, this uncertainty and target altitude is approximately on the order of one kilometre typically for most targets.
+
+And this particular chart shows how if we consider that target altitude error,
+
+then we can see what happens as the spacecraft elevation as seen from the ground varies from straight down,
+
+looking down nadir wise, closer to about 80 degrees of elevation angle.
+
+So take a look at this and you can see another source of mapping error.
+
+Contributors to our problem of imaging from spacecraft.
+
+Figure 851 on your text. Page 195 continues with the discussion of pointing and mapping errors.
+
+But in this particular case, we're talking about pointing errors.
+
+And you'll notice that at a low elevation angles, the pointing errors can be in fact considerably larger than when you're looking straight down.
+
+And this only stands to reason. The idea behind this particular chart is that if you are dealing with, for example, a communication system,
+
+a lot of times that will limit you to angles above a certain value from the horizon, and that's due to terrain, um, manmade obstacles, etc.
+
+But the idea here is that typically communications systems limit themselves to greater than five degree elevation angles,
+
+so that the pointing error becomes less. Also consider, for example,
+
+an GPS receiver is designed so that it ignores satellite positions that it has determined from ephemeris information are below,
+
+perhaps 5 or 10 degrees above the horizon at the viewer's location, and as, um, a function of the system itself.
+
+So look carefully at this drawing and you'll see that it compared to figure eight dash 50
+
+pointing errors are much more much less sensitive to elevation angle than mapping errors.
+
+And that's something that you have to, of course, consider in the design of your space mission,
+
+particularly if you're trying to image the ground or communicate with the ground.
+
+In. This refers back to the drawing. Uh, a couple of slides ago showing the graphic of the satellite over the Earth,
+
+and it describes the particular kinds of errors that we've been talking about, the mapping and pointing errors.
+
+So look at the definitions on this slide and then compare it with a graph that shows the angles and the uh,
+
+position of the satellite on that previous chart. And you'll get an idea of the types of errors and how they contribute to the problems we will have.
+
+And getting decent information from an imaging system isn't as simple as just taking a picture.
+
+We have to be aware of all these various types of mapping and pointing errors.
+
+Mathematically speaking,
+
+here is the summary table of the various types of errors and the formula for determining the magnitude of those particular errors.
+
+So take a look at this one. Some numbers that you can or some um samples to see what the magnitudes of the errors might be.
+
+And that might be a good thing to be able to do in the future.
+
+He briefly mentioned the types of issues involved with pointing accuracy and the errors associated with pointing.
+
+And here is an example of the type of attitude control.
+
+Remember we discussed that as part of the housekeeping problems for satellite drivers.
+
+Well here are the various types of attitude control and sensing that satellites might have.
+
+And you can see the accuracy level over on the left side.
+
+And therefore that can contribute dramatically to the pointing errors associated with
+
+the particular satellites that are using these methods of attitude determination.
+
+Next session will deal with chapter nine. And this is Orbitz and Astro Dynamics.
+
+It's going to be a pretty intense chapter, so we'll cover as much detail as we can.
+
+But as you see from the opening page on 197, we'll be talking about Kepler's laws,
+
+the various orbits of that we're going to be dealing with, and our mission planning.
+
+And that will include effects on those orbits.
+
+Because of such things as the Earth not being around other bodies, such as the moon and sun, what effect they have on the orbits of our our plans.
+
+Space missions are also going to look at orbital maneuvers.
+
+So it's going to be pretty interesting but intense session next week for our next time for chapter nine.
+
+Now, since this week we covered chapters seven and eight.
+
+There will be homework assignments for both chapters, but for chapter seven, I it's not that intense of a homework assignment.
+
+So I'm going to ask that you get them both done in this next week period.
+
+So the idea would be read through your material of chapter seven, look at and work homework for chapter seven.
+
+And then since there's a clear break between 7 and 8, then go on to chapter eight or section eight and material.
+
+And once you have that completed, then you'll be in a good position to do homework.
+
+Number three all this is because we have a lot to cover this semester,
+
+and I want to get these basics down soon so that we can then go on and deal with the mission planning itself.
+
+So homework number two and number three will be do one week from this current week, one week from Monday.
+
+But do not let it go until the very end.
+
+And please just look at the first part first and do that homework.
+
+And then go on to the second part of our material and do the homework assignments, dealing with the chapters in chapter eight.
+
+Then we'll be in a good position to go on to chapter nine.
+
